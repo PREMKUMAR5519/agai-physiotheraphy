@@ -1,0 +1,167 @@
+{
+  "kit": "AGAI Brand Kit",
+  "version": "1.1",
+  "source_files_sha256": {
+    "final-logo.svg": "0ebb4a5d070717cf306f45cb03a8deb79b9a58dc8ae440c94013306e7a2c3fc4",
+    "final-logo-horizontal.svg": "91b846960d9a275a5d22a831a23e8cf36b1ca20fc9383bb9e83bfcaaa9d389f7",
+    "logo.svg": "a41ff2df81082e73133d362f77f1743a1efdfb7932ccf12ce30fb14d6f2a0c27",
+    "logo.jpeg": "f3fdc732b36dcb195b37c9f470b2d3e9bc42d15ae9a20530ca3f4e4b1caf44d8"
+  },
+  "source_files_unchanged": true,
+  "stacked_master_byte_identical": true,
+  "horizontal_master_byte_identical": true,
+  "horizontal_export_note": "Horizontal SVG reproduced exactly as supplied.",
+  "horizontal_composition": {
+    "used_supplied_shield": true,
+    "added_existing_outlined_lettering": false,
+    "original_source_modified": false
+  },
+  "clear_space_rule": "At least one tenth of the visible shield height around visible artwork. Padded deployment exports include this margin.",
+  "assets": {
+    "AGAI-Brand-Guide.pdf": {
+      "bytes": 2411513,
+      "sha256": "6d9e411fa9927014668b15983a5873eb2b27af6f6e031e286287856426a41e31"
+    },
+    "assets/agai-avatar-1080.png": {
+      "bytes": 340552,
+      "sha256": "370e57a515892c3ce398ce6ed7fc42577df5730bd635bb058f687dc939538993"
+    },
+    "assets/agai-emblem-128.webp": {
+      "bytes": 10966,
+      "sha256": "ebffa362f7ed6dc692bf9f61dae757c61b96f985defa0d260e3e53032a4e6fd2"
+    },
+    "assets/agai-emblem-512.png": {
+      "bytes": 118259,
+      "sha256": "eb85a0418f8da168fd97abc7de3e38e98cb860cee3b6089f8c44d17bc4efc238"
+    },
+    "assets/agai-emblem-512.webp": {
+      "bytes": 80006,
+      "sha256": "65308845a3554a03700b97762a94cd6f2ad82f0b88d0f9ce6873c52ebb911f07"
+    },
+    "assets/agai-emblem.svg": {
+      "bytes": 601332,
+      "sha256": "5d228be16806c86675287a42f4d6ffabf4a727dfe6fbbfe7ba7d2ca6b4880619"
+    },
+    "assets/agai-horizontal-1600.png": {
+      "bytes": 160487,
+      "sha256": "9a32f8a7063e82d1e67a7f773afa60b34af41a503439156abfea76857bd3c82c"
+    },
+    "assets/agai-horizontal-1600.webp": {
+      "bytes": 100534,
+      "sha256": "5b7600da1e5afa00a6c77dae747a98fa310602d25c785a76da20c592916bdd46"
+    },
+    "assets/agai-horizontal-3200.png": {
+      "bytes": 429251,
+      "sha256": "11ff21ea4a3a94e0ea845a70a1008537941108c1dd20dcf5d427088a49d03f60"
+    },
+    "assets/agai-horizontal-800.webp": {
+      "bytes": 38966,
+      "sha256": "623dca07633dc61b847e78982d901b7c6706a2b4e2afc63a6a8a4bff3edc4021"
+    },
+    "assets/agai-horizontal-master.svg": {
+      "bytes": 918353,
+      "sha256": "91b846960d9a275a5d22a831a23e8cf36b1ca20fc9383bb9e83bfcaaa9d389f7"
+    },
+    "assets/agai-horizontal.svg": {
+      "bytes": 631358,
+      "sha256": "418d476a0fbd2f1d22e2e40cede9c08bcdbe13262d763f8d88ae693f59ffe00d"
+    },
+    "assets/agai-logo-1280.png": {
+      "bytes": 269370,
+      "sha256": "c26bcb59f722c5b5342fa0a67d2ca2371f0b529fb4392949ae38452061afc422"
+    },
+    "assets/agai-logo-1280.webp": {
+      "bytes": 161512,
+      "sha256": "010f49408a7d68e0151d365ce65aa0c5af623efffdfd502deec5b43f02870051"
+    },
+    "assets/agai-logo-2560.png": {
+      "bytes": 680506,
+      "sha256": "20c64cf4ea689c3d5419e739753c290f775697fe7430aebb01cca446efe9d920"
+    },
+    "assets/agai-logo-640.webp": {
+      "bytes": 64806,
+      "sha256": "ac8a44cbcf83ebf848b82000296292f9dc781fd2840161436544968bf151e3c6"
+    },
+    "assets/agai-logo.svg": {
+      "bytes": 610607,
+      "sha256": "353ee0d5de2df392e11fa29d21131809c6ea5066c40069300b72de1be45b9410"
+    },
+    "assets/agai-master.svg": {
+      "bytes": 891013,
+      "sha256": "0ebb4a5d070717cf306f45cb03a8deb79b9a58dc8ae440c94013306e7a2c3fc4"
+    },
+    "assets/agai-social-1200x630.png": {
+      "bytes": 87646,
+      "sha256": "5b52909586d9484fb095852be748a33c552849dec67e19b4b7ed9bf87abed74d"
+    },
+    "fonts/InterVariable.ttf": {
+      "bytes": 879708,
+      "sha256": "871ee95a9b4d9168e54d219db1844472ae55ea400d010becbebe04515d978b11"
+    },
+    "fonts/InterVariable.woff2": {
+      "bytes": 352240,
+      "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3"
+    },
+    "fonts/OFL-Inter.txt": {
+      "bytes": 4380,
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    "preview.html": {
+      "bytes": 17661,
+      "sha256": "aa22d0096a359e8409e5a901d8dd85eba5eed272438b4bf31bcfb78d3adf9853"
+    },
+    "README.txt": {
+      "bytes": 8845,
+      "sha256": "d3153c79857bf0f94220e5778ade44591aeba68187b8d14ef7c74c897a1f6986"
+    },
+    "web/apple-touch-icon.png": {
+      "bytes": 21475,
+      "sha256": "19c4f541da792ca119c23b2b8e6ea754c960933d18a49b22d1f10c62a5f438d8"
+    },
+    "web/brand.css": {
+      "bytes": 3532,
+      "sha256": "975e507319f398ddb94ccafe3055811ae1b009b9ff2f95b9e102a81d50ea6cc1"
+    },
+    "web/favicon.ico": {
+      "bytes": 6295,
+      "sha256": "d711f036faaf05f1d61f7830ba75926d2a9ffcc6a6f9c5a94d8fad969f88ffd1"
+    },
+    "web/favicon.svg": {
+      "bytes": 601432,
+      "sha256": "ae32494206c577b180a3f1f73fa359a9f836fbbacba6057ce1bb374047484290"
+    },
+    "web/head-snippet.html": {
+      "bytes": 718,
+      "sha256": "684c7e2b1570588bc8fe7a5ec6c18b71a3f15265c4f15b5d966f2e24b704f1e6"
+    },
+    "web/icon-192.png": {
+      "bytes": 23841,
+      "sha256": "6063fb9d9b80d274e225fc1fa12debd4d1bc13d201c27544234802ffcfabe795"
+    },
+    "web/icon-512.png": {
+      "bytes": 111742,
+      "sha256": "29f0d2dc1bb0e37a1467c694b861f23a5cbfba2cc07ce6b89b99fddc3f9fe605"
+    },
+    "web/tokens.json": {
+      "bytes": 1660,
+      "sha256": "adb5a5eb1ef1a85643d353c42dc2a928316d46a68d5709c0f41a1be0906682d5"
+    }
+  },
+  "final_checks": {
+    "horizontal_source_includes_lettering": true,
+    "horizontal_optimized_render_pixel_identical": true,
+    "master_copies_byte_identical": true,
+    "guide_pages_reviewed": 8,
+    "pdf_text_within_margins": true,
+    "preview_widths_checked_px": [
+      1440,
+      900,
+      768,
+      390,
+      320
+    ],
+    "images_fonts_local_links_passed": true,
+    "color_copy_passed": true,
+    "original_files_unchanged": true
+  }
+}

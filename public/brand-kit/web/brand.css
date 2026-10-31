@@ -1,0 +1,48 @@
+/* AGAI brand kit 1.1. Keep this file beside ../fonts/. */
+@font-face{font-family:Inter;src:url('../fonts/InterVariable.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+:root{
+  --agai-blue:#0558AD;
+  --agai-green:#007C2C;
+  --agai-gold:#DCA51E;
+  --agai-lime:#87DD00;
+  --agai-ink:#153B35;
+  --agai-muted:#526762;
+  --agai-white:#FFFFFF;
+  --agai-surface:#F3F8F5;
+  --agai-border:#CEDDD6;
+  --agai-border-strong:#71877E;
+  --agai-blue-hover:#044788;
+
+  --agai-font:Inter,Arial,sans-serif;
+  --agai-space-1:4px;--agai-space-2:8px;--agai-space-3:12px;--agai-space-4:16px;
+  --agai-space-6:24px;--agai-space-8:32px;--agai-space-12:48px;--agai-space-16:64px;
+  --agai-radius-control:8px;--agai-radius-card:16px;--agai-max-width:1120px;
+}
+.agai-theme{font-family:var(--agai-font);font-optical-sizing:auto;color:var(--agai-ink);background:var(--agai-white);font-size:16px;line-height:1.6}
+.agai-theme *,.agai-theme *::before,.agai-theme *::after{box-sizing:border-box}
+.agai-container{width:min(calc(100% - 40px),var(--agai-max-width));margin-inline:auto}
+.agai-h1{font-size:clamp(2.25rem,4.5vw,3.5rem);font-weight:700;line-height:1.1;letter-spacing:-.035em}
+.agai-h2{font-size:clamp(1.75rem,3vw,2.25rem);font-weight:700;line-height:1.2;letter-spacing:-.025em}
+.agai-lead{font-size:1.25rem;line-height:1.5}
+.agai-link{color:var(--agai-blue);text-decoration:underline;text-underline-offset:3px}
+.agai-button{display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:48px;padding:12px 20px;border:2px solid var(--agai-blue);border-radius:var(--agai-radius-control);background:var(--agai-blue);color:#fff;font:600 1rem/1.25 var(--agai-font);text-decoration:none;cursor:pointer}
+.agai-button:hover{background:var(--agai-blue-hover);border-color:var(--agai-blue-hover)}
+.agai-button--secondary{background:transparent;color:var(--agai-blue)}
+.agai-button--secondary:hover{background:#ECF3FC;color:var(--agai-blue);border-color:var(--agai-blue)}
+.agai-theme :focus-visible{outline:3px solid var(--agai-blue);outline-offset:4px}
+.agai-field{display:grid;gap:8px;font-weight:600}
+.agai-input{width:100%;min-height:48px;padding:12px 14px;border:1px solid var(--agai-border-strong);border-radius:var(--agai-radius-control);background:#fff;color:var(--agai-ink);font:400 1rem/1.5 var(--agai-font)}
+.agai-input::placeholder{color:var(--agai-muted);opacity:1}
+.agai-card{padding:24px;border:1px solid var(--agai-border);border-radius:var(--agai-radius-card);background:#fff}
+.agai-logo{display:block;width:100%;height:auto;object-fit:contain}
+.agai-emblem{display:block;width:64px;height:64px;object-fit:contain}
+.agai-header-brand{display:flex;align-items:center;gap:12px;color:var(--agai-ink);text-decoration:none}
+.agai-header-brand strong{display:block;font-size:18px;line-height:1.3}
+.agai-header-brand small{display:block;font-size:14px;line-height:1.4;color:var(--agai-muted)}
+@media(min-width:768px){.agai-container{width:min(calc(100% - 64px),var(--agai-max-width))}}
+@media(prefers-reduced-motion:reduce){.agai-theme *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* Use the full horizontal mark only where at least 400 CSS px are available. */
+.agai-horizontal-logo{display:block;width:400px;max-width:100%;height:auto}
+.agai-site-brand .agai-header-brand{display:none}
+@media(max-width:767px){.agai-site-brand .agai-horizontal-logo{display:none}.agai-site-brand .agai-header-brand{display:flex}}
