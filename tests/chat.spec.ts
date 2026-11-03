@@ -1,5 +1,40 @@
 import { test, expect } from '@playwright/test'
 
+test('chat stays in the viewport when the page wrapper creates a containing block', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 568 })
+  await page.goto('/')
+  await page.addStyleTag({ content: '.site-shell { transform: translateZ(0); }' })
+  await page.locator('.service-preview').nth(2).scrollIntoViewIfNeeded()
+  const launcher = page.getByRole('button', { name: 'Open AGAI chat' })
+  await expect(launcher).toBeInViewport()
+  await launcher.click()
+  await expect(page.getByRole('dialog')).toBeInViewport()
+  await page.getByRole('button', { name: 'Close chat', exact: true }).click()
+  await expect(launcher).toBeInViewport()
+})
+
+test('mobile chat expands below the hero and stays available across routes', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  await page.goto('/')
+  const launcher = page.getByRole('button', { name: 'Open AGAI chat' })
+  const caption = launcher.getByText('Here to guide you')
+  await expect(caption).toBeHidden()
+  await page.locator('.home-services').evaluate(element => element.scrollIntoView())
+  await expect(caption).toBeVisible()
+  await expect(page.locator('.chat-bot-stage')).toBeVisible()
+  await expect(launcher).toBeInViewport()
+  await launcher.click()
+  await expect(page.getByRole('dialog')).toBeVisible()
+  await page.getByRole('button', { name: 'Close chat', exact: true }).click()
+  await page.evaluate(() => window.scrollTo(0, 0))
+  await expect(caption).toBeHidden()
+  await page.getByRole('button', { name: 'Open navigation' }).click()
+  await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Our services' }).click()
+  await expect(caption).toBeVisible()
+  await launcher.click()
+  await expect(page.getByRole('dialog')).toBeVisible()
+})
+
 for (const width of [320, 390, 767]) {
   test(`mobile hero booking stays unobstructed by chat at ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 800 })

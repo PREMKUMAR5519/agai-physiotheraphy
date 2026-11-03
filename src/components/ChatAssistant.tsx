@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import type { SubmitEvent } from 'react'
-import { Link } from 'react-router'
+import { Link, useLocation } from 'react-router'
 import { Arrow, Icon } from './UI'
 import { getChatReply } from './chatReplies'
 import type { ChatReply } from './chatReplies'
@@ -16,6 +17,8 @@ const shortcuts = [
 ]
 
 export default function ChatAssistant() {
+  const { pathname } = useLocation()
+  const [overHero, setOverHero] = useState(pathname === '/')
   const [open, setOpen] = useState(false)
   const [draft, setDraft] = useState('')
   const [messages, setMessages] = useState<Message[]>([])
@@ -24,6 +27,19 @@ export default function ChatAssistant() {
   const input = useRef<HTMLInputElement>(null)
   const conversation = useRef<HTMLDivElement>(null)
   const panel = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const hero = document.querySelector('.hero')
+    if (!hero) {
+      setOverHero(false)
+      return
+    }
+    const bounds = hero.getBoundingClientRect()
+    setOverHero(bounds.bottom > 0 && bounds.top < window.innerHeight)
+    const observer = new IntersectionObserver(([entry]) => setOverHero(entry.intersectionRatio >= 0.01), { threshold: 0.01 })
+    observer.observe(hero)
+    return () => observer.disconnect()
+  }, [pathname])
 
   useEffect(() => {
     if (open) input.current?.focus({ preventScroll: true })
@@ -59,7 +75,8 @@ export default function ChatAssistant() {
     send(draft)
   }
 
-  return <div className="care-chat">
+  // Keep the floating UI outside page wrappers that can clip or reposition fixed elements.
+  return createPortal(<div className={`care-chat${overHero ? ' is-over-hero' : ''}`}>
     {!open ? <ChatBotMascot /> : null}
     {open ? <section ref={panel} className="care-chat-panel" id="care-chat-panel" role="dialog" aria-labelledby="care-chat-title">
       <header className="care-chat-header">
@@ -96,5 +113,5 @@ export default function ChatAssistant() {
       </footer>
     </section> : null}
     <button ref={launcher} type="button" className={`care-chat-launcher${open ? ' is-open' : ''}`} aria-expanded={open} aria-controls="care-chat-panel" aria-label={open ? 'Close AGAI chat' : 'Open AGAI chat'} onClick={() => open ? close() : setOpen(true)}><span className="care-chat-launcher-icon"><Icon name="chat" /></span><span>Ask AGAI<span className="care-chat-launcher-caption">Here to guide you</span></span><span className="care-chat-launcher-arrow" aria-hidden="true"><Arrow diagonal /></span></button>
-  </div>
+  </div>, document.body)
 }
