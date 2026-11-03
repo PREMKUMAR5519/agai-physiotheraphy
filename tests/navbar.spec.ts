@@ -1,4 +1,37 @@
-import { test, expect } from '@playwright/test'
+import { test, expect, devices } from '@playwright/test'
+
+for (const device of ['iPhone 13', 'Pixel 7']) {
+test(`${device} viewport stays stable while the navbar hides and chat remains visible`, async ({ browser }) => {
+  const context = await browser.newContext({ ...devices[device] })
+  const page = await context.newPage()
+  try {
+    await page.goto('/')
+    await page.evaluate(() => document.fonts.ready)
+    const width = await page.evaluate(() => window.innerWidth)
+    for (const y of [500, 1000, 1600, 2500, 500, 0]) {
+      await page.evaluate(y => window.scrollTo(0, y), y)
+      await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(y)
+      if (y === 500 && await page.evaluate(() => window.scrollY) === 500) {
+        // Wait for the first hide animation, where transformed drawers previously caused overflow.
+        await page.locator('.site-header').evaluate(async element => {
+          await Promise.all(element.getAnimations().map(animation => animation.finished))
+        })
+      }
+      await expect.poll(() => page.evaluate(() => window.innerWidth)).toBe(width)
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width)
+      const launcher = page.getByRole('button', { name: 'Open AGAI chat' })
+      await expect(launcher).toBeInViewport()
+      const rect = (await launcher.boundingBox())!
+      expect(rect.x + rect.width).toBeLessThanOrEqual(width)
+    }
+    await page.evaluate(() => window.scrollTo(0, 1600))
+    await page.getByRole('button', { name: 'Open AGAI chat' }).tap()
+    await expect(page.getByRole('dialog')).toBeInViewport()
+  } finally {
+    await context.close()
+  }
+})
+}
 
 for (const width of [390, 1440]) {
   test(`navbar follows scroll direction at ${width}px`, async ({ page }) => {

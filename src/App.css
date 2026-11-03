@@ -357,7 +357,9 @@ p { margin-block: 0 16px; }
 }
 @media (max-width: 767px) {
   .site-shell { --mobile-header-height: 81px; }
-  .site-header { min-height: var(--mobile-header-height); }
+  /* A transformed header traps the fixed drawer and widens the mobile viewport. */
+  .site-header { min-height: var(--mobile-header-height); transition: top .3s cubic-bezier(.22, 1, .36, 1); }
+  .site-header.is-hidden { top: calc(-1 * var(--mobile-header-height)); transform: none; }
   .appointment-layout { grid-template-columns: 1fr; gap: 32px; }
   .appointment-intro { padding: 0; }
   .booking-visit { display: none; }
