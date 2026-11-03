@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import type { SubmitEvent } from 'react'
+import { useSearchParams } from 'react-router'
 import { clinic, services } from '../content'
 import { Arrow, Eyebrow, Icon } from './UI'
 import ServiceSelect from './ServiceSelect'
@@ -20,8 +21,9 @@ function dateLabel(value: string) {
 }
 
 export default function AppointmentSection() {
+  const [params] = useSearchParams()
   const [step, setStep] = useState(0)
-  const [values, setValues] = useState({ service: '', date: '', time: 'Flexible', name: '', phone: '', email: '', notes: '', consent: false })
+  const [values, setValues] = useState(() => ({ service: services.find(service => service.id === params.get('service'))?.id || '', date: '', time: 'Flexible', name: '', phone: '', email: '', notes: '', consent: false }))
   const [error, setError] = useState('')
   const [timePeriod, setTimePeriod] = useState<TimePeriod>('Morning')
   const [month, setMonth] = useState(() => new Date(new Date().getFullYear(), new Date().getMonth(), 1))

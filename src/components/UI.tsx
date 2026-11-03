@@ -25,13 +25,13 @@ export function Arrow({ diagonal = false }: { diagonal?: boolean }) {
   return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d={diagonal ? 'M6 18 18 6M6 6h12v12' : 'M4 12h16m-6-6 6 6-6 6'} /></svg>
 }
 export function Eyebrow({ children }: { children: ReactNode }) {
-  return <p className="eyebrow"><span />{children}</p>
+  return <p className="eyebrow">{children}</p>
 }
 export function Breadcrumb({ current }: { current: string }) {
   return <nav className="breadcrumb" aria-label="Breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><span aria-current="page">{current}</span></nav>
 }
-export function ContactBanner({ homeHeading = false }: { homeHeading?: boolean }) {
-  return <section className="contact-banner"><div className="contact-banner-inner agai-container"><div><Eyebrow>Your next step</Eyebrow><h2 className={homeHeading ? 'home-section-title' : undefined}>{homeHeading ? <><span className="home-title-lead">Let’s make movement</span><br /><span>part of your story.</span></> : <>Let’s make movement<br />part of your story.</>}</h2><p>Explore care that starts with you and your goals.</p></div><Link className="agai-button" to="/contact">Get in touch <Arrow /></Link></div></section>
+export function ContactBanner() {
+  return <section className="contact-banner"><div className="contact-banner-inner agai-container"><div><Eyebrow>Your next step</Eyebrow><h2 className="home-section-title"><span className="home-title-lead">Let’s make movement</span><br /><span>part of your story.</span></h2><p>Explore care that starts with you and your goals.</p></div><Link className="agai-button" to="/contact">Get in touch <Arrow /></Link></div></section>
 }
 export function FAQ({ items, numbered = false }: { items: { question: string; answer: string }[]; numbered?: boolean }) {
   return <div className={`faq-list${numbered ? ' faq-list--numbered' : ''}`}>{items.map((item, index) => <details key={item.question}>

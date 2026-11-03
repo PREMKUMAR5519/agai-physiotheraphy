@@ -1,3 +1,4 @@
+import FounderSection from '../components/FounderSection'
 import { Link } from 'react-router'
 import { approach, clinic, faqs, services } from '../content'
 import { Arrow, ContactBanner, Eyebrow, FAQ, Icon } from '../components/UI'
@@ -15,21 +16,6 @@ export default function HomePage() {
             <p>Evidence-based physiotherapy led by a sports specialist. Book an appointment, call {clinic.phone} or visit us in {clinic.address || 'Chennai'}.</p>
           </div>
         </div>
-        <div className="hero-media">
-          <div className="hero-panel">
-            <p className="hero-panel-status"><span className="hero-panel-dot" aria-hidden="true" />Now welcoming new patients</p>
-            <Link className="hero-founder" to="/about#founder">
-              <span className="hero-founder-avatar" aria-hidden="true">RR</span>
-              <span className="hero-founder-copy"><strong>Dr. Rasathi Rajendren, PT</strong><span>Founder · MPT, Sports Physiotherapy</span></span>
-              <span className="hero-founder-arrow"><Arrow diagonal /></span>
-            </Link>
-            <ul className="hero-tiles" aria-label="Key facts">
-              <li><strong>10<span>+</span></strong><span>Years of clinical experience</span></li>
-              <li><strong>7</strong><span>Areas of specialised care</span></li>
-              <li><strong>1<span>:1</span></strong><span>Personalised sessions</span></li>
-            </ul>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -38,7 +24,7 @@ export default function HomePage() {
         {services.map(service => <Link className="service-preview" key={service.id} to={`/services#${service.id}`}>
           <img
             className="service-preview-image"
-            src={service.image}
+            src={service.previewImage}
             alt=""
             loading="lazy"
             decoding="async"
@@ -56,16 +42,13 @@ export default function HomePage() {
 
     <section className="approach-section" id="approach"><div className="agai-container section"><div className="section-heading"><div><Eyebrow>The AGAI approach</Eyebrow><h2 className="home-section-title"><span className="home-title-lead">More than pain relief.</span><br /><span>A way forward.</span></h2></div><p>Restoring movement, rebuilding strength and helping every individual work towards their full potential.</p></div><div className="approach-grid">{approach.map((step, index) => <article key={step.title}><span className="step-number">0{index + 1}</span><h3>{step.title}</h3><p>{step.text}</p></article>)}</div></div></section>
 
-    <section className="section agai-container founder-section" id="founder" tabIndex={-1} aria-labelledby="founder-heading">
-      <div className="founder-profile"><div className="profile-top"><span>Experience with purpose</span><Icon name="shield" /></div><div className="profile-number">10<span>+</span></div><p className="profile-number-label">years of clinical experience</p><div className="profile-rule" /><h3>Dr. Rasathi<br />Rajendren, PT</h3><p>Founder & Sports Physiotherapist</p><div className="profile-countries"><span>India</span><span>Saudi Arabia</span><span>Oman</span></div></div>
-      <div className="founder-story"><Eyebrow>Meet our founder</Eyebrow><h2 id="founder-heading" className="home-section-title"><span className="home-title-lead">Expertise you can</span><br /><span>move forward with.</span></h2><p>Dr. Rasathi Rajendren brings over a decade of clinical experience across India and the Middle East to AGAI Physiotherapy Centre.</p><p>With a postgraduate specialisation in Sports Physiotherapy, she combines clinical assessment, hands-on therapy, individualised exercise and patient education. Her experience spans multispecialty hospital care, sports rehabilitation and women’s wellness.</p><ul className="qualifications"><li><Icon name="check" /><span><strong>MPT · Sports Physiotherapy</strong><small>Annamalai University, 2022</small></span></li><li><Icon name="check" /><span><strong>Postgraduate Diploma in Yoga</strong><small>Alagappa University, 2021</small></span></li><li><Icon name="check" /><span><strong>MSc · Applied Psychology</strong><small>Annamalai University, 2020 · Correspondence</small></span></li></ul></div>
-    </section>
-    <section className="experience-section agai-container" aria-labelledby="experience-heading"><div className="experience-heading"><Eyebrow>A foundation of clinical experience</Eyebrow><h2 id="experience-heading" className="home-section-title"><span className="home-title-lead">Experience that matters.</span><br /><span>Care you can trust.</span></h2></div><div className="experience-timeline">{[
+    <FounderSection />
+    <section className="experience-section agai-container home-experience" aria-labelledby="experience-heading"><div className="experience-heading"><div><Eyebrow>A foundation of clinical experience</Eyebrow><h2 id="experience-heading" className="home-section-title"><span className="home-title-lead">Experience that matters.</span><br /><span>Care you can trust.</span></h2></div><p className="experience-context">Clinical experience across India, Saudi Arabia and Oman.</p></div><div className="experience-timeline">{[
       ['2016–2017', 'Pondicherry Institute of Medical Sciences', 'India'],
       ['2017–2019', 'Al Hayat National Hospital', 'Saudi Arabia'],
       ['2022–2024', 'Khalfan Nasser Al Farsi Physio Centre', 'Oman'],
       ['2024–2026', 'Apollo Super Speciality Hospital', 'Oman'],
-    ].map(([dates, name, country]) => <article key={name}><span>{dates}</span><h3>{name}</h3><p>{country}</p></article>)}</div></section>
+    ].map(([dates, name, country], index) => <article key={name}><div className="experience-card-top"><span className="experience-date">{dates}</span><span className="experience-order" aria-hidden="true">0{index + 1}</span></div><h3>{name}</h3><p className="experience-location"><Icon name="pin" />{country}</p></article>)}</div></section>
 
     <AppointmentSection />
     <section className="faq-section section home-faq" aria-labelledby="home-faq-heading">
@@ -81,6 +64,6 @@ export default function HomePage() {
         <FAQ items={faqs} numbered />
       </div>
     </section>
-    <ContactBanner homeHeading />
+    <ContactBanner />
   </div>
 }

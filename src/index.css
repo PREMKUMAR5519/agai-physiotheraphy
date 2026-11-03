@@ -1,4 +1,6 @@
 ﻿body { margin: 0; min-width: 320px; }
+/* Suppress the browser's touch highlight without removing keyboard focus styles. */
+html { -webkit-tap-highlight-color: transparent; }
 button, input, textarea, select { font: inherit; }
 img { max-width: 100%; height: auto; }
 ::selection { color: var(--agai-white); background: var(--agai-blue); }
