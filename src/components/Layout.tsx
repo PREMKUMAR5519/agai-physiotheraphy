@@ -8,8 +8,35 @@ const year = new Date().getFullYear()
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [hidden, setHidden] = useState(false)
+  const header = useRef<HTMLElement>(null)
   const menuButton = useRef<HTMLButtonElement>(null)
   const navigation = useRef<HTMLElement>(null)
+  useEffect(() => {
+    let previousY = window.scrollY
+    let travel = 0
+    function handleScroll() {
+      // Clamp overscroll so bouncing at either end does not reverse the navbar.
+      const maxY = Math.max(0, document.documentElement.scrollHeight - window.innerHeight)
+      const currentY = Math.max(0, Math.min(window.scrollY, maxY))
+      const delta = currentY - previousY
+      previousY = currentY
+      if (menuOpen || currentY <= (header.current?.offsetHeight ?? 80)) {
+        travel = 0
+        setHidden(false)
+        return
+      }
+      if (delta === 0) return
+      travel = Math.sign(delta) === Math.sign(travel) ? travel + delta : delta
+      // Ignore small touch/trackpad movements to avoid flickering.
+      if (Math.abs(travel) >= 8) {
+        setHidden(travel > 0)
+        travel = 0
+      }
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [menuOpen])
   function closeMenu() {
     setMenuOpen(false)
     menuButton.current?.focus()
@@ -52,7 +79,7 @@ export function Header() {
       </div>
       <div className="utility-right"><a href={clinic.mapsUrl} target="_blank" rel="noreferrer"><Icon name="pin" />{clinic.address}</a></div>
     </div></div>
-    <header className="site-header"><div className="site-header-inner">
+    <header ref={header} className={`site-header${hidden && !menuOpen ? ' is-hidden' : ''}`} onFocusCapture={() => setHidden(false)}><div className="site-header-inner">
       <Link className="agai-site-brand" to="/" aria-label="AGAI Physiotherapy Centre - home" onClick={() => setMenuOpen(false)}>
         <img className="agai-horizontal-logo" src={`${brandPath}/assets/agai-horizontal-800.webp`} srcSet={`${brandPath}/assets/agai-horizontal-800.webp 800w, ${brandPath}/assets/agai-horizontal-1600.webp 1600w`} sizes="400px" width="1589" height="512" alt="AGAI Physiotherapy Centre" />
         <span className="agai-header-brand"><img className="agai-emblem" src={`${brandPath}/assets/agai-emblem-128.webp`} width="64" height="64" alt="" /><span><strong>AGAI</strong><small>Physiotherapy Centre</small></span></span>

@@ -13,7 +13,8 @@ svg { width: 22px; height: 22px; flex-shrink: 0; }
 .utility-left svg, .utility-right svg { width: 15px; height: 15px; margin-right: 7px; color: #ffffffcc; }
 .utility-right > a:first-child, .utility-right > span:first-child { margin-left: 0; padding-left: 0; border-left: 0; }
 .utility-accent { color: var(--agai-green) !important; font-weight: 600; }
-.site-header { position: relative; z-index: 2; border-bottom: 1px solid var(--agai-border); background: white; }
+.site-header { position: sticky; top: 0; z-index: 9; border-bottom: 1px solid var(--agai-border); background: white; transition: transform .3s cubic-bezier(.22, 1, .36, 1); }
+.site-header.is-hidden { transform: translateY(-100%); }
 .site-header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 4px 24px; }
 .site-header .agai-horizontal-logo { width: 200px; }
 .agai-site-brand { flex-shrink: 0; text-decoration: none; }
@@ -355,6 +356,8 @@ p { margin-block: 0 16px; }
   .appointment-fields { grid-template-columns: 1fr; }
 }
 @media (max-width: 767px) {
+  .site-shell { --mobile-header-height: 81px; }
+  .site-header { min-height: var(--mobile-header-height); }
   .appointment-layout { grid-template-columns: 1fr; gap: 32px; }
   .appointment-intro { padding: 0; }
   .booking-visit { display: none; }
@@ -607,13 +610,14 @@ p { margin-block: 0 16px; }
   h2 { font-size: 28px; }
   h3 { font-size: 22px; }
   .eyebrow { font-size: 12px; }
-  .hero { min-height: 0; background-size: 100% auto; background-position: 50% 100%; padding-bottom: 50vw; }
-  .hero::before { background: linear-gradient(180deg, var(--hero-solid) 0, var(--hero-solid) calc(100% - 56vw), #0a4f9c00 calc(100% - 22vw)); }
-  .hero-inner { grid-template-columns: 1fr; gap: 36px; padding-block: 32px 24px; }
-  .hero-copy { padding: 0; }
+  .hero { min-height: calc(100vh - var(--mobile-header-height)); background-image: none; padding-bottom: 0; }
+  .hero::before { position: relative; inset: auto; flex: 1; min-height: 120px; background: linear-gradient(180deg, #0a4f9c00 70%, var(--hero-solid) 100%), url('/images/hero-bg.jpg') center / cover no-repeat; }
+  .hero-inner { flex: none; grid-template-columns: 1fr; align-items: stretch; gap: 36px; padding-block: 24px max(24px, env(safe-area-inset-bottom)); }
+  .hero-copy { display: flex; flex-direction: column; align-items: flex-start; padding: 0; }
+  .hero-copy > .hero-pill { order: 1; flex-shrink: 0; }
   .hero h1 { font-size: clamp(32px, 8.4vw, 44px); margin-bottom: 24px; }
   .hero h1 br { display: none; }
-  .hero-feature { margin-top: 40px; }
+  .hero-feature { margin-top: 0; margin-bottom: 32px; }
   .hero-media { justify-items: stretch; padding-bottom: 0; }
   .hero-panel { width: 100%; padding: 18px 18px 16px; }
   .hero-tiles li { padding-inline: 12px; }
@@ -672,6 +676,7 @@ p { margin-block: 0 16px; }
   .location-visual { min-height: 240px; }
 }
 @media (max-width: 359px) {
+  .site-shell { --mobile-header-height: 65px; }
   .agai-header-brand { gap: 8px; }
   .agai-header-brand .agai-emblem { width: 48px; height: 48px; }
   .agai-header-brand small { font-size: 12px; }
@@ -680,4 +685,4 @@ p { margin-block: 0 16px; }
   .experience-timeline, .experience-timeline--detailed { grid-template-columns: 1fr; }
 }
 
-@media (prefers-reduced-motion: reduce) { .navigation, .menu-backdrop { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .site-header, .navigation, .menu-backdrop { transition: none; } }

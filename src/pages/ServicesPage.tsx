@@ -16,7 +16,7 @@ export default function ServicesPage() {
         <div className="service-detail-content">
           <div className="service-detail-heading"><span className="service-category">{categories.find(item => item.id === service.category)?.label}</span><h3 id={`${service.id}-title`}>{service.title}</h3><p>{service.intro}</p></div>
           <p className="service-description">{service.description}</p>
-          <div className="service-detail-bottom"><div className="service-detail-body"><h4>Care focus</h4><ul>{service.focus.map(focus => <li key={focus}><Icon name="check" />{focus}</li>)}</ul></div><Link className="service-enquiry" to={`/?service=${service.id}#appointment`} aria-label={`Enquire about ${service.shortTitle}`}>Enquire about this service <span><Arrow diagonal /></span></Link></div>
+          <div className="service-detail-bottom"><div className="service-detail-body"><h4>Care focus</h4><ul>{service.focus.map(focus => <li key={focus}><Icon name="check" />{focus}</li>)}</ul></div><Link className="service-enquiry" to={`/?service=${service.id}#appointment`} aria-label={`Book Appointment for ${service.shortTitle}`}>Book Appointment <span><Arrow diagonal /></span></Link></div>
         </div>
       </article>)}</div>
       <aside className="service-help"><span className="service-icon"><Icon name="chat" /></span><div><h3>Not sure where to start?</h3><p>You don’t need to have it all figured out. Tell us what you need help with in your enquiry.</p></div><Link className="text-action" to="/contact">Get in touch <Arrow /></Link></aside>

@@ -53,17 +53,18 @@ test('service filters persist in the URL and history', async ({ page }) => {
   await expect(page.locator('.service-detail')).toHaveCount(7)
 })
 
-test('deep links reach services and preselect enquiry subject', async ({ page }) => {
+test('deep links reach services and preselect the appointment service', async ({ page }) => {
   await page.goto('/')
   await page.locator('.service-preview').filter({ hasText: 'Orthopaedic rehabilitation' }).click()
   await expect(page).toHaveURL(/\/services#orthopaedic$/)
   await expect(page.locator('#orthopaedic')).toBeInViewport()
-  await page.locator('#orthopaedic').getByRole('link', { name: 'Enquire about this service' }).click()
-  await expect(page.getByLabel('I’m interested in')).toHaveValue('orthopaedic')
+  await page.locator('#orthopaedic').getByRole('link', { name: /Book Appointment for/ }).click()
+  await expect(page).toHaveURL('/?service=orthopaedic#appointment')
+  await expect(page.locator('#appointment-service')).toContainText('Orthopaedic')
   await page.reload()
-  await expect(page.getByLabel('I’m interested in')).toHaveValue('orthopaedic')
-  await page.goto('/contact?service=unknown')
-  await expect(page.getByLabel('I’m interested in')).toHaveValue('not-sure')
+  await expect(page.locator('#appointment-service')).toContainText('Orthopaedic')
+  await page.goto('/?service=unknown#appointment')
+  await expect(page.locator('#appointment-service')).toContainText('Select')
 })
 
 test('mobile menu supports Escape, navigation and founder anchor', async ({ page }) => {

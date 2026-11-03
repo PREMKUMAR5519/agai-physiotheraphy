@@ -1,5 +1,29 @@
 import { test, expect } from '@playwright/test'
 
+for (const width of [320, 390, 767]) {
+  test(`mobile hero booking stays unobstructed by chat at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 800 })
+    await page.goto('/')
+    await page.evaluate(() => document.fonts.ready)
+    const booking = page.locator('.hero-pill')
+    const launcher = page.getByRole('button', { name: 'Open AGAI chat' })
+    const button = (await booking.boundingBox())!
+    const chat = (await launcher.boundingBox())!
+    expect(button.x + button.width + 12).toBeLessThanOrEqual(chat.x)
+    expect(button.y + button.height).toBeLessThanOrEqual(800)
+    expect(await booking.evaluate(element => {
+      const rect = element.getBoundingClientRect()
+      return [rect.left + 4, rect.left + rect.width / 2, rect.right - 4].every(x =>
+        element.contains(document.elementFromPoint(x, rect.top + rect.height / 2)))
+    })).toBe(true)
+    await booking.click({ position: { x: button.width - 10, y: button.height / 2 } })
+    await expect(page).toHaveURL(/\/#appointment$/)
+    await expect(page.locator('#appointment')).toBeInViewport()
+    await launcher.click()
+    await expect(page.getByRole('dialog', { name: 'AGAI care guide' })).toBeVisible()
+  })
+}
+
 test('chat guides a visitor to booking and keeps conversation across routes', async ({ page }) => {
   await page.goto('/services')
   await expect(page.getByRole('dialog')).toHaveCount(0)

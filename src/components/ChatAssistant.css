@@ -57,8 +57,13 @@
 .care-chat-footer > p { font-size: 9px; color: #7d8fa3; text-align: center; margin: 8px 0 0; }
 .care-chat button:focus-visible, .care-chat a:focus-visible { outline: 2px solid #0658ae; outline-offset: 3px; }
 @keyframes chat-appear { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 767px) {
+  .care-chat { right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); }
+  .care-chat-launcher { justify-content: center; width: 52px; height: 52px; padding: 0; }
+  .care-chat-launcher > span:nth-child(2), .care-chat-launcher-arrow { display: none; }
+  .care-chat .chat-bot-stage, .care-chat .chat-bot-hands { display: none; }
+}
 @media (max-width: 600px) {
-  .care-chat { right: 16px; bottom: max(16px, env(safe-area-inset-bottom)); }
   .care-chat-panel { position: fixed; right: 10px; left: 10px; top: max(10px, env(safe-area-inset-top)); bottom: max(10px, env(safe-area-inset-bottom)); width: auto; height: auto; max-height: 660px; margin-top: auto; border-radius: 18px; }
   .care-chat-launcher.is-open { visibility: hidden; }
   .care-chat-composer input { font-size: 16px; }
