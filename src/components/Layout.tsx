@@ -81,7 +81,7 @@ export function Header() {
     </div></div>
     <header ref={header} className={`site-header${hidden && !menuOpen ? ' is-hidden' : ''}`} onFocusCapture={() => setHidden(false)}><div className="site-header-inner">
       <Link className="agai-site-brand" to="/" aria-label="AGAI Physiotherapy Centre - home" onClick={() => setMenuOpen(false)}>
-        <img className="agai-horizontal-logo" src={`${brandPath}/assets/agai-horizontal-800.webp`} srcSet={`${brandPath}/assets/agai-horizontal-800.webp 800w, ${brandPath}/assets/agai-horizontal-1600.webp 1600w`} sizes="400px" width="1589" height="512" alt="AGAI Physiotherapy Centre" />
+        <img className="agai-horizontal-logo" src={`${brandPath}/assets/agai-horizontal-800.webp`} srcSet={`${brandPath}/assets/agai-horizontal-800.webp 800w, ${brandPath}/assets/agai-horizontal-1600.webp 1600w`} sizes="(max-width: 1100px) 160px, 200px" width="1589" height="512" alt="AGAI Physiotherapy Centre" />
         <span className="agai-header-brand"><img className="agai-emblem" src={`${brandPath}/assets/agai-emblem-128.webp`} width="64" height="64" alt="" /><span><strong>AGAI</strong><small>Physiotherapy Centre</small></span></span>
       </Link>
       <button ref={menuButton} className="menu-toggle" type="button" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} aria-controls="main-navigation" onClick={() => setMenuOpen(open => !open)}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d={menuOpen ? 'm6 6 12 12M6 18 18 6' : 'M4 7h16M4 12h16M4 17h16'} /></svg></button>

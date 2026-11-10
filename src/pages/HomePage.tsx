@@ -1,25 +1,43 @@
 import FounderSection from '../components/FounderSection'
 import { Link } from 'react-router'
-import { approach, clinic, faqs, services } from '../content'
+import { approach, careNeeds, faqs, services } from '../content'
 import { Arrow, ContactBanner, Eyebrow, FAQ, Icon } from '../components/UI'
 import AppointmentSection from '../components/AppointmentSection'
 
 export default function HomePage() {
   return <div className="home-page">
     <section className="hero" aria-labelledby="hero-heading">
+      <div className="hero-visual">
+        <img
+          className="hero-photo"
+          src={`${import.meta.env.BASE_URL}images/home-hero-main.webp`}
+          alt=""
+          width="1500" height="1000"
+          fetchPriority="high"
+        />
+      </div>
       <div className="hero-inner agai-container">
         <div className="hero-copy">
-          <h1 id="hero-heading">Your trusted partner <br />in movement and <br />recovery</h1>
+          <div className="hero-brand"><img src={`${import.meta.env.BASE_URL}images/agai-wordmark-light.svg`} alt="AGAI Physiotherapy Centre" width="1142" height="345" /></div>
+          <h1 id="hero-heading"><span>Move Better.</span>{' '}<span>Recover Stronger.</span>{' '}<span>Perform Better.</span></h1>
+          <p className="hero-speciality">Sports Rehabilitation &amp; Performance Centre</p>
           <Link className="hero-pill" to="/#appointment">Book appointment <span className="hero-pill-icon"><Arrow /></span></Link>
           <div className="hero-feature">
-            <h2>Personalised care</h2>
-            <p>Evidence-based physiotherapy led by a sports specialist. Book an appointment, call {clinic.phone} or visit us in {clinic.address || 'Chennai'}.</p>
+            <h2>Is movement becoming difficult?</h2>
+            <p>If pain, stiffness or weakness is making everyday activities harder, start with an assessment.</p>
+            <Link className="hero-help-link" to="/#when-to-visit">When can physiotherapy help? <Arrow /></Link>
           </div>
         </div>
       </div>
     </section>
 
-    <section className="section agai-container home-services" aria-labelledby="home-services-heading"><div className="section-heading"><div><Eyebrow>Our services</Eyebrow><h2 id="home-services-heading" className="home-section-title"><span className="home-title-lead">Different needs.</span><br /><span>The same thoughtful care.</span></h2></div><p>From returning to sport to moving more comfortably in everyday life, your goals give your care direction.</p></div>
+    <section className="section care-needs-section" id="when-to-visit" tabIndex={-1} aria-labelledby="care-needs-heading"><div className="agai-container">
+      <div className="section-heading"><div><Eyebrow>When to visit</Eyebrow><h2 id="care-needs-heading" className="home-section-title"><span className="home-title-lead">Does this sound</span><br /><span>familiar?</span></h2></div><p>Physiotherapy may help when pain or difficulty moving gets in the way of your day. An assessment helps us understand your needs and discuss the right next step.</p></div>
+      <div className="care-needs-grid">{careNeeds.map(need => <Link className="care-need" key={need.title} to={`/services#${need.serviceId}`}><span className="care-need-icon"><Icon name={need.icon} /></span><h3>{need.title}</h3><p>{need.description}</p><span className="care-need-link">{need.linkLabel} <Arrow /></span></Link>)}</div>
+      <div className="care-needs-footer"><p>Not sure which service you need? Tell us what you are finding difficult.</p><Link className="text-action" to="/#appointment">Start with an assessment <Arrow /></Link></div>
+    </div></section>
+
+    <section className="section agai-container home-services" aria-labelledby="home-services-heading"><div className="section-heading"><div><Eyebrow>Our services</Eyebrow><h2 id="home-services-heading" className="home-section-title"><span className="home-title-lead">Care for your needs.</span><br /><span>Support for your next step.</span></h2></div><p>Explore what each service is for and how it may support your daily life, recovery or return to sport.</p></div>
       <div className="service-preview-grid">
         {services.map(service => <Link className="service-preview" key={service.id} to={`/services#${service.id}`}>
           <img
@@ -40,16 +58,9 @@ export default function HomePage() {
       <div className="section-bottom"><span>Seven services. One focus: your movement.</span><Link className="text-action" to="/services">View all services <Arrow /></Link></div>
     </section>
 
-    <section className="approach-section" id="approach"><div className="agai-container section"><div className="section-heading"><div><Eyebrow>The AGAI approach</Eyebrow><h2 className="home-section-title"><span className="home-title-lead">More than pain relief.</span><br /><span>A way forward.</span></h2></div><p>Restoring movement, rebuilding strength and helping every individual work towards their full potential.</p></div><div className="approach-grid">{approach.map((step, index) => <article key={step.title}><span className="step-number">0{index + 1}</span><h3>{step.title}</h3><p>{step.text}</p></article>)}</div></div></section>
+    <section className="approach-section" id="approach"><div className="agai-container section"><div className="section-heading"><div><Eyebrow>Your first visit</Eyebrow><h2 className="home-section-title"><span className="home-title-lead">Know what to expect.</span><br /><span>Feel ready to begin.</span></h2></div><p>Your visit starts with a conversation about your symptoms, daily activities and goals. We explain the options before planning care together.</p></div><div className="approach-grid">{approach.map((step, index) => <article key={step.title}><span className="step-number">0{index + 1}</span><h3>{step.title}</h3><p>{step.text}</p></article>)}</div></div></section>
 
     <FounderSection />
-    <section className="experience-section agai-container home-experience" aria-labelledby="experience-heading"><div className="experience-heading"><div><Eyebrow>A foundation of clinical experience</Eyebrow><h2 id="experience-heading" className="home-section-title"><span className="home-title-lead">Experience that matters.</span><br /><span>Care you can trust.</span></h2></div><p className="experience-context">Clinical experience across India, Saudi Arabia and Oman.</p></div><div className="experience-timeline">{[
-      ['2016–2017', 'Pondicherry Institute of Medical Sciences', 'India'],
-      ['2017–2019', 'Al Hayat National Hospital', 'Saudi Arabia'],
-      ['2022–2024', 'Khalfan Nasser Al Farsi Physio Centre', 'Oman'],
-      ['2024–2026', 'Apollo Super Speciality Hospital', 'Oman'],
-    ].map(([dates, name, country], index) => <article key={name}><div className="experience-card-top"><span className="experience-date">{dates}</span><span className="experience-order" aria-hidden="true">0{index + 1}</span></div><h3>{name}</h3><p className="experience-location"><Icon name="pin" />{country}</p></article>)}</div></section>
-
     <AppointmentSection />
     <section className="faq-section section home-faq" aria-labelledby="home-faq-heading">
       <div className="agai-container faq-layout">
@@ -64,6 +75,6 @@ export default function HomePage() {
         <FAQ items={faqs} numbered />
       </div>
     </section>
-    <ContactBanner />
+    <ContactBanner variant="home" />
   </div>
 }

@@ -26,7 +26,8 @@ Browser tests use installed Microsoft Edge on Windows. On other systems, run `np
 
 | URL | Content and behaviour |
 | --- | --- |
-| `/` | Hero, service previews, care approach, founder profile and qualifications, professional timeline, FAQs, contact prompt. |
+| `/` | Prominent AGAI branding, common reasons to seek care, service previews, first-visit guidance, brief physiotherapist introduction, FAQs and appointment form. |
+| `/about` | A short clinic and physiotherapist introduction, what to expect at a first visit and links to care. |
 | `/services` | All seven services, URL-based category filters, individual section anchors and enquiry links. |
 | `/contact` | Contact channels, location and hours, enquiry preparation, draft copy/download, and FAQs. |
 | Other URLs | A page-not-found view with a return-home link. |
@@ -61,11 +62,17 @@ There is no server-side enquiry storage, email delivery API, booking system or d
 - `src/index.css`: global foundations.
 - `public/brand-kit/`: complete unchanged kit, including local Inter font and its license.
 - `public/images/movement-hero.png`: generated artistic movement illustration.
+- `public/images/home-hero-main.webp`: current homepage hero, supplied at 1500 x 1000. Previous hero options are retained; responsive crops and the blue fade frame the supervised workout.
+- `public/images/hero-resistance-training.mp4`: previous video hero option, retained with its poster for comparison. The original MOV is preserved in `output/source-media/`.
+- `public/images/hero-dumbbell.jpg`: previous hero option, retained for comparison.
+- `public/images/hero-treadmill.jpg`: previous hero option, retained for comparison.
 - `tests/website.spec.ts`: browser regression coverage.
 
 React Router 7.18.5 is compatible with the installed Node runtime; the current v8 release requires a newer Node version. React 19.3.1 and Vite 8.3.5 remain in use.
 
 ## Brand and content
+
+Client feedback (6 November 2026): the AGAI name is larger across the header, mobile menu and hero. Patient-facing explanations now cover everyday concerns and who each service may help. Detailed college lists and employment timelines have been removed; BPT and MPT remain in a brief founder introduction. General physiotherapy wording was checked against [NHS patient information](https://www.nhs.uk/tests-and-treatments/physiotherapy/); service choices still require an individual assessment. Booking and enquiry delivery flows are unchanged.
 
 Brand assets came from `C:\VolumeD\personal\New folder\brand-kit`. Keep the included font license when redistributing assets. The desktop horizontal logo remains at 400 CSS pixels; compact layouts use the emblem with readable centre-name text. Fonts and imagery are self-hosted.
 

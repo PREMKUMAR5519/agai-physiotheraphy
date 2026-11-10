@@ -5,7 +5,7 @@ import { clinic, services } from '../content'
 import { Arrow, Eyebrow, Icon } from './UI'
 import ServiceSelect from './ServiceSelect'
 
-const steps = ['Your details', 'Your day']
+const steps = ['Details', 'Select date']
 const timeGroups = {
   Morning: ['09:00 AM', '09:30 AM', '10:00 AM', '10:30 AM', '11:00 AM', '11:30 AM'],
   Afternoon: ['12:00 PM', '12:30 PM', '01:00 PM', '01:30 PM', '02:00 PM', '02:30 PM', '03:00 PM', '03:30 PM', '04:00 PM', '04:30 PM'],
@@ -70,6 +70,12 @@ export default function AppointmentSection() {
         <h2 className="home-section-title" id="appointment-heading"><span className="home-title-lead">Your recovery.</span><br /><span>Starts right here.</span></h2>
         <p>A little about you. A day that suits you. Let’s find your next step towards moving better.</p>
         <div className="booking-clinician"><span className="booking-avatar">RR</span><div><strong>Dr. Rasathi Rajendren, PT</strong><span>MPT · Sports Physiotherapy</span></div><Icon name="shield" /></div>
+        <div className="appointment-whatsapp">
+          <a className="appointment-whatsapp-button" href={`https://wa.me/${clinic.whatsapp}?text=${encodeURIComponent('Hello AGAI, I would like to book a physiotherapy appointment. Please help me with availability.')}`} target="_blank" rel="noopener noreferrer">
+            <span className="appointment-phone-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13.3 7.9L3 21l1.6-4.7A9 9 0 1 1 21 11.5Z" /><path d="m8 7 2 3-1.2 1.2a10 10 0 0 0 4 4L14 14l3 2c-1 3-4 2-7-1s-4-6-2-8Z" /></svg></span>
+            <span><small>Prefer to chat?</small><strong>Chat on WhatsApp</strong></span>
+          </a>
+        </div>
         <a className="appointment-phone" href={`tel:${clinic.phone.replace(/[^+\d]/g, '')}`}><span className="appointment-phone-icon"><Icon name="phone" /></span><span><small>Prefer to book by phone?</small><strong>{clinic.phone}</strong></span></a>
       </div>
       <div className="appointment-card">

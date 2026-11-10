@@ -13,8 +13,8 @@ import './App.css'
 
 const pageMeta: Record<string, { title: string; description: string }> = {
   '/blogs': { title: 'The AGAI Journal | Blogs', description: 'Thoughtful reads on movement, everyday wellbeing and preparing for physiotherapy care at AGAI.' },
-  '/': { title: 'AGAI Physiotherapy Centre | Rehab. Recover. Restore. Perform.', description: 'Personalised, evidence-based physiotherapy at AGAI. Meet Dr. Rasathi Rajendren, PT, and explore rehabilitation, sports performance and wellness care.' },
-  '/about': { title: 'About us | AGAI Physiotherapy Centre', description: 'Get to know AGAI Physiotherapy Centre in Chennai: our commitment to personalised, evidence-based care and the clinical experience of founder Dr. Rasathi Rajendren, PT.' },
+  '/': { title: 'AGAI Physiotherapy Centre | Sports Rehabilitation & Performance', description: 'Move better. Recover stronger. Perform better. Connect with AGAI in Ambattur, Chennai for sports rehabilitation, injury prevention and personalised physiotherapy care.' },
+  '/about': { title: 'About us | AGAI Physiotherapy Centre', description: 'Meet your physiotherapist at AGAI in Ambattur, Chennai, and learn what to expect from your first visit and personalised care.' },
   '/services': { title: 'Our services | AGAI Physiotherapy Centre', description: 'Explore seven areas of physiotherapy care: sports injury rehabilitation, conditioning, orthopaedics, neurology, women’s wellness, pelvic floor and geriatric rehabilitation.' },
   '/contact': { title: 'Contact us | AGAI Physiotherapy Centre', description: 'Contact AGAI Physiotherapy Centre and prepare an enquiry about rehabilitation, physiotherapy services or appointments.' },
 }

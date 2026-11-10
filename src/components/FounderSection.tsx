@@ -1,11 +1,22 @@
 import FounderDetails from './FounderDetails'
-import { Eyebrow, Icon } from './UI'
+import { Link } from 'react-router'
+import { Arrow, Eyebrow, Icon } from './UI'
 
 export default function FounderSection() {
   return (
     <section className="section agai-container founder-section" id="founder" tabIndex={-1} aria-labelledby="founder-heading">
-      <div className="founder-portrait" aria-hidden="true" />
-      <div className="founder-story"><Eyebrow>Meet our founder</Eyebrow><h2 id="founder-heading" className="home-section-title"><span className="home-title-lead">Expertise you can</span><br /><span>move forward with.</span></h2><FounderDetails /><p>Dr. Rasathi Rajendren brings over a decade of clinical experience across India and the Middle East to AGAI Physiotherapy Centre.</p><p>With a postgraduate specialisation in Sports Physiotherapy, she combines clinical assessment, hands-on therapy, individualised exercise and patient education. Her experience spans multispecialty hospital care, sports rehabilitation and women’s wellness.</p><ul className="qualifications"><li><Icon name="check" /><span><strong>MPT · Sports Physiotherapy</strong><small>Annamalai University, 2022</small></span></li><li><Icon name="check" /><span><strong>Postgraduate Diploma in Yoga</strong><small>Alagappa University, 2021</small></span></li><li><Icon name="check" /><span><strong>MSc · Applied Psychology</strong><small>Annamalai University, 2020 · Correspondence</small></span></li></ul></div>
+      <div className="founder-story">
+        <Eyebrow>Meet your physiotherapist</Eyebrow>
+        <h2 id="founder-heading" className="home-section-title"><span className="home-title-lead">Someone who listens.</span><br /><span>Care that fits you.</span></h2>
+        <FounderDetails />
+        <p>With over 10 years of clinical experience, Dr. Rasathi helps people work towards easier movement, injury recovery and a return to the activities they enjoy.</p>
+      </div>
+      <aside className="founder-care-note" aria-label="Your care at AGAI">
+        <span className="care-note-icon"><Icon name="person" /></span>
+        <h3>Your goals guide your care.</h3>
+        <ul>{['Time to explain what is troubling you', 'A clear explanation of your care options', 'Exercises and advice suited to your daily routine'].map(item => <li key={item}><Icon name="check" /><span>{item}</span></li>)}</ul>
+        <Link className="text-action" to="/#appointment">Talk to us about your needs <Arrow /></Link>
+      </aside>
     </section>
   )
 }

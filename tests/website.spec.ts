@@ -1,7 +1,7 @@
 ﻿import { test, expect } from '@playwright/test'
 
 for (const width of [320, 390, 768, 1440]) {
-  for (const path of ['/', '/services', '/contact']) {
+  for (const path of ['/', '/about', '/services', '/contact']) {
     test(`${path} renders without overflow or browser errors at ${width}px`, async ({ page }) => {
       const errors: string[] = []
       page.on('pageerror', error => errors.push(error.message))
@@ -11,7 +11,13 @@ for (const width of [320, 390, 768, 1440]) {
       await page.evaluate(() => document.fonts.ready)
       await expect(page.locator('h1')).toHaveCount(1)
       await expect(page.locator('main')).toBeVisible()
-      await expect.poll(() => page.locator('img').evaluateAll(images => images.every(img => img.complete && img.naturalWidth > 0))).toBe(true)
+      for (const image of await page.locator('img:visible').all()) {
+        await image.scrollIntoViewIfNeeded()
+        await expect.poll(() => image.evaluate(element => {
+          const rendered = element as HTMLImageElement
+          return rendered.complete && rendered.naturalWidth > 0
+        }), { message: `Image should load: ${await image.getAttribute('src')}` }).toBe(true)
+      }
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
       expect(errors).toEqual([])
     })
@@ -96,14 +102,15 @@ test('FAQ expands with the keyboard', async ({ page }) => {
 
 test('enquiry validates, creates an unsent draft, copies, downloads, and clears stale drafts', async ({ page }) => {
   const submissions: string[] = []
-  page.on('request', request => { if (request.method() === 'POST') submissions.push(request.url()) })
+  page.on('request', request => { if (request.method() === 'POST' && new URL(request.url()).origin === 'http://127.0.0.1:5186') submissions.push(request.url()) })
   await page.goto('/contact?service=sports-injury')
-  await page.getByRole('button', { name: 'Prepare enquiry' }).click()
+  await page.getByRole('button', { name: 'Submit enquiry' }).click()
   await expect(page.getByRole('heading', { name: 'Your draft is ready.' })).toHaveCount(0)
   await page.getByLabel('Your name').fill('Test Visitor')
   await page.getByLabel('Email address').fill('visitor@example.com')
+  await page.getByLabel('Phone number').fill('+91 96000 66505')
   await page.getByLabel('Your message').fill('I would like to ask about an appointment next week.')
-  await page.getByRole('button', { name: 'Prepare enquiry' }).click()
+  await page.getByRole('button', { name: 'Submit enquiry' }).click()
   await expect(page.getByRole('heading', { name: 'Your draft is ready.' })).toBeFocused()
   await expect(page.getByLabel('Enquiry draft')).toHaveValue(/Service: Sports injury prevention & rehabilitation/)
   await expect(page.getByText('This is a draft, not a sent enquiry or a confirmed appointment.')).toBeVisible()
@@ -130,12 +137,13 @@ test('empty whitespace input and clipboard failure have useful feedback', async 
   await page.goto('/contact')
   await page.getByLabel('Your name').fill('   ')
   await page.getByLabel('Email address').fill('visitor@example.com')
+  await page.getByLabel('Phone number').fill('+91 96000 66505')
   await page.getByLabel('Your message').fill('                   ')
-  await page.getByRole('button', { name: 'Prepare enquiry' }).click()
+  await page.getByRole('button', { name: 'Submit enquiry' }).click()
   await expect(page.getByRole('alert')).toContainText('excluding extra spaces')
   await page.getByLabel('Your name').fill('Test Visitor')
   await page.getByLabel('Your message').fill('I have a question about physiotherapy.')
-  await page.getByRole('button', { name: 'Prepare enquiry' }).click()
+  await page.getByRole('button', { name: 'Submit enquiry' }).click()
   await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async () => { throw new Error('Denied') } } }))
   await page.getByRole('button', { name: 'Copy draft', exact: true }).click()
   await expect(page.getByRole('status')).toContainText('Copy is unavailable')
@@ -146,5 +154,5 @@ test('unknown routes offer a working return home', async ({ page }) => {
   await expect(page).toHaveTitle('Page not found | AGAI Physiotherapy Centre')
   await page.getByRole('link', { name: 'Back to home' }).click()
   await expect(page).toHaveURL(/\/$/)
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Rehab. Recover.')
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Move Better. Recover Stronger. Perform Better.')
 })

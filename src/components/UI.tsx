@@ -30,8 +30,14 @@ export function Eyebrow({ children }: { children: ReactNode }) {
 export function Breadcrumb({ current }: { current: string }) {
   return <nav className="breadcrumb" aria-label="Breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><span aria-current="page">{current}</span></nav>
 }
-export function ContactBanner() {
-  return <section className="contact-banner"><div className="contact-banner-inner agai-container"><div><Eyebrow>Your next step</Eyebrow><h2 className="home-section-title"><span className="home-title-lead">Let’s make movement</span><br /><span>part of your story.</span></h2><p>Explore care that starts with you and your goals.</p></div><Link className="agai-button" to="/contact">Get in touch <Arrow /></Link></div></section>
+export function ContactBanner({ variant = 'default' }: { variant?: 'default' | 'home' }) {
+  const isHome = variant === 'home'
+  return <section className="contact-banner"><div className="contact-banner-inner agai-container"><div>
+    <Eyebrow>Your next step</Eyebrow>
+    <h2 className="home-section-title"><span className="home-title-lead">{isHome ? "Let's get you" : 'Let’s make movement'}</span><br /><span>{isHome ? 'moving better.' : 'part of your story.'}</span></h2>
+    {isHome ? <p className="contact-banner-message">Your recovery. Your performance. Our commitment.</p> : null}
+    <p>{isHome ? 'Connect with AGAI Physiotherapy Centre for sports rehabilitation, injury prevention and personalised physiotherapy care.' : 'Explore care that starts with you and your goals.'}</p>
+  </div><Link className="agai-button" to="/contact">Get in touch <Arrow /></Link></div></section>
 }
 export function FAQ({ items, numbered = false }: { items: { question: string; answer: string }[]; numbered?: boolean }) {
   return <div className={`faq-list${numbered ? ' faq-list--numbered' : ''}`}>{items.map((item, index) => <details key={item.question}>
