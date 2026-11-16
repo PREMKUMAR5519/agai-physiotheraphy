@@ -1,3 +1,4 @@
+import OptimizedImage from '../components/OptimizedImage'
 import { ServicesStatus, useServices } from '../ServicesContext'
 import FounderSection from '../components/FounderSection'
 import { Fragment } from 'react'
@@ -5,6 +6,7 @@ import { Link } from 'react-router'
 import { approach, careNeeds, faqs, homeContent } from '../content'
 import { Arrow, ContactBanner, Eyebrow, FAQ, Icon } from '../components/UI'
 import AppointmentSection from '../components/AppointmentSection'
+import heroImage from '../assets/home-hero-main.webp'
 
 export default function HomePage() {
   const { services } = useServices()
@@ -13,7 +15,7 @@ export default function HomePage() {
       <div className="hero-visual">
         <img
           className="hero-photo"
-          src={homeContent.heroImage}
+          src={homeContent.heroImage === '/images/home-hero-main.webp' ? heroImage : homeContent.heroImage}
           alt=""
           width="1500" height="1000"
           fetchPriority="high"
@@ -43,7 +45,8 @@ export default function HomePage() {
     <section className="section agai-container home-services" aria-labelledby="home-services-heading"><div className="section-heading"><div><Eyebrow>Our services</Eyebrow><h2 id="home-services-heading" className="home-section-title"><span className="home-title-lead">Care for your needs.</span><br /><span>Support for your next step.</span></h2></div><p>Explore what each service is for and how it may support your daily life, recovery or return to sport.</p></div>
       <ServicesStatus/><div className="service-preview-grid">
         {services.map(service => <Link className="service-preview" key={service.id} to={`/services#${service.id}`}>
-          <img
+          <OptimizedImage
+            sizes="120px"
             className="service-preview-image"
             src={service.previewImage}
             alt=""

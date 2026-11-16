@@ -7,10 +7,12 @@
     "node": ">=22.18.0"
   },
   "scripts": {
+    "images:optimize": "node scripts/optimize-images.js",
+    "predev": "npm run images:optimize",
     "dev": "vite",
     "sitemap": "node generate-sitemap.js",
     "content:sync": "node scripts/sync-content.js",
-    "prebuild": "npm run content:sync && npm run sitemap",
+    "prebuild": "npm run content:sync && npm run images:optimize && npm run sitemap",
     "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node prerender.js",
     "lint": "oxlint",
     "preview": "vite preview",
@@ -28,6 +30,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "oxlint": "^1.89.0",
+    "sharp": "^0.35.5",
     "typescript": "~7.0.2",
     "vite": "^8.3.5"
   }

@@ -2,6 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 import { services as initialServices } from './content'
 import { contentEndpoint } from './cms-contract'
 import { parseServices, type Service } from './services-api'
+import { publicData } from './public-data-cache'
 
 type ServicesState = { services: readonly Service[]; loading: boolean; error: string; refresh: () => Promise<void> }
 const ServicesContext = createContext<ServicesState | null>(null)
@@ -12,7 +13,7 @@ export function ServicesProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const active = useRef<AbortController | null>(null)
-  const refresh = useCallback(async () => {
+  const refresh = useCallback(async (force = true) => {
     active.current?.abort()
     const controller = new AbortController()
     active.current = controller
@@ -21,9 +22,7 @@ export function ServicesProvider({ children }: { children: ReactNode }) {
       const contentUrl = contentEndpoint(import.meta.env.VITE_CMS_API_URL)
       if (!contentUrl) return
       const endpoint = contentUrl.replace(/\/content$/, '/services')
-      const response = await fetch(endpoint, { credentials: 'omit', cache: 'no-store', signal: AbortSignal.any([controller.signal, AbortSignal.timeout(8000)]) })
-      if (!response.ok) throw new Error(`Services returned ${response.status}`)
-      const data = parseServices(await response.json(), endpoint)
+      const data = await publicData(endpoint, parseServices, { force, timeout: 8000 })
       if (!controller.signal.aborted) setServices(data)
     } catch {
       if (!controller.signal.aborted) setError('We could not refresh services. Showing the last available information.')
@@ -31,7 +30,7 @@ export function ServicesProvider({ children }: { children: ReactNode }) {
       if (!controller.signal.aborted) setLoading(false)
     }
   }, [])
-  useEffect(() => { void refresh(); return () => active.current?.abort() }, [refresh])
+  useEffect(() => { void refresh(false); return () => active.current?.abort() }, [refresh])
   const value = useMemo(() => ({ services, loading, error, refresh }), [services, loading, error, refresh])
   return <ServicesContext.Provider value={value}>{children}</ServicesContext.Provider>
 }

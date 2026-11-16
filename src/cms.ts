@@ -1,5 +1,6 @@
 import snapshot from './cms-snapshot.json' with { type: 'json' }
 import { contentEndpoint, parsePublishedContent } from './cms-contract'
+import { publicData } from './public-data-cache'
 
 type Snapshot = typeof snapshot
 let current: Snapshot = snapshot
@@ -10,9 +11,7 @@ export async function loadPublishedContent() {
   try {
     const endpoint = contentEndpoint(import.meta.env.VITE_CMS_API_URL)
     if (!endpoint) return false
-    const response = await fetch(endpoint, { signal: AbortSignal.timeout(4000), cache: 'no-store', credentials: 'omit' })
-    if (!response.ok) throw new Error(`CMS returned ${response.status}`)
-    const data = parsePublishedContent(await response.json(), endpoint)
+    const data = await publicData(endpoint, parsePublishedContent)
     current = data
     return JSON.stringify(data.content) !== JSON.stringify(snapshot.content) || JSON.stringify(data.articles) !== JSON.stringify(snapshot.articles)
   } catch (error) {

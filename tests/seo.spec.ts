@@ -1,6 +1,13 @@
 import { expect, test } from '@playwright/test'
 import { blogArticles } from '../src/blogs'
 import site from '../src/site.json' with { type: 'json' }
+import snapshot from '../src/cms-snapshot.json' with { type: 'json' }
+
+// These expectations describe the build snapshot, independent of a local CMS.
+test.beforeEach(async ({ page }) => {
+  await page.route('**/api/public/content', route => route.fulfill({ json: snapshot }))
+  await page.route('**/api/public/services', route => route.fulfill({ json: { schemaVersion: 1, services: snapshot.content.services } }))
+})
 
 test('robots and sitemap index expose every public route as valid XML', async ({ page, request }) => {
   const robots = await request.get('/robots.txt')
