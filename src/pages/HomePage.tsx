@@ -45,7 +45,7 @@ export default function HomePage() {
     <section className="section agai-container home-services" aria-labelledby="home-services-heading"><div className="section-heading"><div><Eyebrow>Our services</Eyebrow><h2 id="home-services-heading" className="home-section-title"><span className="home-title-lead">Care for your needs.</span><br /><span>Support for your next step.</span></h2></div><p>Explore what each service is for and how it may support your daily life, recovery or return to sport.</p></div>
       <ServicesStatus/><div className="service-preview-grid">
         {services.map(service => <Link className="service-preview" key={service.id} to={`/services#${service.id}`}>
-          <OptimizedImage
+          <span className="service-preview-media"><OptimizedImage
             sizes="120px"
             className="service-preview-image"
             src={service.previewImage}
@@ -54,7 +54,7 @@ export default function HomePage() {
             decoding="async"
             width="120"
             height="170"
-          />
+          /></span>
           <div className="service-preview-copy">
             <h3>{service.shortTitle}</h3>
             <p>{service.intro}</p>
