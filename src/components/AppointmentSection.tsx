@@ -1,7 +1,8 @@
+import { useServices } from '../ServicesContext'
 import { useRef, useState } from 'react'
 import type { SubmitEvent } from 'react'
 import { useSearchParams } from 'react-router'
-import { clinic, services } from '../content'
+import { clinic } from '../content'
 import { Arrow, Eyebrow, Icon } from './UI'
 import ServiceSelect from './ServiceSelect'
 
@@ -21,9 +22,10 @@ function dateLabel(value: string) {
 }
 
 export default function AppointmentSection() {
+  const { services } = useServices()
   const [params] = useSearchParams()
   const [step, setStep] = useState(0)
-  const [values, setValues] = useState(() => ({ service: services.find(service => service.id === params.get('service'))?.id || '', date: '', time: 'Flexible', name: '', phone: '', email: '', notes: '', consent: false }))
+  const [values, setValues] = useState(() => ({ service: params.get('service') || '', date: '', time: 'Flexible', name: '', phone: '', email: '', notes: '', consent: false }))
   const [error, setError] = useState('')
   const [timePeriod, setTimePeriod] = useState<TimePeriod>('Morning')
   const [month, setMonth] = useState(() => new Date(new Date().getFullYear(), new Date().getMonth(), 1))
@@ -49,7 +51,7 @@ export default function AppointmentSection() {
   }
   function next(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault()
-    if (step === 0 && !values.service) { document.getElementById('appointment-service')?.focus(); setError('Choose a service, or select “Help me choose”.'); return }
+    if (step === 0 && !selectedService && values.service !== 'not-sure') { document.getElementById('appointment-service')?.focus(); setError('Choose a service, or select “Help me choose”.'); return }
     if (values.date && (values.date < minDate || values.date > maxDate)) { goTo(1); setError('Please choose a date from today through the end of next month.'); return }
     if (step === 0) {
       if (!values.name.trim()) { setError('Please enter your name.'); return }

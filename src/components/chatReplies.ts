@@ -1,4 +1,5 @@
-import { approach, clinic, services } from '../content'
+import type { Service } from '../services-api'
+import { approach, clinic, services as defaultServices } from '../content'
 
 export type ChatAction = { label: string; href: string }
 export type ChatReply = { text: string; actions?: ChatAction[] }
@@ -18,13 +19,13 @@ const serviceTerms: Record<string, RegExp> = {
   geriatric: /\bgeriatric|\belderly|\bolder adult/,
 }
 
-function findService(text: string) {
+function findService(text: string, services: readonly Service[]) {
   return services.find(service => serviceTerms[service.id]?.test(text) || text.includes(service.shortTitle.toLowerCase().replace(/’/g, "'")))
 }
 
 // Rules run top to bottom and the first match wins, so order matters:
 // safety first, then specific intents, then broad keywords, then the fallback.
-export function getChatReply(input: string): ChatReply {
+export function getChatReply(input: string, services: readonly Service[] = defaultServices): ChatReply {
   // Phone keyboards type curly apostrophes ("can’t"); match them like straight ones.
   const text = input.toLowerCase().replace(/[‘’]/g, "'").trim()
   if (/\b(emergency|urgent|chest pain|cannot breathe|can'?t breathe|(trouble|difficulty) breathing)\b/.test(text)) return {
@@ -50,7 +51,7 @@ export function getChatReply(input: string): ChatReply {
     text: 'Start with your details and the service you’re interested in, then choose a preferred date and time. “Book appointment” opens WhatsApp with your request. Send it there, and the clinic will confirm your visit.', actions: [book],
   }
   // Named services only; this guide does not select treatment from symptoms.
-  const service = findService(text)
+  const service = findService(text, services)
   if (service) return { text: `${service.title}\n\n${service.description}`, actions: [{ label: 'Explore this service', href: `/services#${service.id}` }, book] }
   if (/\b(where|address|location|located|directions|map|parking)\b/.test(text)) return {
     text: `You’ll find AGAI Physiotherapy Centre in ${clinic.address}. Use the map for directions, or call the clinic for help finding us.`,
@@ -66,7 +67,7 @@ export function getChatReply(input: string): ChatReply {
     text: 'Your care needs an individual assessment. I can explain AGAI’s services, but I can’t assess symptoms or recommend treatment. Please speak with the clinic about your concerns.', actions: [book, contact],
   }
   if (/\b(service|services|care|offer|help me choose|not sure|rehab|rehabilitation)\b/.test(text)) return {
-    text: 'AGAI offers sports injury rehabilitation, strength and conditioning, orthopaedic and neurological rehabilitation, women’s wellness, pelvic floor care, and geriatric rehabilitation. Not sure where to start? Choose “Help me choose” in the booking form.',
+    text: `AGAI offers ${services.map(service => service.shortTitle).join(', ')}. Not sure where to start? Choose Help me choose in the booking form.`,
     actions: [{ label: 'View all services', href: '/services' }, book],
   }
   if (/\b(thanks|thank you)\b/.test(text)) return { text: 'You’re welcome. If you need anything else, I’m here to help with clinic information and your next step.' }

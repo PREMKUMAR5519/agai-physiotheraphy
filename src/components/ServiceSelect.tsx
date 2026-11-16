@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
-import { services } from '../content'
+import { useServices } from '../ServicesContext'
 import { Icon } from './UI'
 
-const options = [...services.map(service => ({ id: service.id as string, label: service.shortTitle as string, icon: service.icon })), { id: 'not-sure', label: 'Not sure yet / help me choose', icon: 'chat' as const }]
+
 
 export default function ServiceSelect({ value, onChange }: { value: string; onChange: (value: string) => void }) {
+  const { services } = useServices()
+  const options = [...services.map(service => ({ id: service.id as string, label: service.shortTitle as string, icon: service.icon })), { id: 'not-sure', label: 'Not sure yet / help me choose', icon: 'chat' as const }]
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState(0)
   const root = useRef<HTMLDivElement>(null)

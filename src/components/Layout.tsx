@@ -1,6 +1,7 @@
+import { useServices } from '../ServicesContext'
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink } from 'react-router'
-import { clinic, services } from '../content'
+import { clinic } from '../content'
 import { Arrow, Icon } from './UI'
 
 const brandPath = `${import.meta.env.BASE_URL}brand-kit`
@@ -101,6 +102,7 @@ export function Header() {
 }
 
 export function Footer() {
+  const { services } = useServices()
   return <footer className="site-footer"><div className="footer-grid agai-container">
     <div className="footer-brand"><Link className="footer-logo" to="/" aria-label="AGAI Physiotherapy Centre - home"><img src={`${brandPath}/assets/agai-horizontal-800.webp`} srcSet={`${brandPath}/assets/agai-horizontal-800.webp 800w, ${brandPath}/assets/agai-horizontal-1600.webp 1600w`} sizes="240px" width="1589" height="512" alt="AGAI Physiotherapy Centre" /></Link><p>Rehab. Recover. Restore. Perform.</p><p>Personalised, evidence-based care for the way you move.</p></div>
     <div><h2>Explore</h2><Link to="/">Home</Link><Link to="/about">About us</Link><Link to="/services">Our services</Link><Link to="/blogs">Blogs</Link><Link to="/about#founder">Meet our founder</Link><Link to="/contact">Contact us</Link></div>

@@ -7,7 +7,7 @@ import site from './site.json' with { type: 'json' }
 const pageMeta: Record<string, { title: string; description: string }> = {
   '/': { title: 'AGAI Physiotherapy Centre | Sports Rehabilitation & Performance', description: 'Move better. Recover stronger. Perform better. Connect with AGAI in Ambattur, Chennai for sports rehabilitation, injury prevention and personalised physiotherapy care.' },
   '/about': { title: 'About us | AGAI Physiotherapy Centre', description: 'Meet your physiotherapist at AGAI in Ambattur, Chennai, and learn what to expect from your first visit and personalised care.' },
-  '/services': { title: 'Our services | AGAI Physiotherapy Centre', description: 'Explore seven areas of physiotherapy care: sports injury rehabilitation, conditioning, orthopaedics, neurology, women’s wellness, pelvic floor and geriatric rehabilitation.' },
+  '/services': { title: 'Our services | AGAI Physiotherapy Centre', description: 'Explore our physiotherapy services, including sports injury rehabilitation, conditioning, orthopaedics, neurology, women’s wellness, pelvic floor and geriatric rehabilitation.' },
   '/blogs': { title: 'The AGAI Journal | Blogs', description: 'Thoughtful reads on movement, everyday wellbeing and preparing for physiotherapy care at AGAI.' },
   '/contact': { title: 'Contact us | AGAI Physiotherapy Centre', description: 'Contact AGAI Physiotherapy Centre and prepare an enquiry about rehabilitation, physiotherapy services or appointments.' },
 }

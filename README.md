@@ -131,6 +131,24 @@ Final generation prompt:
 
 The separate React/Node/MongoDB admin is in `../agai-admin`. See its README for sign-in, media uploads, draft/publish and deployment instructions. The local development website loads `http://127.0.0.1:5001/api/public/content` before importing its pages, with the checked-in `src/cms-snapshot.json` as an outage fallback. Restart Vite after changing `.env.development.local`.
 
-`npm run content:sync` refreshes the snapshot when `CMS_API_URL` or `VITE_CMS_API_URL` is set. `npm run build` runs sync before sitemap generation, so static HTML and sitemaps use published article URLs. Runtime fetches use `VITE_CMS_API_URL`; a production website needs a publicly reachable HTTPS API. The development-only localhost setting is not used in production builds. Configure the production API origin explicitly, then rebuild and deploy.
+`npm run content:sync` refreshes the snapshot when `CMS_API_URL` or `VITE_CMS_API_URL` is set. `npm run build` runs sync before sitemap generation, so static HTML and sitemaps use published article URLs. Both runtime fetches and build-time sync use `CMS_API_URL` (with `VITE_CMS_API_URL` as a legacy fallback); a production website needs a publicly reachable HTTPS API. The development-only localhost setting is not used in production builds. Configure the production API origin explicitly, then rebuild and deploy.
 
 Rebuild after adding, renaming, unpublishing or archiving blogs to refresh their static pages, metadata, sitemap and fallback content. CMS publication timestamps supply blog `lastmod` values. Original sample blog content is retained in `src/defaultBlogs.ts`; active content comes from the CMS snapshot. With no API configured, the website works from that snapshot alone.
+
+### Live blogs on Vercel
+
+Set `CMS_API_URL` on the **website** project to the public HTTPS origin of the **admin** deployment, then redeploy the website. This is a public URL, not a credential. Do not put `SESSION_SECRET`, MongoDB credentials or admin passwords in the website environment. `CMS_API_URL` enables both build-time sync and browser updates. Vite explicitly exposes only this public URL to the browser. If both names are set, `CMS_API_URL` takes precedence. Redeploy after changing the value because it is embedded during the build.
+
+The browser requests `/api/public/content` without cookies before loading the app. Published articles drive blog cards, search, category filters, article routes, related articles and metadata. Rich-text documents preserve headings, lists, links and formatting; older section-based articles still render. Relative `/uploads/` media URLs resolve against the CMS origin, while bundled `/images/` assets remain on the website.
+
+Build-time sync and browser loading use the same response validation. Failed builds preserve the existing snapshot. Browser failures keep the last built content available; this means unpublished content may remain in the outage fallback until the website is rebuilt. An explicitly empty published list displays no articles instead of restoring samples.
+
+`vercel.json` enables clean URLs and serves the blog shell for a newly published slug that has no static page yet. Existing prerendered pages take filesystem precedence. New articles can therefore open directly in a JavaScript-enabled browser before the next build. Rebuild to generate their crawler-visible HTML, social previews and sitemap entries. Unknown blog slugs display an article-not-found page with `noindex`, but the static shell rewrite returns HTTP 200; unrelated unknown routes retain Vercel's 404 handling.
+
+Run `npx playwright test tests/cms.spec.ts` for mocked live-content, search, direct-route, rich-text, empty-list and outage coverage. These checks do not publish or modify production data.
+
+### Shared services context
+
+`ServicesContext` fetches `/api/public/services` from `CMS_API_URL` and shares the result across the homepage, services page, booking selector, contact enquiry, footer and chat. Existing content stays visible during loading. A failed or malformed response preserves the last available data and offers Retry; an explicitly empty result remains empty. Requests have an eight-second timeout and are cancelled on unmount or when superseded.
+
+The admin stores both draft and published services in MongoDB and publishes through `/api/services/publish`. Build-time content sync fetches the public services endpoint too, so prerendered pages and outage snapshots include the published data. Deploy the updated backend before building the website. The context refreshes on initial app load or Retry; it does not poll continuously.

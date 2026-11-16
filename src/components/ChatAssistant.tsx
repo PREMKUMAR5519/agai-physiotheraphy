@@ -1,3 +1,4 @@
+import { useServices } from '../ServicesContext'
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import { createPortal } from 'react-dom'
 import type { SubmitEvent } from 'react'
@@ -19,6 +20,7 @@ const shortcuts = [
 const noSubscription = () => () => {}
 
 export default function ChatAssistant() {
+  const { services } = useServices()
   // The chat is portalled into document.body, which does not exist while prerendering.
   const inBrowser = useSyncExternalStore(noSubscription, () => true, () => false)
   const { pathname } = useLocation()
@@ -69,7 +71,7 @@ export default function ChatAssistant() {
     const message = text.trim().slice(0, 300)
     if (!message) return
     const user: Message = { id: nextId.current++, role: 'user', text: message }
-    const reply: Message = { id: nextId.current++, role: 'assistant', ...getChatReply(message) }
+    const reply: Message = { id: nextId.current++, role: 'assistant', ...getChatReply(message, services) }
     setMessages(current => [...current.slice(-38), user, reply])
     setDraft('')
     input.current?.focus({ preventScroll: true })

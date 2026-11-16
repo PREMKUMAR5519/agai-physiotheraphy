@@ -13,6 +13,7 @@ export default defineConfig({
     screenshot: 'only-on-failure',
   },
   webServer: {
+    env: { CMS_API_URL: 'http://127.0.0.1:5001', VITE_CMS_API_URL: '' },
     command: 'npm run dev -- --host 127.0.0.1 --port 5186 --strictPort',
     url: 'http://127.0.0.1:5186',
     reuseExistingServer: false,

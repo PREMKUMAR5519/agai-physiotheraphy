@@ -1,9 +1,11 @@
+import { ServicesStatus, useServices } from '../ServicesContext'
 import PageIntro from '../components/PageIntro'
 import { Link, useSearchParams } from 'react-router'
-import { categories, services } from '../content'
+import { categories } from '../content'
 import { Arrow, ContactBanner, Icon } from '../components/UI'
 
 export default function ServicesPage() {
+  const { services } = useServices()
   const [params, setParams] = useSearchParams()
   const category = categories.some(item => item.id === params.get('category')) ? params.get('category')! : 'all'
   const visibleServices = services.filter(service => category === 'all' || service.category === category)
@@ -11,7 +13,7 @@ export default function ServicesPage() {
   return <>
     <PageIntro label="Our services" lead="Understand your needs." accent="Find your next step." description="Pain, stiffness, an injury or difficulty with everyday movement? Explore who each service is for and how care may help. Your physiotherapist will assess your needs before recommending a plan." metric={String(services.length).padStart(2, '0')} metricCaption={<>Areas of care.<br />Individual care.</>} />
     <section className="section agai-container services-section" aria-labelledby="services-heading"><div className="services-toolbar"><h2 id="services-heading">Find your focus.</h2><span className="result-count" role="status">{visibleServices.length} {visibleServices.length === 1 ? 'service' : 'services'}</span></div><div className="service-filters" role="group" aria-label="Filter services">{categories.map(item => <button type="button" key={item.id} aria-pressed={category === item.id} onClick={() => setParams(item.id === 'all' ? {} : { category: item.id }, { preventScrollReset: true })}>{item.label}</button>)}</div>
-      <div className="service-catalogue">{visibleServices.map(service => <article className="service-detail" key={service.id} id={service.id} tabIndex={-1} aria-labelledby={`${service.id}-title`}>
+      <ServicesStatus/>{!services.length && <p role="status">No services are currently published. Please contact the clinic for help.</p>}<div className="service-catalogue">{visibleServices.map(service => <article className="service-detail" key={service.id} id={service.id} tabIndex={-1} aria-labelledby={`${service.id}-title`}>
         <div className="service-detail-image"><img src={service.image} alt="" loading="lazy" width="640" height="800" /><span className="service-photo-icon"><Icon name={service.icon} /></span></div>
         <div className="service-detail-content">
           <div className="service-detail-heading"><span className="service-category">{categories.find(item => item.id === service.category)?.label}</span><h3 id={`${service.id}-title`}>{service.title}</h3><p>{service.intro}</p></div>

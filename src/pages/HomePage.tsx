@@ -1,11 +1,13 @@
+import { ServicesStatus, useServices } from '../ServicesContext'
 import FounderSection from '../components/FounderSection'
 import { Fragment } from 'react'
 import { Link } from 'react-router'
-import { approach, careNeeds, faqs, services, homeContent } from '../content'
+import { approach, careNeeds, faqs, homeContent } from '../content'
 import { Arrow, ContactBanner, Eyebrow, FAQ, Icon } from '../components/UI'
 import AppointmentSection from '../components/AppointmentSection'
 
 export default function HomePage() {
+  const { services } = useServices()
   return <div className="home-page">
     <section className="hero" aria-labelledby="hero-heading">
       <div className="hero-visual">
@@ -39,7 +41,7 @@ export default function HomePage() {
     </div></section>
 
     <section className="section agai-container home-services" aria-labelledby="home-services-heading"><div className="section-heading"><div><Eyebrow>Our services</Eyebrow><h2 id="home-services-heading" className="home-section-title"><span className="home-title-lead">Care for your needs.</span><br /><span>Support for your next step.</span></h2></div><p>Explore what each service is for and how it may support your daily life, recovery or return to sport.</p></div>
-      <div className="service-preview-grid">
+      <ServicesStatus/><div className="service-preview-grid">
         {services.map(service => <Link className="service-preview" key={service.id} to={`/services#${service.id}`}>
           <img
             className="service-preview-image"
@@ -56,7 +58,7 @@ export default function HomePage() {
           </div>
         </Link>)}
       </div>
-      <div className="section-bottom"><span>Seven services. One focus: your movement.</span><Link className="text-action" to="/services">View all services <Arrow /></Link></div>
+      <div className="section-bottom"><span>{services.length} services. One focus: your movement.</span><Link className="text-action" to="/services">View all services <Arrow /></Link></div>
     </section>
 
     <section className="approach-section" id="approach"><div className="agai-container section"><div className="section-heading"><div><Eyebrow>Your first visit</Eyebrow><h2 className="home-section-title"><span className="home-title-lead">Know what to expect.</span><br /><span>Feel ready to begin.</span></h2></div><p>Your visit starts with a conversation about your symptoms, daily activities and goals. We explain the options before planning care together.</p></div><div className="approach-grid">{approach.map((step, index) => <article key={step.title}><span className="step-number">0{index + 1}</span><h3>{step.title}</h3><p>{step.text}</p></article>)}</div></div></section>

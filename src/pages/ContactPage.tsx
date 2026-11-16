@@ -1,8 +1,9 @@
+import { useServices } from '../ServicesContext'
 import PageIntro from '../components/PageIntro'
 import { useRef, useState } from 'react'
 import type { SubmitEvent } from 'react'
 import { Link, useSearchParams } from 'react-router'
-import { clinic, services } from '../content'
+import { clinic } from '../content'
 import { Arrow, Eyebrow, FAQ, Icon } from '../components/UI'
 import type { IconName } from '../components/UI'
 
@@ -11,6 +12,7 @@ function ContactMethod({ icon, title, value, pending, href }: { icon: IconName; 
 }
 
 export default function ContactPage() {
+  const { services } = useServices()
   const [params] = useSearchParams()
   const requestedService = params.get('service')
   const [draft, setDraft] = useState('')
