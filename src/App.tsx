@@ -8,25 +8,41 @@ import ServicesPage from './pages/ServicesPage'
 import ContactPage from './pages/ContactPage'
 import ChatAssistant from './components/ChatAssistant'
 import BlogsPage, { BlogArticlePage } from './pages/BlogsPage'
-import { blogArticles } from './blogs'
+import { getPageMeta } from './meta'
+import site from './site.json'
 import './App.css'
-
-const pageMeta: Record<string, { title: string; description: string }> = {
-  '/blogs': { title: 'The AGAI Journal | Blogs', description: 'Thoughtful reads on movement, everyday wellbeing and preparing for physiotherapy care at AGAI.' },
-  '/': { title: 'AGAI Physiotherapy Centre | Sports Rehabilitation & Performance', description: 'Move better. Recover stronger. Perform better. Connect with AGAI in Ambattur, Chennai for sports rehabilitation, injury prevention and personalised physiotherapy care.' },
-  '/about': { title: 'About us | AGAI Physiotherapy Centre', description: 'Meet your physiotherapist at AGAI in Ambattur, Chennai, and learn what to expect from your first visit and personalised care.' },
-  '/services': { title: 'Our services | AGAI Physiotherapy Centre', description: 'Explore seven areas of physiotherapy care: sports injury rehabilitation, conditioning, orthopaedics, neurology, women’s wellness, pelvic floor and geriatric rehabilitation.' },
-  '/contact': { title: 'Contact us | AGAI Physiotherapy Centre', description: 'Contact AGAI Physiotherapy Centre and prepare an enquiry about rehabilitation, physiotherapy services or appointments.' },
-}
 
 export default function App() {
   const location = useLocation()
   useEffect(() => {
-    const path = location.pathname.replace(/\/$/, '') || '/'
-    const article = path.startsWith('/blogs/') ? blogArticles.find(item => `/blogs/${item.slug}` === path) : undefined
-    const meta = article ? { title: `${article.title} | AGAI Journal`, description: article.excerpt } : pageMeta[path] || { title: 'Page not found | AGAI Physiotherapy Centre', description: 'Find your way back to AGAI Physiotherapy Centre.' }
+    const meta = getPageMeta(location.pathname)
+    const { indexable } = meta
     document.title = meta.title
-    document.querySelector('meta[name="description"]')?.setAttribute('content', meta.description)
+    for (const [selector, value] of [
+      ['meta[name="description"]', meta.description],
+      ['meta[property="og:title"]', meta.title],
+      ['meta[property="og:description"]', meta.description],
+      ['meta[property="og:type"]', meta.type],
+      ['meta[property="og:url"]', meta.canonical ?? `${site.url}/`],
+    ]) document.querySelector(selector)?.setAttribute('content', value)
+    let robots = document.querySelector<HTMLMetaElement>('meta[name="robots"]')
+    if (!robots) {
+      robots = document.createElement('meta')
+      robots.name = 'robots'
+      document.head.appendChild(robots)
+    }
+    robots.content = indexable ? 'index, follow' : 'noindex, follow'
+    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')
+    if (indexable) {
+      if (!canonical) {
+        canonical = document.createElement('link')
+        canonical.rel = 'canonical'
+        document.head.appendChild(canonical)
+      }
+      canonical.href = meta.canonical!
+    } else {
+      canonical?.remove()
+    }
   }, [location.pathname])
   const previous = useRef(location)
   useEffect(() => {

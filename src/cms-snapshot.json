@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "content": {
+    "clinic": {
+      "name": "AGAI Physiotherapy Centre",
+      "founder": "Dr. Rasathi Rajendren, PT",
+      "phone": "+91 96000 66505",
+      "whatsapp": "919600066505",
+      "email": "agaiphysiorehab@gmail.com",
+      "address": "Ambattur, Chennai – 600058",
+      "mapsUrl": "https://maps.app.goo.gl/HXLyiWfbT9M8eqJq6",
+      "mapsEmbedUrl": "https://maps.google.com/maps?ll=13.0967021,80.1437204&z=17&output=embed",
+      "hours": ""
+    },
+    "home": {
+      "headline": [
+        "Move Better.",
+        "Recover Stronger.",
+        "Perform Better."
+      ],
+      "speciality": "Sports Rehabilitation & Performance Centre",
+      "featureTitle": "Is movement becoming difficult?",
+      "featureText": "If pain, stiffness or weakness is making everyday activities harder, start with an assessment.",
+      "heroImage": "/images/home-hero-main.webp"
+    },
+    "founder": {
+      "role": "Founder & Sports Physiotherapist",
+      "credentials": "BPT, MPT · Sports Physiotherapy",
+      "description": "With over 10 years of clinical experience, Dr. Rasathi helps people work towards easier movement, injury recovery and a return to the activities they enjoy."
+    },
+    "services": [
+      {
+        "id": "sports-injury",
+        "category": "sports",
+        "icon": "activity",
+        "image": "/images/services/big-cards/01-sports-injury-rehabilitation.webp",
+        "previewImage": "/images/services/small-cards/01-sports-injury-rehabilitation.webp",
+        "title": "Sports injury prevention & rehabilitation",
+        "shortTitle": "Sports injury rehabilitation",
+        "intro": "For an injury that is keeping you away from sport or exercise.",
+        "description": "We assess how your injury affects movement and plan rehabilitation around the activity you want to return to.",
+        "forYou": "A sprain, strain or sports injury is limiting training, exercise or play.",
+        "focus": [
+          "Understanding your injury and movement",
+          "Rebuilding strength and control",
+          "Planning a gradual return to activity"
+        ]
+      },
+      {
+        "id": "strength-conditioning",
+        "category": "sports",
+        "icon": "strength",
+        "image": "/images/services/big-cards/02-strength-and-conditioning.webp",
+        "previewImage": "/images/services/small-cards/02-strength-and-conditioning.webp",
+        "title": "Speed, strength & conditioning",
+        "shortTitle": "Strength & conditioning",
+        "intro": "For building strength, stamina and confidence in exercise.",
+        "description": "Purposeful exercise programmes centred on speed, strength and physical conditioning, with your individual goals guiding the approach.",
+        "forYou": "You want a structured exercise plan suited to your fitness or sporting goals.",
+        "focus": [
+          "Exercises suited to your starting point",
+          "Strength and stamina training",
+          "Progressing towards your activity goals"
+        ]
+      },
+      {
+        "id": "orthopaedic",
+        "category": "rehabilitation",
+        "icon": "joint",
+        "image": "/images/services/big-cards/03-orthopaedic-rehabilitation.webp",
+        "previewImage": "/images/services/small-cards/03-orthopaedic-rehabilitation.webp",
+        "title": "Orthopaedic rehabilitation",
+        "shortTitle": "Orthopaedic rehabilitation",
+        "intro": "For back, neck or joint pain, stiffness and recovery after surgery.",
+        "description": "Care for problems affecting muscles, bones and joints. We assess your movement and discuss exercises, advice and hands-on care where appropriate.",
+        "forYou": "Pain or stiffness makes sitting, bending, lifting or climbing stairs difficult, or you need rehabilitation after surgery.",
+        "focus": [
+          "Understanding what makes movement difficult",
+          "Exercises for mobility and strength",
+          "Support with everyday activities"
+        ]
+      },
+      {
+        "id": "neurological",
+        "category": "rehabilitation",
+        "icon": "brain",
+        "image": "/images/services/big-cards/04-neurological-rehabilitation.webp",
+        "previewImage": "/images/services/small-cards/04-neurological-rehabilitation.webp",
+        "title": "Neurological rehabilitation",
+        "shortTitle": "Neurological rehabilitation",
+        "intro": "For movement and balance difficulties linked to a neurological condition.",
+        "description": "Rehabilitation for people whose movement is affected by conditions involving the brain, spinal cord or nerves, including recovery after a stroke.",
+        "forYou": "An existing neurological condition is affecting your walking, balance or daily tasks.",
+        "focus": [
+          "Practising movements used in daily life",
+          "Working on balance and coordination",
+          "Setting achievable rehabilitation goals"
+        ]
+      },
+      {
+        "id": "womens-wellness",
+        "category": "wellness",
+        "icon": "leaf",
+        "image": "/images/services/big-cards/05-womens-fitness-and-wellness.webp",
+        "previewImage": "/images/services/small-cards/05-womens-fitness-and-wellness.webp",
+        "title": "Women’s clinical fitness & wellness",
+        "shortTitle": "Women’s fitness & wellness",
+        "intro": "For movement, strength and exercise support through different life stages.",
+        "description": "Individual physiotherapy and exercise guidance for women, including during pregnancy and after childbirth, based on an assessment of your needs.",
+        "forYou": "You want help with movement or a supported return to exercise during or after pregnancy.",
+        "focus": [
+          "Discussing your comfort and activity goals",
+          "Exercises adapted to your needs",
+          "Support during and after pregnancy"
+        ]
+      },
+      {
+        "id": "pelvic-floor",
+        "category": "wellness",
+        "icon": "flower",
+        "image": "/images/services/big-cards/06-pelvic-floor-rehabilitation.webp",
+        "previewImage": "/images/services/small-cards/06-pelvic-floor-rehabilitation.webp",
+        "title": "Pelvic floor rehabilitation",
+        "shortTitle": "Pelvic floor rehabilitation",
+        "intro": "For concerns such as bladder leakage or pelvic floor weakness.",
+        "description": "A sensitive, individual assessment helps us understand your concerns and discuss whether pelvic floor exercises and guidance may help.",
+        "forYou": "Bladder leakage or concerns about pelvic floor strength are affecting your comfort or confidence.",
+        "focus": [
+          "Time to discuss your concerns",
+          "Understanding pelvic floor function",
+          "An individual exercise and care plan"
+        ]
+      },
+      {
+        "id": "geriatric",
+        "category": "ageing",
+        "icon": "person",
+        "image": "/images/services/big-cards/07-geriatric-rehabilitation.webp",
+        "previewImage": "/images/services/small-cards/07-geriatric-rehabilitation.webp",
+        "title": "Geriatric rehabilitation",
+        "shortTitle": "Geriatric rehabilitation",
+        "intro": "For older adults finding walking, balance or everyday movement harder.",
+        "description": "Care focused on the movements that support daily independence, with exercises adapted to your abilities and goals.",
+        "forYou": "Getting up from a chair, walking or keeping your balance has become more difficult as you get older.",
+        "focus": [
+          "Strength for everyday tasks",
+          "Walking and balance practice",
+          "Building confidence with movement"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is AGAI only for athletes?",
+        "answer": "No. Alongside sports rehabilitation and conditioning, AGAI offers orthopaedic and neurological rehabilitation, women’s fitness and wellness, pelvic floor rehabilitation and care for older adults."
+      },
+      {
+        "question": "When should I consider physiotherapy?",
+        "answer": "If pain, stiffness, an injury or difficulty moving is affecting everyday activities, a physiotherapy assessment can help you understand your options. You can also ask about rehabilitation after surgery or support with returning to activity."
+      },
+      {
+        "question": "Who will guide my care?",
+        "answer": "Dr. Rasathi Rajendren, PT, is the founder and sports physiotherapist at AGAI. She will discuss your concerns and plan care around your needs and goals."
+      },
+      {
+        "question": "How is my rehabilitation programme planned?",
+        "answer": "The approach combines clinical assessment, hands-on therapy, individualised exercise programmes and patient education. Your needs and movement goals guide the plan."
+      },
+      {
+        "question": "What if I am unsure which service to choose?",
+        "answer": "You can explain your question in your own words in the contact enquiry form. You do not need to choose a specific rehabilitation service before making an enquiry."
+      }
+    ],
+    "approach": [
+      {
+        "title": "Tell us what is difficult",
+        "text": "Share your symptoms, relevant health history and the activities you want to get back to."
+      },
+      {
+        "title": "Understand your movement",
+        "text": "Your physiotherapist assesses movement, strength and balance as needed, then explains the findings."
+      },
+      {
+        "title": "Agree on a plan together",
+        "text": "Discuss your options, set realistic goals and learn exercises or advice suited to your daily routine."
+      }
+    ]
+  },
+  "contentUpdatedAt": "2026-11-16T06:10:35.485Z",
+  "articles": [
+    {
+      "title": "Your first visit. A little clarity before you arrive.",
+      "slug": "your-first-physiotherapy-visit",
+      "category": "Getting started",
+      "excerpt": "What to bring, what to ask, and how to make space for a conversation about your care.",
+      "image": "/images/blog/default-covver-pic.jpg",
+      "imageAlt": "",
+      "sections": [
+        {
+          "heading": "Start with your story",
+          "text": "You do not need the perfect words to explain why you are coming in. Think about what brought you here, the activities you would like to get back to, and the questions you want to ask. A few notes on your phone or a piece of paper can help you remember what matters to you."
+        },
+        {
+          "heading": "Bring what helps the conversation",
+          "text": "If you have existing reports, referral letters or information about previous treatment, keep them together so you can discuss them with your physiotherapist. Ask the clinic beforehand if there is anything specific to bring or wear for your appointment."
+        },
+        {
+          "heading": "Leave room for questions",
+          "text": "You can ask what the next steps involve, how appointments are arranged and who to contact between visits. Before you leave, check that you understand any instructions you have been given. It is always okay to ask for something to be explained again."
+        }
+      ],
+      "publishedAt": "2026-11-16T06:10:35.485Z",
+      "updatedAt": "2026-11-16T06:10:35.485Z"
+    },
+    {
+      "title": "What does moving well mean to you?",
+      "slug": "movement-goals-that-mean-something",
+      "category": "Movement goals",
+      "excerpt": "From a favourite walk to a weekend game, start with the things you want to return to.",
+      "image": "/images/blog/default-covver-pic.jpg",
+      "imageAlt": "",
+      "sections": [
+        {
+          "heading": "Make it personal",
+          "text": "A movement goal can be an ordinary part of your day: getting out with friends, enjoying a hobby or returning to a familiar routine. Write down the activity you miss and why it is important to you. This gives your care team a useful starting point for a conversation."
+        },
+        {
+          "heading": "Describe the whole activity",
+          "text": "Share the details around your goal, such as where it happens, how often you do it and what you find difficult. Your physiotherapist can discuss which details matter for your individual care. You do not need to arrive with your own exercise plan."
+        },
+        {
+          "heading": "Keep the conversation open",
+          "text": "Priorities can change. Bring up new goals or questions at your next appointment, and ask how they fit with the plan you have discussed. A clear conversation helps you and your care team stay focused on what matters to you."
+        }
+      ],
+      "publishedAt": "2026-11-16T06:10:35.485Z",
+      "updatedAt": "2026-11-16T06:10:35.485Z"
+    },
+    {
+      "title": "Five questions worth bringing to your appointment.",
+      "slug": "questions-to-ask-your-physiotherapist",
+      "category": "Getting started",
+      "excerpt": "A simple starting point for a clearer, more confident conversation with your care team.",
+      "image": "/images/blog/default-covver-pic.jpg",
+      "imageAlt": "",
+      "sections": [
+        {
+          "heading": "Understand the plan",
+          "text": "Start with two questions: “What are we working towards?” and “What will the next steps involve?” Ask for an explanation in everyday language if a term is unfamiliar. You can also ask for a written summary of any instructions."
+        },
+        {
+          "heading": "Talk about everyday life",
+          "text": "A third useful question is: “How does this fit with my usual routine?” Describe your work, responsibilities and the activities you enjoy. Your clinician can discuss your circumstances with you instead of leaving you to guess how a plan fits your day."
+        },
+        {
+          "heading": "Know how to follow up",
+          "text": "Finish with: “When should we review the plan?” and “Who should I contact if I have questions?” Keep the contact details somewhere easy to find. If you are unsure about an instruction, ask your care team to clarify it."
+        }
+      ],
+      "publishedAt": "2026-11-16T06:10:35.485Z",
+      "updatedAt": "2026-11-16T06:10:35.485Z"
+    },
+    {
+      "title": "Your sport. Your goals. Your next conversation.",
+      "slug": "planning-your-return-to-sport-conversation",
+      "category": "Movement goals",
+      "excerpt": "The details to share when discussing a return to the activities you love.",
+      "image": "/images/blog/default-covver-pic.jpg",
+      "imageAlt": "",
+      "sections": [
+        {
+          "heading": "Tell us about your sport",
+          "text": "Share what you play, your usual schedule and what you enjoy most about taking part. A casual weekend game and a competitive season can mean different things to different people. Describe your own experience, including any deadlines you have in mind."
+        },
+        {
+          "heading": "Bring your questions, not a deadline to meet",
+          "text": "Ask your physiotherapist how your individual circumstances will be considered and what a review will involve. A blog cannot decide when you are ready to return. Use the appointment to discuss your expectations and understand the next steps for you."
+        },
+        {
+          "heading": "Include the people who support you",
+          "text": "If you would like a coach or family member to understand the plan, ask how information can be shared with your permission. Agreeing on who needs to know what can make your follow-up conversations easier to organise."
+        }
+      ],
+      "publishedAt": "2026-11-16T06:10:35.485Z",
+      "updatedAt": "2026-11-16T06:10:35.485Z"
+    },
+    {
+      "title": "Make room for care in a busy week.",
+      "slug": "making-room-for-care-in-your-week",
+      "category": "Everyday wellbeing",
+      "excerpt": "A few practical ways to organise appointments around the rest of your life.",
+      "image": "/images/blog/default-covver-pic.jpg",
+      "imageAlt": "",
+      "sections": [
+        {
+          "heading": "Look at the practical details",
+          "text": "Before choosing a preferred appointment time, consider your travel, work and family commitments. Give yourself enough room to get to the clinic without rushing. If you need information about access or the location, contact the team before your visit."
+        },
+        {
+          "heading": "Keep the essentials together",
+          "text": "Save the clinic contact number and your appointment details in one place. Put any questions or documents you want to discuss with them. A short note is often easier to find than trying to remember everything on the day."
+        },
+        {
+          "heading": "Let the clinic know if plans change",
+          "text": "If you need to rearrange a visit, contact the clinic to discuss your options. When requesting an appointment online, remember that your preferred date and time are a request; the team will confirm the appointment with you."
+        }
+      ],
+      "publishedAt": "2026-11-16T06:10:35.485Z",
+      "updatedAt": "2026-11-16T06:10:35.485Z"
+    },
+    {
+      "title": "Coming along? How to be a thoughtful support.",
+      "slug": "supporting-someone-at-their-appointment",
+      "category": "Everyday wellbeing",
+      "excerpt": "Make space for the person receiving care while helping with the practical details.",
+      "image": "/images/blog/default-covver-pic.jpg",
+      "imageAlt": "",
+      "sections": [
+        {
+          "heading": "Ask what would be helpful",
+          "text": "If you are accompanying a family member or friend, ask what support they would like. They may want help with travel, remembering questions or keeping appointment details organised. Let their preferences guide your role."
+        },
+        {
+          "heading": "Make space for their voice",
+          "text": "Give the person receiving care room to describe their own goals and experiences. Ask before adding information or taking notes. You can check with the clinic in advance about bringing someone to the appointment."
+        },
+        {
+          "heading": "Agree on the practical next steps",
+          "text": "Before leaving, check which details the person would like help remembering. This might include a follow-up date or a contact number. Any questions about care instructions should go back to the clinician for clarification."
+        }
+      ],
+      "publishedAt": "2026-11-16T06:10:35.485Z",
+      "updatedAt": "2026-11-16T06:10:35.485Z"
+    }
+  ]
+}

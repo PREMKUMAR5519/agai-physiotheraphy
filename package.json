@@ -3,9 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "sitemap": "node generate-sitemap.js",
+    "content:sync": "node scripts/sync-content.js",
+    "prebuild": "npm run content:sync && npm run sitemap",
+    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node prerender.js",
     "lint": "oxlint",
     "preview": "vite preview",
     "test:e2e": "playwright test"

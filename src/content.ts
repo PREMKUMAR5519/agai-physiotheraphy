@@ -1,4 +1,6 @@
-export const clinic = {
+import { getContent } from './cms'
+
+const defaultClinic = {
   name: 'AGAI Physiotherapy Centre',
   founder: 'Dr. Rasathi Rajendren, PT',
   // Add only verified clinic details. Keep unavailable values empty.
@@ -19,7 +21,7 @@ export const categories = [
   { id: 'ageing', label: 'Healthy ageing' },
 ] as const
 
-export const services = [
+const defaultServices = [
   {
     id: 'sports-injury', category: 'sports', icon: 'activity',
     image: '/images/services/big-cards/01-sports-injury-rehabilitation.webp',
@@ -101,16 +103,37 @@ export const careNeeds = [
   { title: 'Movement after a stroke', description: 'You need rehabilitation support with walking, coordination or daily activities.', icon: 'brain', serviceId: 'neurological', linkLabel: 'Explore neurological care' },
 ] as const
 
-export const approach = [
+const defaultApproach = [
   { title: 'Tell us what is difficult', text: 'Share your symptoms, relevant health history and the activities you want to get back to.' },
   { title: 'Understand your movement', text: 'Your physiotherapist assesses movement, strength and balance as needed, then explains the findings.' },
   { title: 'Agree on a plan together', text: 'Discuss your options, set realistic goals and learn exercises or advice suited to your daily routine.' },
 ]
 
-export const faqs = [
+const defaultFaqs = [
   { question: 'Is AGAI only for athletes?', answer: 'No. Alongside sports rehabilitation and conditioning, AGAI offers orthopaedic and neurological rehabilitation, women’s fitness and wellness, pelvic floor rehabilitation and care for older adults.' },
   { question: 'When should I consider physiotherapy?', answer: 'If pain, stiffness, an injury or difficulty moving is affecting everyday activities, a physiotherapy assessment can help you understand your options. You can also ask about rehabilitation after surgery or support with returning to activity.' },
   { question: 'Who will guide my care?', answer: 'Dr. Rasathi Rajendren, PT, is the founder and sports physiotherapist at AGAI. She will discuss your concerns and plan care around your needs and goals.' },
   { question: 'How is my rehabilitation programme planned?', answer: 'The approach combines clinical assessment, hands-on therapy, individualised exercise programmes and patient education. Your needs and movement goals guide the plan.' },
   { question: 'What if I am unsure which service to choose?', answer: 'You can explain your question in your own words in the contact enquiry form. You do not need to choose a specific rehabilitation service before making an enquiry.' },
 ]
+
+export const clinic = getContent('clinic', defaultClinic)
+export const services = getContent('services', defaultServices)
+export const approach = getContent('approach', defaultApproach)
+export const faqs = getContent('faqs', defaultFaqs)
+export const homeContent = getContent('home', {
+  "headline": [
+    "Move Better.",
+    "Recover Stronger.",
+    "Perform Better."
+  ],
+  "speciality": "Sports Rehabilitation & Performance Centre",
+  "featureTitle": "Is movement becoming difficult?",
+  "featureText": "If pain, stiffness or weakness is making everyday activities harder, start with an assessment.",
+  "heroImage": "/images/home-hero-main.webp"
+})
+export const founderContent = getContent('founder', {
+  "role": "Founder & Sports Physiotherapist",
+  "credentials": "BPT, MPT · Sports Physiotherapy",
+  "description": "With over 10 years of clinical experience, Dr. Rasathi helps people work towards easier movement, injury recovery and a return to the activities they enjoy."
+})

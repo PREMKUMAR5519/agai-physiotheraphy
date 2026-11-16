@@ -1,10 +1,10 @@
 ﻿# AGAI Physiotherapy Centre
 
-A responsive, three-page React + TypeScript website using the supplied AGAI brand kit and client content.
+A responsive React + TypeScript website using the supplied AGAI brand kit and client content.
 
 ## Run locally
 
-Requires Node.js 20.19+ or 22.12+ and npm. The project was verified with Node 22.21.1.
+Requires Node.js 22.18+ and npm (the sitemap generator uses Node's built-in TypeScript stripping). The project was verified with Node 22.21.1.
 
 ```sh
 npm ci
@@ -14,7 +14,7 @@ npm run dev
 Open the local URL printed by Vite.
 
 ```sh
-npm run build       # TypeScript checks and production output in dist/
+npm run build       # TypeScript checks, production output and prerendered pages in dist/
 npm run preview     # Local production preview
 npm run lint        # Oxlint
 npm run test:e2e    # Browser regression tests
@@ -51,6 +51,18 @@ The contact page shows availability messages while these values are empty. It cr
 
 There is no server-side enquiry storage, email delivery API, booking system or database. Form contents are held in component memory only and are not saved to localStorage or transmitted to a backend. Navigating away or reloading discards them. A direct-submit workflow would require a configured delivery provider/backend.
 
+## Build output and hosting
+
+`npm run build` writes one static HTML file per route (`prerender.js`), each with its own title, description, canonical URL, Open Graph tags and clinic structured data. Crawlers and link previews do not need JavaScript. The browser then hydrates the page; with a query string, newer CMS content or an unknown URL it renders fresh instead.
+
+- Files are flat: `/about` is `dist/about.html`, `/blogs/<slug>` is `dist/blogs/<slug>.html`, and unknown URLs get `dist/404.html`.
+- Netlify, Cloudflare Pages and GitHub Pages serve these at the clean URL with a real 404 status and need no configuration.
+- Apache hosts (cPanel) use `public/.htaccess`, which is copied into `dist/`. It has not been tested on a live Apache server yet.
+- nginx needs `try_files $uri $uri.html =404;` and `error_page 404 /404.html;`. Vercel needs `"cleanUrls": true` in `vercel.json`.
+- Page titles and descriptions live in `src/meta.ts`. Adding a route there adds its static file.
+
+Only files the site uses belong in `public/`, because everything there is deployed. Originals live in `design-source/`: the complete brand kit, full-size service artwork and the chat mascot PNGs. The mascot ships as 252px WebP files in `public/images/bot/`.
+
 ## Project structure
 
 - `src/App.tsx`: route definitions, page metadata, anchor scrolling and not-found view.
@@ -60,7 +72,7 @@ There is no server-side enquiry storage, email delivery API, booking system or d
 - `src/content.ts`: clinic configuration, services, care approach and homepage FAQs.
 - `src/App.css`: responsive layout and component styles.
 - `src/index.css`: global foundations.
-- `public/brand-kit/`: complete unchanged kit, including local Inter font and its license.
+- `public/brand-kit/`: the brand files the site loads (stylesheet, icons, web logos, Inter font and its license). The complete unchanged kit is in `design-source/brand-kit/`.
 - `public/images/movement-hero.png`: generated artistic movement illustration.
 - `public/images/home-hero-main.webp`: current homepage hero, supplied at 1500 x 1000. Previous hero options are retained; responsive crops and the blue fade frame the supervised workout.
 - `public/images/hero-resistance-training.mp4`: previous video hero option, retained with its poster for comparison. The original MOV is preserved in `output/source-media/`.
@@ -80,6 +92,24 @@ Reviewed `founder.txt`, `our-services.txt`, the handwritten requirements image a
 
 ## Build and hosting
 
+### Production sitemap and robots
+
+The canonical production origin is `https://agaiphysiotherapy.com`, configured in `src/site.json`. `npm run sitemap` regenerates the following files in `public/`, and `npm run build` runs it automatically before copying them to `dist/`:
+
+- `sitemap.xml`: index linking to the page and blog sitemaps.
+- `page-sitemap.xml`: Home, About, Services, Blogs and Contact.
+- `blog-sitemap.xml`: all article URLs, read directly from `src/blogs.ts`.
+- `robots.txt`: allows crawling and advertises the production sitemap index.
+- `sitemap.xsl`: the readable sitemap presentation adapted from the artsandscience project, with AGAI branding and IST dates. Browsers without XSLT support can still display the raw XML; crawlers consume the XML directly.
+
+Only canonical page URLs are listed; filters, search parameters, section anchors and not-found routes are excluded. Client-side canonical tags use the same production origin, remove query strings/fragments, and are removed on unknown pages, which receive `noindex, follow`. This does not change the host's HTTP status code: configure proper HTTP 404 responses for unknown URLs where supported.
+
+`lastmod` uses the latest Git change to a page and its local imported content/components, with file modification times for uncommitted work. It is omitted if Git history is unavailable. CI should fetch full history for useful dates. Articles share a source file, so changing it updates the article sitemap dates together. Generation time is shown separately and never used as the page modification date. New blog entries are included automatically; adding a route requires updating `pages` in `generate-sitemap.js`, otherwise the build fails. No CMS or PHP runtime is needed.
+
+Deploy the contents of `dist/` to the domain root. Configure HTTPS and permanent redirects from HTTP and `www` to `https://agaiphysiotherapy.com`, preserving the path and query. Serve `/robots.txt` as plain text and `/*.xml` as XML before applying the SPA fallback. Host-specific redirects are not configured in this repository because the production hosting platform has not been specified.
+
+After deployment, verify `/robots.txt`, `/sitemap.xml`, both child sitemaps and direct article URLs, then submit `https://agaiphysiotherapy.com/sitemap.xml` in Google Search Console. Protect preview deployments separately with authentication or host-level `X-Robots-Tag: noindex`; the checked-in robots policy is for the public production site.
+
 `npm run build` outputs static assets to `dist/`. The host must serve `index.html` for application routes such as `/services` and `/contact` while serving existing assets normally; otherwise direct route requests may return a host-level 404. Configure an SPA fallback on the chosen host.
 
 For deployment under a subdirectory, set Vite's `base` in `vite.config.ts`. BrowserRouter and application asset paths use this base. The unchanged standalone brand-kit preview may assume root hosting. Page metadata is updated in the browser; server-side rendering and prerendering are not configured.
@@ -96,3 +126,11 @@ Final generation prompt:
 
 > Use case: stylized-concept. Asset type: a premium physiotherapy website hero illustration, square 1024 x 1024 composition. Create an elegant editorial 3D clay sculpture of a human figure in a natural forward running stride, entire body visible, anatomically coherent limbs, smooth matte deep cobalt blue #0558AD surface, abstract faceless features, gender neutral athletic adult proportions. A single broad sculptural green #007C2C ribbon loops behind the runner like an organic leaf/movement arc, one fine warm gold accent curve. Sculpture sits visually on an off-white pale sage #F3F8F5 background, subtle soft floor shadow, warm daylight from upper left, tactile matte surfaces, sophisticated restrained rehabilitation and movement brand aesthetic, large figure centered occupying 80 percent of canvas, plenty of clean breathing space. It is clearly an artistic illustration not a real patient or anatomical medical diagram. No text, no logos, no watermark, no UI, no extra people, no equipment, no gradients in background, no neon, no glowing effects.
 
+
+## Content management
+
+The separate React/Node/MongoDB admin is in `../agai-admin`. See its README for sign-in, media uploads, draft/publish and deployment instructions. The local development website loads `http://127.0.0.1:5001/api/public/content` before importing its pages, with the checked-in `src/cms-snapshot.json` as an outage fallback. Restart Vite after changing `.env.development.local`.
+
+`npm run content:sync` refreshes the snapshot when `CMS_API_URL` or `VITE_CMS_API_URL` is set. `npm run build` runs sync before sitemap generation, so static HTML and sitemaps use published article URLs. Runtime fetches use `VITE_CMS_API_URL`; a production website needs a publicly reachable HTTPS API. The development-only localhost setting is not used in production builds. Configure the production API origin explicitly, then rebuild and deploy.
+
+Rebuild after adding, renaming, unpublishing or archiving blogs to refresh their static pages, metadata, sitemap and fallback content. CMS publication timestamps supply blog `lastmod` values. Original sample blog content is retained in `src/defaultBlogs.ts`; active content comes from the CMS snapshot. With no API configured, the website works from that snapshot alone.

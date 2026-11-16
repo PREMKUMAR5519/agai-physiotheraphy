@@ -1,6 +1,7 @@
 import FounderSection from '../components/FounderSection'
+import { Fragment } from 'react'
 import { Link } from 'react-router'
-import { approach, careNeeds, faqs, services } from '../content'
+import { approach, careNeeds, faqs, services, homeContent } from '../content'
 import { Arrow, ContactBanner, Eyebrow, FAQ, Icon } from '../components/UI'
 import AppointmentSection from '../components/AppointmentSection'
 
@@ -10,7 +11,7 @@ export default function HomePage() {
       <div className="hero-visual">
         <img
           className="hero-photo"
-          src={`${import.meta.env.BASE_URL}images/home-hero-main.webp`}
+          src={homeContent.heroImage}
           alt=""
           width="1500" height="1000"
           fetchPriority="high"
@@ -19,12 +20,12 @@ export default function HomePage() {
       <div className="hero-inner agai-container">
         <div className="hero-copy">
           <div className="hero-brand"><img src={`${import.meta.env.BASE_URL}images/agai-wordmark-light.svg`} alt="AGAI Physiotherapy Centre" width="1142" height="345" /></div>
-          <h1 id="hero-heading"><span>Move Better.</span>{' '}<span>Recover Stronger.</span>{' '}<span>Perform Better.</span></h1>
-          <p className="hero-speciality">Sports Rehabilitation &amp; Performance Centre</p>
+          <h1 id="hero-heading">{homeContent.headline.map((line, index) => <Fragment key={index}>{index > 0 ? ' ' : null}<span>{line}</span></Fragment>)}</h1>
+          <p className="hero-speciality">{homeContent.speciality}</p>
           <Link className="hero-pill" to="/#appointment">Book appointment <span className="hero-pill-icon"><Arrow /></span></Link>
           <div className="hero-feature">
-            <h2>Is movement becoming difficult?</h2>
-            <p>If pain, stiffness or weakness is making everyday activities harder, start with an assessment.</p>
+            <h2>{homeContent.featureTitle}</h2>
+            <p>{homeContent.featureText}</p>
             <Link className="hero-help-link" to="/#when-to-visit">When can physiotherapy help? <Arrow /></Link>
           </div>
         </div>

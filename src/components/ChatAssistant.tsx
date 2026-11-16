@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import { createPortal } from 'react-dom'
 import type { SubmitEvent } from 'react'
 import { Link, useLocation } from 'react-router'
@@ -16,7 +16,11 @@ const shortcuts = [
   { label: 'Talk to the team', question: 'Contact the clinic team', icon: 'chat' as const, detail: 'Continue on WhatsApp' },
 ]
 
+const noSubscription = () => () => {}
+
 export default function ChatAssistant() {
+  // The chat is portalled into document.body, which does not exist while prerendering.
+  const inBrowser = useSyncExternalStore(noSubscription, () => true, () => false)
   const { pathname } = useLocation()
   const [overHero, setOverHero] = useState(pathname === '/')
   const [open, setOpen] = useState(false)
@@ -75,6 +79,7 @@ export default function ChatAssistant() {
     send(draft)
   }
 
+  if (!inBrowser) return null
   // Keep the floating UI outside page wrappers that can clip or reposition fixed elements.
   return createPortal(<div className={`care-chat${overHero ? ' is-over-hero' : ''}`}>
     {!open ? <ChatBotMascot /> : null}

@@ -1,6 +1,8 @@
+import { clinic, founderContent } from '../content'
+
 export default function FounderDetails() {
   return <div className="founder-details">
-    <div className="founder-identity"><h3>Dr. Rasathi Rajendren, PT</h3><p>Founder &amp; Sports Physiotherapist</p></div>
-    <p className="founder-credentials">BPT, MPT · Sports Physiotherapy</p>
+    <div className="founder-identity"><h3>{clinic.founder}</h3><p>{founderContent.role}</p></div>
+    <p className="founder-credentials">{founderContent.credentials}</p>
   </div>
 }

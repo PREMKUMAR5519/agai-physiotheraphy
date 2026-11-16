@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://agaiphysiotherapy.com/sitemap.xml
