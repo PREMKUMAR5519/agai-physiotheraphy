@@ -36,6 +36,12 @@
   .booking-practitioner-profile h3 { font-size: 15px; }
 }
 @media (max-width: 767px) {
+  .home-page .appointment-section { background: #fff; }
+  .home-page .appointment-layout { width: calc(100% - 24px); }
+  .home-page .appointment-layout > .appointment-card { border: 0; border-radius: 0; padding-inline: 8px; }
+  .book-appointment-page .appointment-section { padding-block: 20px; }
+  .book-appointment-page .appointment-layout { width: calc(100% - 24px); }
+  .book-appointment-page .appointment-layout > .appointment-card { order: -1; padding: 18px 8px; border: 0; border-radius: 0; }
   .appointment-section .appointment-intro { padding-top: 0; }
   .booking-practitioner { padding-inline: 16px; }
   .booking-practitioner-profile { gap: 12px; }

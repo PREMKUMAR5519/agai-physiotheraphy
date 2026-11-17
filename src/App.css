@@ -801,6 +801,10 @@ p { margin-block: 0 16px; }
 
 @media (max-width: 767px) {
   .contact-banner--home .contact-banner-inner { padding-block: 56px 28px; }
+  .home-page .care-needs-section,
+  .home-page .founder-showcase,
+  .home-page .appointment-section { background: #fff; }
+  .home-page .founder-showcase::before { background: none; }
   .contact-banner--home .contact-banner-actions { width: 100%; }
   .contact-banner--home .contact-banner-message { font-size: 18px; }
   .contact-banner-steps { grid-template-columns: 1fr; gap: 22px; padding-block: 24px 40px; }

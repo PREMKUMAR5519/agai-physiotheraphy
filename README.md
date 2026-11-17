@@ -98,7 +98,8 @@ The canonical production origin is `https://agaiphysiotherapy.com`, configured i
 - `page-sitemap.xml`: Home, About, Services, Blogs and Contact.
 - `blog-sitemap.xml`: all article URLs, read directly from `src/blogs.ts`.
 - `robots.txt`: allows crawling and advertises the production sitemap index.
-- `sitemap.xsl`: the readable sitemap presentation adapted from the artsandscience project, with AGAI branding and IST dates. Browsers without XSLT support can still display the raw XML; crawlers consume the XML directly.
+
+Sitemaps display as plain XML without an XSLT stylesheet, avoiding browser XSLT deprecation warnings. Crawlers consume the XML directly.
 
 Only canonical page URLs are listed; filters, search parameters, section anchors and not-found routes are excluded. Client-side canonical tags use the same production origin, remove query strings/fragments, and are removed on unknown pages, which receive `noindex, follow`. This does not change the host's HTTP status code: configure proper HTTP 404 responses for unknown URLs where supported.
 

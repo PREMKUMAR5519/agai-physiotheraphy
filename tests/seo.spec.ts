@@ -20,7 +20,7 @@ test('robots and sitemap index expose every public route as valid XML', async ({
     expect(response.status()).toBe(200)
     expect(response.headers()['content-type']).toContain('xml')
     const xml = await response.text()
-    expect(xml).toContain('href="/sitemap.xsl"')
+    expect(xml).not.toContain('<?xml-stylesheet')
     return page.evaluate(source => {
       const document = new DOMParser().parseFromString(source, 'application/xml')
       return {
@@ -49,9 +49,6 @@ test('robots and sitemap index expose every public route as valid XML', async ({
     '/', '/about', '/services', '/blogs', '/book-appointment', '/contact',
     ...blogArticles.map(article => `/blogs/${article.slug}`),
   ].map(path => site.url + path).sort())
-  const stylesheet = await request.get('/sitemap.xsl')
-  expect(stylesheet.status()).toBe(200)
-  expect(await stylesheet.text()).toContain('AGAI Physiotherapy Centre')
 })
 
 test('canonical and robots metadata follow routes, filters, and missing pages', async ({ page }) => {

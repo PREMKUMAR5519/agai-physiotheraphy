@@ -84,7 +84,7 @@ function lastModified(source) {
 }
 const toIst = date => `${new Date(date.getTime() + 19800000).toISOString().slice(0, 19)}+05:30`
 const escapeXml = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' })[char])
-const head = `<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n<!-- generated: ${toIst(new Date())} -->`
+const head = `<?xml version="1.0" encoding="UTF-8"?>\n<!-- generated: ${toIst(new Date())} -->`
 const lastmodTag = date => date ? `\n    <lastmod>${toIst(date)}</lastmod>` : ''
 const articleDate = lastModified('src/pages/BlogsPage.tsx')
 const groups = [
