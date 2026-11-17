@@ -9,6 +9,7 @@
 .founder-showcase-badge { color: #396719; background: #e7f4e8; }
 .founder-showcase-story h2 { margin: 0 0 22px; font-size: 36px; line-height: 1.14; font-weight: 600; letter-spacing: -.035em; }
 .founder-showcase-story h2 > span { display: block; color: var(--agai-blue); }
+.founder-showcase .founder-showcase-story h2.home-section-title, .founder-showcase .founder-showcase-story h2.home-section-title > span { font-weight: 600; }
 .founder-showcase-story h2 > .home-title-lead { font-size: 1.25em; color: #143b63; margin-bottom: 4px; }
 .founder-showcase .founder-details { margin: 0 0 20px; }
 .founder-showcase .founder-identity h3 { margin: 0 0 5px; font-size: 21px; font-weight: 600; line-height: 1.4; letter-spacing: -.02em; overflow-wrap: anywhere; }

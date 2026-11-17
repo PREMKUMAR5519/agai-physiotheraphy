@@ -1,9 +1,6 @@
 .home-page .appointment-section { background: #f7f9fc; }
 .appointment-section .appointment-intro { min-width: 0; padding-top: 8px; }
-.appointment-section .appointment-intro h2.home-section-title { font-size: 38px; line-height: 1.02; font-weight: 600; letter-spacing: -.035em; margin: 0 0 16px; }
-.appointment-section .appointment-intro h2.home-section-title > span { font-weight: 600; }
-.appointment-section .appointment-intro h2.home-section-title > .home-title-lead { font-size: 1em; color: #102d48; }
-.appointment-section .appointment-intro > p { max-width: none; margin: 0 0 24px; color: #506982; font-size: 15px; line-height: 1.6; }
+.appointment-section .appointment-intro > p:not(.home-unified-eyebrow) { max-width: none; margin: 0 0 24px; color: #506982; font-size: 15px; line-height: 1.6; }
 .booking-practitioner { position: relative; overflow: hidden; padding: 22px 20px 18px; margin-bottom: 22px; background: #fff; border: 1px solid #e0e9f4; border-radius: 16px; box-shadow: 0 2px 8px #123d7006; }
 .booking-practitioner-profile { display: flex; align-items: center; gap: 14px; }
 .booking-practitioner-profile > div { min-width: 0; }
@@ -40,7 +37,6 @@
 }
 @media (max-width: 767px) {
   .appointment-section .appointment-intro { padding-top: 0; }
-  .appointment-section .appointment-intro h2.home-section-title { font-size: 32px; }
   .booking-practitioner { padding-inline: 16px; }
   .booking-practitioner-profile { gap: 12px; }
   .booking-practitioner-profile h3 { font-size: 16px; }

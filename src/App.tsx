@@ -55,11 +55,12 @@ function WebsiteApp() {
     previous.current = location
     if (last === location && !location.hash) return
     // Only the query changed on the same page (e.g. a service filter): leave the scroll position alone.
-    if (last && last !== location && last.pathname === location.pathname && last.hash === location.hash && last.search !== location.search) return
+    if (last && last !== location && last.pathname === location.pathname && last.hash === location.hash && last.search !== location.search && location.hash !== '#appointment') return
     const frame = requestAnimationFrame(() => {
       let anchor = ''
       try { anchor = decodeURIComponent(location.hash.slice(1)) } catch { /* Ignore malformed URL fragments. */ }
-      const target = anchor ? document.getElementById(anchor) : null
+      const targetId = anchor === 'appointment' && window.matchMedia('(max-width: 767px)').matches ? 'appointment-form' : anchor
+      const target = targetId ? document.getElementById(targetId) : null
       if (target) {
         target.scrollIntoView({ block: 'start', behavior: 'instant' })
         if (target.hasAttribute('tabindex')) target.focus({ preventScroll: true })

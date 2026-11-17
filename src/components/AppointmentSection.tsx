@@ -69,7 +69,8 @@ export default function AppointmentSection() {
   return <section className="section appointment-section" id="appointment" tabIndex={-1} aria-labelledby="appointment-heading">
     <div className="agai-container appointment-layout">
       <div className="appointment-intro">
-        <h2 className="home-section-title" id="appointment-heading"><span className="home-title-lead">Your recovery.</span><br /><span>Starts right here.</span></h2>
+        <p className="home-unified-eyebrow">Book an appointment</p>
+        <h2 className="home-unified-title" id="appointment-heading">Your recovery. <span>Starts right here.</span></h2>
         <p>A little about you. A day that suits you. Let’s find your next step towards moving better.</p>
         <div className="booking-practitioner">
           <div className="booking-practitioner-profile"><span className="booking-practitioner-avatar" aria-hidden="true">DR.</span><div><h3>{clinic.founder}</h3><p>{founderContent.credentials}</p><p>{founderContent.role}</p></div></div>
@@ -85,7 +86,7 @@ export default function AppointmentSection() {
         {clinic.phone ? <a className="appointment-phone" href={`tel:${clinic.phone.replace(/[^+\d]/g, '')}`}><span className="appointment-phone-icon"><Icon name="phone" /></span><span><small>Prefer to book by phone?</small><strong>{clinic.phone}</strong><span className="booking-contact-caption">Call AGAI to arrange your visit</span></span></a> : null}
         <div className="booking-privacy-note"><Icon name="shield" /><p><strong>Your appointment request:</strong> Share only the details needed to arrange your visit. Please avoid sensitive medical information.</p></div>
       </div>
-      <div className="appointment-card">
+      <div className="appointment-card" id="appointment-form" tabIndex={-1}>
         <div className="booking-card-header"><div><p className="booking-label">Book now</p><h3>Schedule Your Clinical Appointment</h3></div><span className="booking-duration"><Icon name="clock" />~2 mins to complete</span></div>
         <ol className="booking-steps" aria-label="Appointment progress">{steps.map((label, index) => <li key={label} className={index < step ? 'is-complete' : index === step ? 'is-current' : ''}><button type="button" disabled={index > step} aria-current={index === Math.min(step, steps.length - 1) ? 'step' : undefined} onClick={() => goTo(index)}><span>{index < step ? <Icon name="check" /> : index + 1}</span>{label}</button></li>)}</ol>
         <div className="booking-progress" aria-hidden="true"><span style={{ width: `${Math.min((step + 1) / steps.length, 1) * 100}%` }} /></div>

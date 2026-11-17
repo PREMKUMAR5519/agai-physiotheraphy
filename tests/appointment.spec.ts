@@ -108,6 +108,29 @@ test('header booking action reaches the form from another page', async ({ page }
   await expect(page.locator('#appointment')).toBeInViewport()
 })
 
+test('mobile appointment links land on the form instead of the introduction', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  const card = page.locator('#appointment-form')
+  async function expectFormDestination() {
+    await expect(card).toBeFocused()
+    await expect.poll(async () => (await card.boundingBox())!.y).toBeGreaterThanOrEqual(0)
+    await expect.poll(async () => (await card.boundingBox())!.y).toBeLessThan(60)
+    await expect(page.getByLabel('Full name')).toBeInViewport()
+  }
+  await page.goto('/')
+  for (const selector of ['.hero-pill', '.care-path-actions .agai-button', '.founder-showcase-book']) {
+    await page.locator(selector).click()
+    await expectFormDestination()
+  }
+  await page.goto('/services')
+  await page.getByRole('button', { name: 'Open navigation' }).click()
+  await page.locator('.nav-cta').click()
+  await expectFormDestination()
+  await page.goto('/?service=orthopaedic#appointment')
+  await expectFormDestination()
+  await expect(page.locator('#appointment-service')).toContainText('Orthopaedic rehabilitation')
+})
+
 
 
 test('service dropdown supports keyboard navigation and dismissal', async ({ page }) => {

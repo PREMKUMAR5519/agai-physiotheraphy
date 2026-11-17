@@ -24,8 +24,8 @@ export default function HomeFAQSection() {
       </div>
       <div className="home-faq-layout">
         <div className="home-faq-introduction">
-          <p className="home-faq-eyebrow">A little clarity</p>
-          <h2 id="home-faq-heading">Frequently asked<br />questions.</h2>
+          <p className="home-unified-eyebrow">A little clarity</p>
+          <h2 id="home-faq-heading" className="home-unified-title">Frequently asked <span>questions.</span></h2>
           <p className="home-faq-description">Clear care begins with answering everyday doubts. Everything you need to know about starting your rehabilitation journey at AGAI.</p>
           <div className="home-faq-contact">
             <h3>Still have a question?</h3>

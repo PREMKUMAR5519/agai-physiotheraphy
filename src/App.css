@@ -1,4 +1,8 @@
 /* Shared layout and navigation */
+.home-page h2.home-unified-title { font-size: clamp(32px, 3.1vw, 44px); font-weight: 600; line-height: 1.15; letter-spacing: -.045em; margin: 0 0 18px; color: #122f48; }
+.home-page h2.home-unified-title > span { color: #0558ad; }
+.home-page p.home-unified-eyebrow { display: flex; align-items: center; gap: 7px; margin: 0 0 14px; color: #176196; font-size: 10px; line-height: 1.5; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.home-page p.home-unified-eyebrow::before { content: ''; width: 6px; height: 6px; flex-shrink: 0; border-radius: 50%; background: #36a6cb; }
 .site-shell { min-height: 100svh; }
 svg { width: 22px; height: 22px; flex-shrink: 0; }
 .skip-link { position: fixed; top: 16px; left: 20px; z-index: 10; padding: 12px 20px; background: var(--agai-blue); color: white; transform: translateY(-160%); border-radius: 8px; }
@@ -172,6 +176,10 @@ p { margin-block: 0 16px; }
 .card-link { display: flex; align-items: center; justify-content: space-between; margin-top: auto; font-size: 13px; font-weight: 600; color: var(--agai-blue); }
 .card-link svg { width: 18px; }
 .approach-section { background: #0658ae; color: #ffffff; }
+.home-page .approach-section h2.home-unified-title { color: #ffffff; }
+.home-page .approach-section h2.home-unified-title > span { color: #dceaff; }
+.home-page .approach-section p.home-unified-eyebrow { color: #dceaff; }
+.home-page .approach-section p.home-unified-eyebrow::before { background: #8fdbf3; }
 .approach-section .eyebrow { color: #dceaff; }
 .approach-section .section-heading > p { color: #dceaff; }
 .approach-section .step-number { color: #dceaff; font-weight: 600; }
@@ -246,7 +254,7 @@ p { margin-block: 0 16px; }
 .appointment-section { background: #fff; border-top: 1px solid #e2ebf5; }
 .appointment-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 64px; align-items: start; }
 .appointment-intro { padding-top: 16px; }
-.appointment-intro > p:not(.eyebrow) { max-width: 400px; color: #506982; font-size: 16px; line-height: 1.8; }
+.appointment-intro > p:not(.eyebrow):not(.home-unified-eyebrow) { max-width: 400px; color: #506982; font-size: 16px; line-height: 1.8; }
 .booking-clinician { display: flex; align-items: center; gap: 12px; margin: 28px 0; color: #143b63; }
 .booking-avatar { display: grid; place-items: center; width: 46px; height: 46px; flex-shrink: 0; border-radius: 14px; background: #eaf3ff; color: #0658ae; font-size: 14px; font-weight: 600; }
 .booking-clinician strong { display: block; font-size: 14px; font-weight: 600; }
