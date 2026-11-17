@@ -10,19 +10,23 @@ import { approach, homeContent } from '../content'
 import { Arrow, ContactBanner } from '../components/UI'
 import AppointmentSection from '../components/AppointmentSection'
 import heroImage from '../assets/home-hero-main.webp'
+import mobileHeroImage from '../assets/home-hero-main-mobile.webp'
 
 export default function HomePage() {
   const { services } = useServices()
   return <div className="home-page">
     <section className="hero" aria-labelledby="hero-heading">
       <div className="hero-visual">
-        <img
-          className="hero-photo"
-          src={homeContent.heroImage === '/images/home-hero-main.webp' ? heroImage : homeContent.heroImage}
-          alt=""
-          width="1500" height="1000"
-          fetchPriority="high"
-        />
+        <picture>
+          <source media="(max-width: 767px)" srcSet={mobileHeroImage} />
+          <img
+            className="hero-photo"
+            src={homeContent.heroImage === '/images/home-hero-main.webp' ? heroImage : homeContent.heroImage}
+            alt=""
+            width="1500" height="1000"
+            fetchPriority="high"
+          />
+        </picture>
       </div>
       <div className="hero-inner agai-container">
         <div className="hero-copy">
