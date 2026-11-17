@@ -35,7 +35,7 @@ export default function CareNeedsSection() {
       <button type="submit">{t("Find care")} <Arrow /></button>
     </form>
     <div className="care-path-filters" role="group" aria-label={t("Filter care paths")}>{['All care paths', ...pathways.map(path => path.category)].map(value => <button key={value} type="button" aria-pressed={category === value} onClick={() => setCategory(value)}>{t(value)}</button>)}</div>
-    <p id="care-path-results" className="care-path-count" role="status" tabIndex={-1}>{isTamil ? `${visible.length} சேவை வகைகள்${query.trim() ? ` — “${query.trim()}”` : ''}` : <>{visible.length} care {visible.length === 1 ? 'path' : 'paths'}{query.trim() ? ` for “${query.trim()}”` : ' to explore'}</>}</p>
+    <p id="care-path-results" className="care-path-count" role="status" tabIndex={-1}>{isTamil ? `${visible.length} ${visible.length === 1 ? 'சேவை வகை' : 'சேவை வகைகள்'}${query.trim() ? ` — “${query.trim()}”` : ''}` : <>{visible.length} care {visible.length === 1 ? 'path' : 'paths'}{query.trim() ? ` for “${query.trim()}”` : ' to explore'}</>}</p>
     <div className="care-needs-grid">{visible.map(need => {
       const service = services.find(service => service.id === need.serviceId)
       return <Link className="care-need" key={need.image} to={localPath(service ? `/services#${need.serviceId}` : '/contact')}>

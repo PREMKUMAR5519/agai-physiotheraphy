@@ -119,7 +119,7 @@ export function Footer() {
 function LanguageSwitch() {
   const { pathname, search, hash } = useLocation()
   const isTamil = isTamilPath(pathname)
-  return <Link className="language-switch" to={`${languagePath(pathname, !isTamil)}${search}${hash}`} hrefLang={isTamil ? 'en' : 'ta'} aria-label={isTamil ? 'Switch to English' : 'தமிழுக்கு மாற்று'} title={isTamil ? 'Switch to English' : 'Switch to Tamil'}>
+  return <Link className="language-switch" to={`${languagePath(pathname, !isTamil)}${search}${hash}`} hrefLang={isTamil ? 'en' : 'ta'} aria-label={isTamil ? 'Switch to English' : 'தமிழுக்கு மாற்றுங்கள்'} title={isTamil ? 'Switch to English' : 'Switch to Tamil'}>
     {[{ code: 'en', label: 'EN', tamil: false }, { code: 'ta', label: 'த', tamil: true }].map(option => <span key={option.code} className={`language-option${isTamil === option.tamil ? ' is-selected' : ''}`} lang={option.code} aria-hidden="true">
       <span aria-hidden="true">{option.label}</span>
     </span>)}

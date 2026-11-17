@@ -47,9 +47,9 @@ test('contact retains Tamil input across language changes and supports error, re
   await page.locator('.language-switch').click()
   await expect(page.locator('#enquiry-message')).toHaveValue('சந்திப்புக்கு முன்பதிவு செய்ய உதவி தேவை.')
   await page.locator('.prepare-button').click()
-  await expect(page.getByRole('alert')).toHaveText('உங்கள் விசாரணையை அனுப்ப முடியவில்லை. மீண்டும் முயலுங்கள்.')
+  await expect(page.getByRole('alert')).toHaveText('உங்கள் கேள்வியை அனுப்ப முடியவில்லை. மீண்டும் முயலுங்கள்.')
   await page.locator('.prepare-button').click()
-  await expect(page.locator('.draft-preview')).toContainText('உங்கள் விசாரணை பெறப்பட்டது.')
+  await expect(page.locator('.draft-preview')).toContainText('உங்கள் கேள்வி பெறப்பட்டது.')
   expect(attempts).toBe(2)
 })
 
