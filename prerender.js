@@ -12,7 +12,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 const root = dirname(fileURLToPath(import.meta.url))
 const dist = resolve(root, 'dist')
 const serverBuild = resolve(root, 'dist-ssr')
-const { render, getPageMeta, prerenderPaths, socialImage, structuredData } = await import(pathToFileURL(resolve(serverBuild, 'entry-server.js')).href)
+const { render, getPageMeta, prerenderPaths, socialImage, structuredData, siteUrl } = await import(pathToFileURL(resolve(serverBuild, 'entry-server.js')).href)
 
 const template = readFileSync(resolve(dist, 'index.html'), 'utf8')
 const escapeHtml = value => String(value).replace(/[&<>"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[char])
@@ -35,7 +35,7 @@ function build(path) {
   html = setMeta(html, 'property="og:title"', meta.title)
   html = setMeta(html, 'property="og:description"', meta.description)
   html = setMeta(html, 'property="og:type"', meta.type)
-  html = setMeta(html, 'property="og:url"', meta.canonical ?? structuredData.url)
+  html = setMeta(html, 'property="og:url"', meta.canonical ?? siteUrl)
   html = setMeta(html, 'property="og:image"', socialImage)
   const head = [
     `<meta name="robots" content="${meta.indexable ? 'index, follow' : 'noindex, follow'}" />`,

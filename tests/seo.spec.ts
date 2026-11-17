@@ -46,7 +46,7 @@ test('robots and sitemap index expose every public route as valid XML', async ({
     urls.push(...child.urls)
   }
   expect(urls.sort()).toEqual([
-    '/', '/about', '/services', '/blogs', '/contact',
+    '/', '/about', '/services', '/blogs', '/book-appointment', '/contact',
     ...blogArticles.map(article => `/blogs/${article.slug}`),
   ].map(path => site.url + path).sort())
   const stylesheet = await request.get('/sitemap.xsl')

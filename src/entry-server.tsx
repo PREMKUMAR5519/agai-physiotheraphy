@@ -4,7 +4,7 @@ import { renderToString } from 'react-dom/server'
 import { StaticRouter } from 'react-router'
 import App from './App.tsx'
 
-export { getPageMeta, prerenderPaths, socialImage, structuredData } from './meta.ts'
+export { getPageMeta, prerenderPaths, socialImage, structuredData, siteUrl } from './meta.ts'
 
 export function render(path: string) {
   return renderToString(

@@ -20,7 +20,7 @@ test('loads live blogs, searches, and opens a new rich-text article directly', a
   await page.goto(`/blogs/${article.slug}`)
   await expect(page.getByRole('heading', { level: 1, name: article.title })).toBeVisible()
   await expect(page.locator('.rich-text strong')).toHaveText('Published content from the CMS.')
-  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://agaiphysiotherapy.com/blogs/${article.slug}`)
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://www.agaiphysiotherapy.com/blogs/${article.slug}`)
   await page.reload()
   await expect(page.getByRole('heading', { level: 1, name: article.title })).toBeVisible()
 })

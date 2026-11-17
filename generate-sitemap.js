@@ -25,6 +25,7 @@ const pages = [
   { path: '/about', source: 'src/pages/AboutPage.tsx', changefreq: 'monthly', priority: 0.8 },
   { path: '/services', source: 'src/pages/ServicesPage.tsx', changefreq: 'monthly', priority: 0.9 },
   { path: '/blogs', source: 'src/pages/BlogsPage.tsx', changefreq: 'weekly', priority: 0.8 },
+  { path: '/book-appointment', source: 'src/pages/BookAppointmentPage.tsx', changefreq: 'monthly', priority: 0.9 },
   { path: '/contact', source: 'src/pages/ContactPage.tsx', changefreq: 'monthly', priority: 0.8 },
 ]
 

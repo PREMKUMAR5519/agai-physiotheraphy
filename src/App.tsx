@@ -6,6 +6,7 @@ import { Arrow, Eyebrow } from './components/UI'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ServicesPage from './pages/ServicesPage'
+import BookAppointmentPage from './pages/BookAppointmentPage'
 import ContactPage from './pages/ContactPage'
 import ChatAssistant from './components/ChatAssistant'
 import BlogsPage, { BlogArticlePage } from './pages/BlogsPage'
@@ -72,5 +73,5 @@ function WebsiteApp() {
     return () => cancelAnimationFrame(frame)
   }, [location, services])
 
-  return <div id="top" className="site-shell"><a className="skip-link" href="#main">Skip to content</a><Header key={location.pathname + location.search + location.hash} /><main id="main" tabIndex={-1}><Routes><Route path="/" element={<HomePage />} /><Route path="/about" element={<AboutPage />} /><Route path="/services" element={<ServicesPage />} /><Route path="/blogs" element={<BlogsPage />} /><Route path="/blogs/:slug" element={<BlogArticlePage />} /><Route path="/contact" element={<ContactPage key={location.search} />} /><Route path="*" element={<section className="section agai-container not-found"><Eyebrow>404 · Page not found</Eyebrow><h1>Let’s get you<br /><span>back on track.</span></h1><p>This page isn’t here. Explore our care or return to the homepage.</p><Link className="agai-button" to="/">Back to home <Arrow /></Link></section>} /></Routes></main><Footer /><ChatAssistant /></div>
+  return <div id="top" className="site-shell"><a className="skip-link" href="#main">Skip to content</a><Header key={location.pathname + location.search + location.hash} /><main id="main" tabIndex={-1}><Routes><Route path="/" element={<HomePage />} /><Route path="/about" element={<AboutPage />} /><Route path="/services" element={<ServicesPage />} /><Route path="/blogs" element={<BlogsPage />} /><Route path="/blogs/:slug" element={<BlogArticlePage />} /><Route path="/book-appointment" element={<BookAppointmentPage />} /><Route path="/contact" element={<ContactPage key={location.search} />} /><Route path="*" element={<section className="section agai-container not-found"><Eyebrow>404 · Page not found</Eyebrow><h1>Let’s get you<br /><span>back on track.</span></h1><p>This page isn’t here. Explore our care or return to the homepage.</p><Link className="agai-button" to="/">Back to home <Arrow /></Link></section>} /></Routes></main><Footer /><ChatAssistant /></div>
 }

@@ -9,6 +9,7 @@ const pageMeta: Record<string, { title: string; description: string }> = {
   '/about': { title: 'About us | AGAI Physiotherapy Centre', description: 'Meet your physiotherapist at AGAI in Ambattur, Chennai, and learn what to expect from your first visit and personalised care.' },
   '/services': { title: 'Our services | AGAI Physiotherapy Centre', description: 'Explore our physiotherapy services, including sports injury rehabilitation, conditioning, orthopaedics, neurology, women’s wellness, pelvic floor and geriatric rehabilitation.' },
   '/blogs': { title: 'The AGAI Journal | Blogs', description: 'Thoughtful reads on movement, everyday wellbeing and preparing for physiotherapy care at AGAI.' },
+  '/book-appointment': { title: 'Book appointment | AGAI Physiotherapy Centre', description: 'Book a physiotherapy appointment at AGAI Physiotherapy Centre in Ambattur, Chennai. Choose a service and tell us what you need help with.' },
   '/contact': { title: 'Contact us | AGAI Physiotherapy Centre', description: 'Contact AGAI Physiotherapy Centre and prepare an enquiry about rehabilitation, physiotherapy services or appointments.' },
 }
 
@@ -41,8 +42,16 @@ export const prerenderPaths = [...Object.keys(pageMeta), ...blogArticles.map(art
 const [latitude, longitude] = (clinic.mapsEmbedUrl.match(/[?&]ll=(-?[\d.]+),(-?[\d.]+)/) ?? []).slice(1).map(Number)
 
 /** schema.org description of the clinic, written into the head of each prerendered page. */
-export const structuredData = {
-  '@context': 'https://schema.org',
+// Tells search engines the short name to show above the address in results.
+const website = {
+  '@type': 'WebSite',
+  '@id': `${site.url}/#website`,
+  name: 'AGAI',
+  alternateName: [clinic.name, 'AGAI Physiotherapy'],
+  url: `${site.url}/`,
+}
+
+const clinicData = {
   '@type': 'Physiotherapy',
   '@id': `${site.url}/#clinic`,
   name: clinic.name,
@@ -62,3 +71,6 @@ export const structuredData = {
   hasMap: clinic.mapsUrl || undefined,
   founder: { '@type': 'Person', name: clinic.founder, jobTitle: 'Sports Physiotherapist' },
 }
+
+export const structuredData = { '@context': 'https://schema.org', '@graph': [website, clinicData] }
+export const siteUrl = site.url
