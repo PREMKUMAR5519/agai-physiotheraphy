@@ -1,5 +1,6 @@
 ﻿import type { ReactNode } from 'react'
 import { Link } from 'react-router'
+import { approach, clinic } from '../content'
 
 const paths = {
   activity: 'M3 12h4l3-8 4 16 3-8h4',
@@ -32,15 +33,18 @@ export function Breadcrumb({ current }: { current: string }) {
 }
 export function ContactBanner({ variant = 'default' }: { variant?: 'default' | 'home' }) {
   const isHome = variant === 'home'
-  return <section className="contact-banner"><div className="contact-banner-inner agai-container"><div>
+  return <section className={`contact-banner${isHome ? ' contact-banner--home' : ''}`}><div className="contact-banner-inner agai-container"><div className="contact-banner-copy">
+    {isHome && clinic.address ? <span className="contact-banner-location"><Icon name="pin" />{clinic.address}</span> : null}
     <Eyebrow>Your next step</Eyebrow>
     <h2 className="home-section-title"><span className="home-title-lead">{isHome ? "Let's get you" : 'Let’s make movement'}</span><br /><span>{isHome ? 'moving better.' : 'part of your story.'}</span></h2>
     {isHome ? <p className="contact-banner-message">Your recovery. Your performance. Our commitment.</p> : null}
     <p>{isHome ? 'Connect with AGAI Physiotherapy Centre for sports rehabilitation, injury prevention and personalised physiotherapy care.' : 'Explore care that starts with you and your goals.'}</p>
-  </div><Link className="agai-button" to="/contact">Get in touch <Arrow /></Link></div></section>
+  </div><div className="contact-banner-actions"><Link className="agai-button" to="/contact">Get in touch <Arrow /></Link>{isHome && clinic.phone ? <a className="contact-banner-phone" href={`tel:${clinic.phone.replace(/[^+\d]/g, '')}`}><Icon name="phone" />{clinic.phone}</a> : null}</div></div>
+    {isHome ? <div className="agai-container"><ul className="contact-banner-steps" aria-label="Your first visit">{approach.map((step, index) => <li key={step.title}><span className="contact-banner-step-icon"><Icon name={index === 0 ? 'chat' : index === 1 ? 'activity' : 'person'} /></span><div><h3>{step.title}</h3><p>{step.text}</p></div></li>)}</ul></div> : null}
+  </section>
 }
-export function FAQ({ items, numbered = false }: { items: { question: string; answer: string }[]; numbered?: boolean }) {
-  return <div className={`faq-list${numbered ? ' faq-list--numbered' : ''}`}>{items.map((item, index) => <details key={item.question}>
+export function FAQ({ items, numbered = false, openFirst = false }: { items: { question: string; answer: string }[]; numbered?: boolean; openFirst?: boolean }) {
+  return <div className={`faq-list${numbered ? ' faq-list--numbered' : ''}`}>{items.map((item, index) => <details key={item.question} open={openFirst && index === 0}>
     <summary>
       {numbered ? <><span className="faq-number" aria-hidden="true">{index + 1}.</span><span>{item.question}</span><svg className="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg></> : <>{item.question}<span className="faq-plus" aria-hidden="true">+</span></>}
     </summary>

@@ -2,9 +2,10 @@ import { useServices } from '../ServicesContext'
 import { useRef, useState } from 'react'
 import type { SubmitEvent } from 'react'
 import { useSearchParams } from 'react-router'
-import { clinic } from '../content'
-import { Arrow, Eyebrow, Icon } from './UI'
+import { clinic, founderContent } from '../content'
+import { Arrow, Icon } from './UI'
 import ServiceSelect from './ServiceSelect'
+import './AppointmentIntro.css'
 
 const steps = ['Details', 'Select date']
 const timeGroups = {
@@ -68,20 +69,24 @@ export default function AppointmentSection() {
   return <section className="section appointment-section" id="appointment" tabIndex={-1} aria-labelledby="appointment-heading">
     <div className="agai-container appointment-layout">
       <div className="appointment-intro">
-        <Eyebrow>Book an appointment</Eyebrow>
         <h2 className="home-section-title" id="appointment-heading"><span className="home-title-lead">Your recovery.</span><br /><span>Starts right here.</span></h2>
         <p>A little about you. A day that suits you. Let’s find your next step towards moving better.</p>
-        <div className="booking-clinician"><span className="booking-avatar">RR</span><div><strong>Dr. Rasathi Rajendren, PT</strong><span>MPT · Sports Physiotherapy</span></div><Icon name="shield" /></div>
-        <div className="appointment-whatsapp">
+        <div className="booking-practitioner">
+          <div className="booking-practitioner-profile"><span className="booking-practitioner-avatar" aria-hidden="true">DR.</span><div><h3>{clinic.founder}</h3><p>{founderContent.credentials}</p><p>{founderContent.role}</p></div></div>
+          <ul className="booking-practitioner-tags" aria-label="Care at AGAI"><li>Sports rehabilitation</li><li>Movement &amp; recovery</li><li>Personalised care</li></ul>
+          <ul className="booking-practitioner-steps" aria-label="Your care journey"><li><strong>Assess</strong><span>Your movement</span></li><li><strong>Plan</strong><span>Care around you</span></li><li><strong>Progress</strong><span>Towards your goals</span></li></ul>
+        </div>
+        {clinic.whatsapp ? <div className="appointment-whatsapp">
           <a className="appointment-whatsapp-button" href={`https://wa.me/${clinic.whatsapp}?text=${encodeURIComponent('Hello AGAI, I would like to book a physiotherapy appointment. Please help me with availability.')}`} target="_blank" rel="noopener noreferrer">
             <span className="appointment-phone-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13.3 7.9L3 21l1.6-4.7A9 9 0 1 1 21 11.5Z" /><path d="m8 7 2 3-1.2 1.2a10 10 0 0 0 4 4L14 14l3 2c-1 3-4 2-7-1s-4-6-2-8Z" /></svg></span>
-            <span><small>Prefer to chat?</small><strong>Chat on WhatsApp</strong></span>
+            <span><small>Prefer instant messaging?</small><strong>Chat on WhatsApp</strong><span className="booking-contact-caption">Ask about appointment availability</span></span>
           </a>
-        </div>
-        <a className="appointment-phone" href={`tel:${clinic.phone.replace(/[^+\d]/g, '')}`}><span className="appointment-phone-icon"><Icon name="phone" /></span><span><small>Prefer to book by phone?</small><strong>{clinic.phone}</strong></span></a>
+        </div> : null}
+        {clinic.phone ? <a className="appointment-phone" href={`tel:${clinic.phone.replace(/[^+\d]/g, '')}`}><span className="appointment-phone-icon"><Icon name="phone" /></span><span><small>Prefer to book by phone?</small><strong>{clinic.phone}</strong><span className="booking-contact-caption">Call AGAI to arrange your visit</span></span></a> : null}
+        <div className="booking-privacy-note"><Icon name="shield" /><p><strong>Your appointment request:</strong> Share only the details needed to arrange your visit. Please avoid sensitive medical information.</p></div>
       </div>
       <div className="appointment-card">
-        <div className="booking-card-header"><div><p className="booking-label">Book now</p><h3>Schedule Your Appointment</h3></div><span className="booking-header-icon"><Icon name="clock" /></span></div>
+        <div className="booking-card-header"><div><p className="booking-label">Book now</p><h3>Schedule Your Clinical Appointment</h3></div><span className="booking-duration"><Icon name="clock" />~2 mins to complete</span></div>
         <ol className="booking-steps" aria-label="Appointment progress">{steps.map((label, index) => <li key={label} className={index < step ? 'is-complete' : index === step ? 'is-current' : ''}><button type="button" disabled={index > step} aria-current={index === Math.min(step, steps.length - 1) ? 'step' : undefined} onClick={() => goTo(index)}><span>{index < step ? <Icon name="check" /> : index + 1}</span>{label}</button></li>)}</ol>
         <div className="booking-progress" aria-hidden="true"><span style={{ width: `${Math.min((step + 1) / steps.length, 1) * 100}%` }} /></div>
         <form onSubmit={next} className="booking-form">

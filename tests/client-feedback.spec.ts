@@ -51,7 +51,7 @@ test('a patient can move from an everyday concern to the matching service and bo
 test('About introduces the physiotherapist briefly and explains the first visit', async ({ page }) => {
   await page.goto('/about#founder')
   await expect(page.locator('#founder')).toBeFocused()
-  await expect(page.locator('#founder')).toContainText('BPT, MPT')
+  await expect(page.locator('#founder .founder-credential-badges li')).toHaveText(['BPT', 'MPT', 'Sports Physiotherapy'])
   await expect(page.locator('.qualifications, .experience-timeline, .founder-portrait')).toHaveCount(0)
   await expect(page.getByRole('heading', { name: 'Tell us what is difficult' })).toBeVisible()
   await expect(page.getByRole('heading', { name: 'Agree on a plan together' })).toBeVisible()
@@ -61,6 +61,6 @@ test('About introduces the physiotherapist briefly and explains the first visit'
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390)
   await page.locator('#founder').scrollIntoViewIfNeeded()
   await page.screenshot({ path: 'test-results/feedback-founder-mobile.png' })
-  await page.locator('#founder').getByRole('link', { name: 'Talk to us about your needs' }).click()
+  await page.locator('#founder').getByRole('link', { name: 'Book a consultation', exact: true }).click()
   await expect(page.locator('#appointment')).toBeInViewport()
 })

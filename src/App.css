@@ -99,18 +99,7 @@ p { margin-block: 0 16px; }
 .hero-help-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 8px; font-size: 13px; color: #ffffff; text-underline-offset: 4px; }
 .hero-help-link svg { width: 16px; }
 
-/* Help visitors recognise their needs before introducing service names. */
-.care-needs-section { background: #f7fafc; }
-.care-needs-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
-.care-need { display: flex; flex-direction: column; padding: 28px; border: 1px solid #dce6ef; border-radius: 16px; background: white; text-decoration: none; color: #143b63; transition: border-color .2s, box-shadow .2s; }
-.care-need:hover { border-color: #0f569e; box-shadow: 0 8px 24px #0f569e0d; }
-.care-need-icon, .care-note-icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: #e8f6ff; color: #0f569e; margin-bottom: 22px; }
-.care-need h3 { margin: 0 0 12px; font-size: 20px; line-height: 1.3; font-weight: 600; }
-.care-need p { font-size: 14px; line-height: 1.7; color: #526779; margin: 0 0 24px; }
-.care-need-link { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; font-size: 12px; color: #0f569e; font-weight: 600; }
-.care-need-link svg { width: 18px; }
-.care-needs-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 28px; }
-.care-needs-footer p { font-size: 14px; color: #526779; margin: 0; max-width: 570px; }
+.care-note-icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: #e8f6ff; color: #0f569e; margin-bottom: 22px; }
 .founder-care-note { border-radius: 20px; padding: 36px; background: #e8f6ff; border: 1px solid #d6e9f6; }
 .founder-care-note .care-note-icon { background: white; }
 .founder-care-note h3 { margin: 0 0 24px; color: #143b63; font-size: 25px; }
@@ -288,7 +277,8 @@ p { margin-block: 0 16px; }
 .appointment-card { border: 1px solid #d7e5f6; border-radius: 24px; background: #fff; padding: 32px; min-width: 0; color: #143b63; }
 .booking-card-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 28px; }
 .booking-card-header h3 { font-size: 24px; font-weight: 500; margin: 0; }
-.booking-header-icon { display: grid; place-items: center; width: 42px; height: 42px; flex-shrink: 0; border-radius: 12px; background: #eaf3ff; color: #0658ae; }
+.booking-duration { display: inline-flex; align-items: center; gap: 8px; flex-shrink: 0; padding: 8px 12px; border: 1px solid #dce6f2; border-radius: 100px; background: #f7f9fc; color: #345577; font-size: 12px; font-weight: 500; line-height: 1.5; white-space: nowrap; }
+.booking-duration svg { width: 16px; height: 16px; color: #0658ae; }
 .booking-steps { display: grid; grid-template-columns: repeat(2, 1fr); list-style: none; margin: 0; padding: 0; gap: 8px; }
 .booking-steps button { display: flex; align-items: center; gap: 8px; padding: 0; min-height: 36px; border: 0; background: none; color: #506982; font-size: 12px; cursor: pointer; }
 .booking-steps button > span { display: grid; place-items: center; width: 26px; height: 26px; flex-shrink: 0; border-radius: 50%; background: #eef3f8; font-size: 11px; }
@@ -410,7 +400,7 @@ p { margin-block: 0 16px; }
   .booking-visit { display: none; }
   .appointment-card { padding: 22px 18px; border-radius: 18px; }
   .booking-card-header h3 { font-size: 22px; }
-  .booking-header-icon { display: none; }
+  .booking-card-header { flex-wrap: wrap; }
   .booking-steps button { gap: 6px; font-size: 11px; }
   .booking-choice { padding: 12px 10px; gap: 8px; }
   .booking-choice > svg { width: 18px; height: 18px; }
@@ -461,6 +451,26 @@ p { margin-block: 0 16px; }
 .contact-banner p.contact-banner-message { margin: 0 0 12px; max-width: 560px; font-size: 22px; line-height: 1.4; font-weight: 600; color: #0f569e; }
 .contact-banner-message + p { max-width: 600px; line-height: 1.7; }
 .contact-banner .agai-button { min-width: 180px; }
+.contact-banner--home { background-color: #fff; background-image: linear-gradient(to bottom, #fff 0, #ffffffd9 32px, #ffffff66 72px, #ffffff00 120px), linear-gradient(#e5eef780 1px, transparent 1px), linear-gradient(90deg, #e5eef780 1px, transparent 1px); background-size: 100% 100%, 40px 40px, 40px 40px; }
+.contact-banner--home .contact-banner-inner { align-items: flex-end; padding-block: 72px 40px; }
+.contact-banner-copy { min-width: 0; }
+.contact-banner-location { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; margin-bottom: 22px; border: 1px solid #d1e7fa; border-radius: 100px; background: #f3faff; color: #0658ae; font-size: 11px; }
+.contact-banner-location svg { width: 14px; height: 14px; }
+.contact-banner--home .contact-banner-message { font-size: 20px; }
+.contact-banner--home .contact-banner-copy > p:last-child { font-size: 14px; max-width: 610px; }
+.contact-banner-actions { display: grid; gap: 10px; flex-shrink: 0; }
+.contact-banner--home .contact-banner-actions { width: 260px; }
+.contact-banner-actions .agai-button { justify-content: center; min-height: 48px; border-radius: 10px; font-size: 13px; }
+.contact-banner-phone { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 46px; border: 1px solid #d3e1f0; border-radius: 10px; background: #ffffffc9; color: #0658ae; font-size: 13px; text-decoration: none; }
+.contact-banner-phone:hover { background: #edf6ff; }
+.contact-banner-phone svg { width: 17px; height: 17px; }
+.contact-banner--home a:focus-visible { outline: 2px solid #0658ae; outline-offset: 4px; }
+.contact-banner-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; list-style: none; padding: 30px 0 48px; margin: 0; border-top: 1px solid #deebf6; }
+.contact-banner-steps li { display: flex; gap: 12px; align-items: flex-start; min-width: 0; }
+.contact-banner-step-icon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 9px; background: #eaf4ff; color: #0658ae; flex-shrink: 0; }
+.contact-banner-step-icon svg { width: 18px; height: 18px; }
+.contact-banner-steps h3 { font-size: 12px; line-height: 1.5; margin: 0 0 4px; font-weight: 600; color: #143b63; }
+.contact-banner .contact-banner-steps p { color: #56718e; font-size: 11px; line-height: 1.65; }
 .site-footer {
   --agai-ink: #ffffff;
   --agai-muted: #d5e3f2;
@@ -634,7 +644,6 @@ p { margin-block: 0 16px; }
   .hero-inner { grid-template-columns: 1fr; gap: 28px; padding-block: 32px; }
   .hero h1 { font-size: clamp(32px, 3.6vw, 40px); }
   .hero-feature { margin-top: 28px; }
-  .care-needs-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero-panel { width: 100%; }
   .section-heading, .founder-section, .faq-layout, .contact-layout, .service-detail, .visit-layout { gap: 40px; }
   .service-preview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -679,9 +688,6 @@ p { margin-block: 0 16px; }
   .hero-feature { margin-top: 0; margin-bottom: 20px; }
   .hero-feature h2 { font-size: 15px; }
   .hero-feature p { font-size: 13px; }
-  .care-needs-grid { grid-template-columns: 1fr; gap: 14px; }
-  .care-need { padding: 24px; }
-  .care-needs-footer { align-items: flex-start; flex-direction: column; gap: 10px; }
   .founder-care-note { padding: 28px; }
   .hero-media { justify-items: stretch; padding-bottom: 0; }
   .hero-panel { width: 100%; padding: 18px 18px 16px; }
@@ -758,3 +764,12 @@ p { margin-block: 0 16px; }
 }
 
 .services-status{padding:14px 18px;margin:16px 0;border:1px solid #d8e4ef;border-radius:10px;background:#f5f9fd;color:#34516b;font-size:14px}.services-status p{margin:0}.services-status .text-action{min-height:40px}
+
+@media (max-width: 767px) {
+  .contact-banner--home .contact-banner-inner { padding-block: 56px 28px; }
+  .contact-banner--home .contact-banner-actions { width: 100%; }
+  .contact-banner--home .contact-banner-message { font-size: 18px; }
+  .contact-banner-steps { grid-template-columns: 1fr; gap: 22px; padding-block: 24px 40px; }
+  .contact-banner .contact-banner-steps p { font-size: 12px; }
+  .contact-banner-steps h3 { font-size: 13px; }
+}

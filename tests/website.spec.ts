@@ -94,10 +94,28 @@ test('mobile menu supports Escape, navigation and founder anchor', async ({ page
 test('FAQ expands with the keyboard', async ({ page }) => {
   await page.goto('/')
   const question = page.locator('summary').filter({ hasText: 'Is AGAI only for athletes?' })
+  await expect(page.locator('details').filter({ has: question })).toHaveAttribute('open', '')
   await question.focus()
+  await page.keyboard.press('Enter')
+  await expect(page.locator('details').filter({ has: question })).not.toHaveAttribute('open', '')
   await page.keyboard.press('Enter')
   await expect(page.locator('details').filter({ has: question })).toHaveAttribute('open', '')
   await expect(page.getByText('No. Alongside sports rehabilitation', { exact: false })).toBeVisible()
+})
+
+test('FAQ filters questions and provides a contact route for unpublished coverage details', async ({ page }) => {
+  await page.goto('/')
+  const section = page.locator('.home-faq')
+  await expect(section.locator('details')).toHaveCount(5)
+  await section.getByRole('button', { name: 'First Visit & Triage', exact: true }).click()
+  await expect(section.locator('summary')).toHaveText(['1.When should I consider physiotherapy?', '2.What if I am unsure which service to choose?'])
+  await section.getByRole('button', { name: 'Treatments & Care', exact: true }).click()
+  await expect(section.locator('details')).toHaveCount(3)
+  await section.getByRole('button', { name: 'Coverage & Plans', exact: true }).click()
+  await expect(section.locator('details')).toHaveCount(0)
+  await expect(section.getByRole('heading', { name: 'Questions about coverage or fees?' })).toBeVisible()
+  await section.locator('.home-faq-empty').getByRole('link', { name: 'Contact us' }).click()
+  await expect(page).toHaveURL('/contact')
 })
 
 test('enquiry validates, creates an unsent draft, copies, downloads, and clears stale drafts', async ({ page }) => {

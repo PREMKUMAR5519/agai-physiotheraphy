@@ -1,10 +1,12 @@
+import CareNeedsSection from '../components/CareNeedsSection'
 import OptimizedImage from '../components/OptimizedImage'
 import { ServicesStatus, useServices } from '../ServicesContext'
 import FounderSection from '../components/FounderSection'
+import HomeFAQSection from '../components/HomeFAQSection'
 import { Fragment } from 'react'
 import { Link } from 'react-router'
-import { approach, careNeeds, faqs, homeContent } from '../content'
-import { Arrow, ContactBanner, Eyebrow, FAQ, Icon } from '../components/UI'
+import { approach, homeContent } from '../content'
+import { Arrow, ContactBanner, Eyebrow } from '../components/UI'
 import AppointmentSection from '../components/AppointmentSection'
 import heroImage from '../assets/home-hero-main.webp'
 
@@ -36,11 +38,7 @@ export default function HomePage() {
       </div>
     </section>
 
-    <section className="section care-needs-section" id="when-to-visit" tabIndex={-1} aria-labelledby="care-needs-heading"><div className="agai-container">
-      <div className="section-heading"><div><Eyebrow>When to visit</Eyebrow><h2 id="care-needs-heading" className="home-section-title"><span className="home-title-lead">Does this sound</span><br /><span>familiar?</span></h2></div><p>Physiotherapy may help when pain or difficulty moving gets in the way of your day. An assessment helps us understand your needs and discuss the right next step.</p></div>
-      <div className="care-needs-grid">{careNeeds.map(need => <Link className="care-need" key={need.title} to={`/services#${need.serviceId}`}><span className="care-need-icon"><Icon name={need.icon} /></span><h3>{need.title}</h3><p>{need.description}</p><span className="care-need-link">{need.linkLabel} <Arrow /></span></Link>)}</div>
-      <div className="care-needs-footer"><p>Not sure which service you need? Tell us what you are finding difficult.</p><Link className="text-action" to="/#appointment">Start with an assessment <Arrow /></Link></div>
-    </div></section>
+    <CareNeedsSection />
 
     <section className="section agai-container home-services" aria-labelledby="home-services-heading"><div className="section-heading"><div><Eyebrow>Our services</Eyebrow><h2 id="home-services-heading" className="home-section-title"><span className="home-title-lead">Care for your needs.</span><br /><span>Support for your next step.</span></h2></div><p>Explore what each service is for and how it may support your daily life, recovery or return to sport.</p></div>
       <ServicesStatus/><div className="service-preview-grid">
@@ -68,19 +66,7 @@ export default function HomePage() {
 
     <FounderSection />
     <AppointmentSection />
-    <section className="faq-section section home-faq" aria-labelledby="home-faq-heading">
-      <div className="agai-container faq-layout">
-        <div className="home-faq-intro">
-          <div><Eyebrow>A little clarity</Eyebrow><h2 id="home-faq-heading" className="home-section-title"><span className="home-title-lead">Frequently asked</span><br /><span>questions.</span></h2></div>
-          <div className="faq-contact-card">
-            <h3>Still have a question?</h3>
-            <p>We’re here to help you find the right next step.</p>
-            <Link className="faq-contact-button" to="/contact">Contact us <Arrow diagonal /></Link>
-          </div>
-        </div>
-        <FAQ items={faqs} numbered />
-      </div>
-    </section>
+    <HomeFAQSection />
     <ContactBanner variant="home" />
   </div>
 }
