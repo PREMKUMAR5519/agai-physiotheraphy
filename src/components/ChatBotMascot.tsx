@@ -1,6 +1,6 @@
 import './ChatBotMascot.css'
 
-// 252px WebP exports (3x the 84px display size). Originals are in design-source/bot.
+// 252px WebP exports (3x the 84px display size).
 const art = `${import.meta.env.BASE_URL}images/bot`
 
 export default function ChatBotMascot() {

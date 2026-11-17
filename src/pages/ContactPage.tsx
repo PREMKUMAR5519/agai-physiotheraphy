@@ -74,7 +74,7 @@ export default function ContactPage() {
       <div className="contact-information"><Eyebrow>Reach the centre</Eyebrow><h2>Let’s talk about<br /><span>your movement.</span></h2><p>Use the centre’s contact details below, or send a short enquiry with the service you’re interested in.</p>
         <div className="contact-methods"><ContactMethod icon="phone" title="Call the centre" value={clinic.phone} pending="Phone number will be available soon." href={phoneLink} /><ContactMethod icon="chat" title="WhatsApp" value={clinic.whatsapp} pending="WhatsApp contact will be available soon." href={whatsappLink} /><ContactMethod icon="mail" title="Email us" value={clinic.email} pending="Email address will be available soon." href={clinic.email ? `mailto:${clinic.email}` : undefined} /><ContactMethod icon="clock" title="Opening hours" value={clinic.hours} pending="Clinic hours will be available soon." /></div>
       </div>
-      <div className="enquiry-card"><Eyebrow>Your enquiry</Eyebrow><h2>How can we help?</h2><p>Send your enquiry directly to our team. We will contact you using the details you provide.</p>
+      <div className={`enquiry-card${sent ? ' enquiry-card--success' : ''}`}>{!sent && <><Eyebrow>Your enquiry</Eyebrow><h2>How can we help?</h2><p>Send your enquiry directly to our team. We will contact you using the details you provide.</p>
         <form onSubmit={prepareEnquiry} aria-busy={busy} onChange={() => { setSent(false); setFormError(''); setPhoneError('') }}>
           <fieldset disabled={busy} style={{ border: 0, padding: 0, margin: 0, minWidth: 0 }}>
           <div hidden aria-hidden="true"><label>Leave this empty<input name="website" tabIndex={-1} autoComplete="off" /></label></div>
@@ -85,8 +85,8 @@ export default function ContactPage() {
           {formError ? <p className="form-error" role="alert">{formError}</p> : null}
           <button className="agai-button prepare-button" type="submit" disabled={busy}>{busy ? 'Sending enquiry?' : 'Submit enquiry'} <Arrow /></button><p className="form-privacy">Your details are shared privately with the centre to respond to your enquiry. Submitting does not confirm an appointment.</p>
           </fieldset>
-        </form>
-        {sent && <section className="draft-preview" role="status"><h3 tabIndex={-1} ref={draftHeading}>Enquiry received.</h3><p>Thank you. Our team will contact you about your enquiry. Your appointment is confirmed only after you hear back from the centre.</p></section>}
+        </form></>}
+        {sent && <section className="draft-preview" role="status"><span className="enquiry-success-icon" aria-hidden="true"><Icon name="check" /></span><h3 tabIndex={-1} ref={draftHeading}>Enquiry received.</h3><p>Thank you. Our team will contact you about your enquiry.</p><p className="enquiry-success-note">Your appointment is confirmed only after you hear back from the centre.</p></section>}
       </div>
     </section>
     <section className="visit-section"><div className="agai-container visit-layout"><div className="location-visual"><iframe src={clinic.mapsEmbedUrl} title="AGAI Physiotherapy Centre location on Google Maps" loading="lazy" allowFullScreen referrerPolicy="no-referrer-when-downgrade" /></div><div><Eyebrow>Visit the centre</Eyebrow><h2 className="home-section-title"><span className="home-title-lead">A place to focus</span><br /><span>on your recovery.</span></h2><p>{clinic.address || 'Our clinic address and directions will be published here once available.'}</p>{clinic.mapsUrl ? <a className="agai-button" href={clinic.mapsUrl} target="_blank" rel="noreferrer">Get directions <Arrow diagonal /></a> : <span className="availability-note"><Icon name="pin" />Location details coming soon</span>}</div></div></section>

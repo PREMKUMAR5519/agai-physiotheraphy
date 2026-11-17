@@ -622,8 +622,15 @@ p { margin-block: 0 16px; }
 .form-error { color: #a32b1e; font-size: 13px; margin: 0; }
 .prepare-button { width: 100%; }
 .draft-preview { padding-top: 32px; margin-top: 32px; border-top: 1px solid var(--agai-border); }
+.enquiry-card > .draft-preview:only-child { padding-top: 0; margin-top: 0; border-top: 0; }
 .draft-preview h3 { font-size: 22px; margin: 0 0 12px; }
 .draft-preview p { font-size: 13px; color: var(--agai-muted); }
+.enquiry-card--success { align-self: stretch; display: grid; place-items: center; min-height: 320px; background: #f8fbff; border-color: #dce8f5; box-shadow: none; text-align: center; }
+.enquiry-card--success .draft-preview { width: 100%; max-width: 380px; }
+.enquiry-success-icon { display: grid; place-items: center; width: 64px; height: 64px; margin: 0 auto 24px; border-radius: 50%; background: #e4f1ff; color: #0558ad; }
+.enquiry-success-icon svg { width: 30px; height: 30px; }
+.enquiry-card--success h3 { color: #143b63; font-size: 28px; }
+.enquiry-card--success .enquiry-success-note { margin: 24px 0 0; padding-top: 20px; border-top: 1px solid #dce8f5; font-size: 12px; }
 .draft-preview textarea { resize: vertical; font-size: 13px; background: var(--agai-surface); }
 .draft-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 16px; }
 .draft-actions .agai-button { font-size: 13px; }

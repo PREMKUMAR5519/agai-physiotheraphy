@@ -61,7 +61,7 @@ There is no server-side enquiry storage, email delivery API, booking system or d
 - nginx needs `try_files $uri $uri.html =404;` and `error_page 404 /404.html;`. Vercel needs `"cleanUrls": true` in `vercel.json`.
 - Page titles and descriptions live in `src/meta.ts`. Adding a route there adds its static file.
 
-Only files the site uses belong in `public/`, because everything there is deployed. Originals live in `design-source/`: the complete brand kit, full-size service artwork and the chat mascot PNGs. The mascot ships as 252px WebP files in `public/images/bot/`.
+Only files the site uses belong in `public/`, because everything there is deployed. The mascot ships as 252px WebP files in `public/images/bot/`. Unused artwork archives and presentation exports have been removed; required image sources and the font license are retained.
 
 ## Project structure
 
@@ -72,14 +72,10 @@ Only files the site uses belong in `public/`, because everything there is deploy
 - `src/content.ts`: clinic configuration, services, care approach and homepage FAQs.
 - `src/App.css`: responsive layout and component styles.
 - `src/index.css`: global foundations.
-- `public/brand-kit/`: the brand files the site loads (stylesheet, icons, web logos, Inter font and its license). The complete unchanged kit is in `design-source/brand-kit/`.
-- `public/images/movement-hero.png`: generated artistic movement illustration.
+- `public/brand-kit/`: the brand files the site loads (stylesheet, icons, web logos, Inter font and its license).
 - `src/assets/home-hero-main.webp`: current homepage hero, supplied at 1500 x 1000. Vite emits a content-hashed URL under `/assets/`, with a one-year immutable browser cache configured in `vercel.json`. Replace this source image to generate a new URL on the next build. The original `public/images/home-hero-main.webp` remains available for the CMS default URL; the homepage maps that default to the hashed asset while preserving custom CMS image URLs. Previous hero options are retained; responsive crops and the blue fade frame the supervised workout.
 - Blog and service images in `public/images/blog/` and `public/images/services/` are optimized by `npm run images:optimize` (also run before development/build). It generates responsive WebP/fallback and AVIF files with content hashes under `public/optimized/`, plus an image manifest. Generated files are ignored by Git and rebuilt from the originals. `/optimized/` has a one-year immutable cache; replacing a source creates new URLs automatically. External/custom CMS image URLs remain supported but are served by their original host and are not transcoded by this pipeline.
 - Public CMS content and services are validated and cached in the browser for 60 seconds, including across reloads. Concurrent requests to the same endpoint share a request. After expiry the next load revalidates over HTTP; retry bypasses the application cache. Invalid data is never cached, storage failures fall back to network loading, and existing build snapshots remain the outage fallback. No appointment/contact submissions are cached.
-- `public/images/hero-resistance-training.mp4`: previous video hero option, retained with its poster for comparison. The original MOV is preserved in `output/source-media/`.
-- `public/images/hero-dumbbell.jpg`: previous hero option, retained for comparison.
-- `public/images/hero-treadmill.jpg`: previous hero option, retained for comparison.
 - `tests/website.spec.ts`: browser regression coverage.
 
 React Router 7.18.5 is compatible with the installed Node runtime; the current v8 release requires a newer Node version. React 19.3.1 and Vite 8.3.5 remain in use.

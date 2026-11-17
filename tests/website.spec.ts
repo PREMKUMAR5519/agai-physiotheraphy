@@ -139,7 +139,8 @@ test('enquiry validates and submits the selected service', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Enquiry received.' })).toBeFocused()
   expect(submitted?.service).toBe('Sports injury prevention & rehabilitation')
   expect(submitted?.email).toBe('visitor@example.com')
-  await expect(page.getByLabel('Your name')).toHaveValue('')
+  await expect(page.locator('.enquiry-card form')).toHaveCount(0)
+  await expect(page.getByRole('heading', { name: 'How can we help?' })).toHaveCount(0)
 })
 
 test('unknown routes offer a working return home', async ({ page }) => {
