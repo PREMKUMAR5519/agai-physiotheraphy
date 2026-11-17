@@ -25,7 +25,7 @@ export default function ServicesPage() {
       </article>)}</div>
       <aside className="service-help"><span className="service-icon"><Icon name="chat" /></span><div><h3>Not sure where to start?</h3><p>You don’t need to have it all figured out. Tell us what you need help with in your enquiry.</p></div><Link className="text-action" to="/contact">Get in touch <Arrow /></Link></aside>
     </section>
-    <ContactBanner />
+    <ContactBanner variant="home" />
   </>
 }
 

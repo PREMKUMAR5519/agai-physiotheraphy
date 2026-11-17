@@ -50,6 +50,25 @@ p { margin-block: 0 16px; }
 .breadcrumb { display: flex; align-items: center; gap: 12px; font-size: 12px; margin-bottom: 40px; color: var(--agai-muted); }
 .breadcrumb a { color: var(--agai-blue); text-underline-offset: 3px; padding-block: 12px; }
 .breadcrumb-bar { background: #f3f4f6; border-bottom: 1px solid #e5e7eb; }
+.page-intro-banner { background: #f3f4f6; }
+.page-intro-banner .breadcrumb-bar, .page-intro-banner .page-intro { background: transparent; }
+.journal-article > .breadcrumb { background: transparent; }
+.page-intro-banner, .journal-article > .breadcrumb { position: relative; isolation: isolate; }
+.page-intro-banner::before, .journal-article > .breadcrumb::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(65%, 720px);
+  height: 75%;
+  max-height: 320px;
+  z-index: -1;
+  pointer-events: none;
+  background-image: linear-gradient(rgb(56 122 182 / 7%) 1px, transparent 1px), linear-gradient(90deg, rgb(56 122 182 / 7%) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: right top;
+  mask-image: radial-gradient(ellipse at 100% 0%, #000 10%, #000000b3 40%, transparent 75%);
+}
 .breadcrumb-bar .breadcrumb { margin-bottom: 0; padding-block: 4px; }
 .breadcrumb-bar + .page-intro { padding-top: 56px; border-top: 0; }
 
