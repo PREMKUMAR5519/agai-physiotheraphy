@@ -1,0 +1,1042 @@
+[
+  {
+    "width": 390,
+    "path": "/",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "0",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:35 GMT",
+      "etag": "W/\"bcfb826e037dcb749cf7b2be858144e8\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:35 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::k6tvr-1794909994735-7e3dd3f0403a"
+    },
+    "title": "AGAI Physiotherapy Centre | Sports Rehabilitation & Performance",
+    "overflow": false,
+    "h1": [
+      "Move Better. Recover Stronger. Perform Better."
+    ],
+    "canonical": "https://www.agaiphysiotherapy.com/",
+    "robots": "index, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "hero",
+        "bg": "rgb(10, 79, 156)"
+      },
+      {
+        "class": "section care-needs-section",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "class": "section agai-container home-services",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "approach-section",
+        "bg": "rgb(6, 88, 174)"
+      },
+      {
+        "class": "section founder-showcase",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "class": "section home-testimonials",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "class": "section appointment-section",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "class": "section home-faq",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "class": "contact-banner contact-banner--home",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "api": [
+      {
+        "url": "https://admin.agaiphysiotherapy.com/api/public/content",
+        "duration": 385.89999997615814
+      },
+      {
+        "url": "https://admin.agaiphysiotherapy.com/api/public/services",
+        "duration": 72.60000002384186
+      }
+    ],
+    "smallInputs": [
+      {
+        "id": "care-path-query",
+        "font": "16px"
+      },
+      {
+        "id": "appointment-name",
+        "font": "14px"
+      },
+      {
+        "id": "appointment-phone",
+        "font": "14px"
+      },
+      {
+        "id": "appointment-email",
+        "font": "14px"
+      },
+      {
+        "id": "appointment-notes",
+        "font": "14px"
+      },
+      {
+        "id": "",
+        "font": "12px"
+      }
+    ],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 390,
+    "path": "/about",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "0",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"about\"",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:38 GMT",
+      "etag": "W/\"7abefe4f8673809a977b3db54a5459cf\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:38 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::pvrlt-1794909998059-b3d41a147ec0"
+    },
+    "title": "About us | AGAI Physiotherapy Centre",
+    "overflow": false,
+    "h1": [
+      "Care that startswith you."
+    ],
+    "canonical": "https://www.agaiphysiotherapy.com/about",
+    "robots": "index, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "page-intro",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "section about-clinic",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "class": "section founder-showcase",
+        "bg": "rgb(247, 249, 254)"
+      },
+      {
+        "class": "approach-section",
+        "bg": "rgb(6, 88, 174)"
+      },
+      {
+        "class": "contact-banner contact-banner--home",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "api": [],
+    "smallInputs": [],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 390,
+    "path": "/services",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "0",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"services\"",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:39 GMT",
+      "etag": "W/\"c4e5a10d3dd840bff5040d2ffccd6ec4\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:39 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::zwj2r-1794909999600-6f876402fd48"
+    },
+    "title": "Our services | AGAI Physiotherapy Centre",
+    "overflow": false,
+    "h1": [
+      "Understand your needs.Find your next step."
+    ],
+    "canonical": "https://www.agaiphysiotherapy.com/services",
+    "robots": "index, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "page-intro",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "section agai-container services-section",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "contact-banner contact-banner--home",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "api": [],
+    "smallInputs": [],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=sports-injury#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=strength-conditioning#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=orthopaedic#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=neurological#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=womens-wellness#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=pelvic-floor#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=geriatric#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 390,
+    "path": "/blogs",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "0",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"blogs\"",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:41 GMT",
+      "etag": "W/\"1a173986b777dd421ead32f1ae4c0b9f\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:41 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::zwj2r-1794910001066-24ffe5b87266"
+    },
+    "title": "The AGAI Journal | Blogs",
+    "overflow": false,
+    "h1": [
+      "A little insight.A step forward."
+    ],
+    "canonical": "https://www.agaiphysiotherapy.com/blogs",
+    "robots": "index, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "page-intro",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "journal-library",
+        "bg": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "api": [],
+    "smallInputs": [
+      {
+        "id": "",
+        "font": "12px"
+      }
+    ],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 390,
+    "path": "/book-appointment",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "0",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"book-appointment\"",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:42 GMT",
+      "etag": "W/\"ba2f56d807edf8cb720096486f433a45\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:42 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::vz7tx-1794910002346-f58c6ec633e4"
+    },
+    "title": "Book appointment | AGAI Physiotherapy Centre",
+    "overflow": false,
+    "h1": [
+      "Book your appointment"
+    ],
+    "canonical": "https://www.agaiphysiotherapy.com/book-appointment",
+    "robots": "index, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "section appointment-section",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "api": [],
+    "smallInputs": [
+      {
+        "id": "appointment-name",
+        "font": "14px"
+      },
+      {
+        "id": "appointment-phone",
+        "font": "14px"
+      },
+      {
+        "id": "appointment-email",
+        "font": "14px"
+      },
+      {
+        "id": "appointment-notes",
+        "font": "14px"
+      },
+      {
+        "id": "",
+        "font": "12px"
+      }
+    ],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 390,
+    "path": "/contact",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "0",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"contact\"",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:43 GMT",
+      "etag": "W/\"a97919c43de404b712be4da9fed1b2c6\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:43 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::dv2ln-1794910003378-d8ee10f15c40"
+    },
+    "title": "Contact us | AGAI Physiotherapy Centre",
+    "overflow": false,
+    "h1": [
+      "Every next step startswith a conversation."
+    ],
+    "canonical": "https://www.agaiphysiotherapy.com/contact",
+    "robots": "index, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "page-intro",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "section agai-container contact-layout",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "visit-section",
+        "bg": "rgb(243, 244, 246)"
+      },
+      {
+        "class": "faq-section section home-faq",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "api": [],
+    "smallInputs": [
+      {
+        "id": "",
+        "font": "16px"
+      },
+      {
+        "id": "enquiry-name",
+        "font": "14px"
+      },
+      {
+        "id": "enquiry-email",
+        "font": "14px"
+      },
+      {
+        "id": "enquiry-phone",
+        "font": "14px"
+      },
+      {
+        "id": "enquiry-message",
+        "font": "14px"
+      }
+    ],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 390,
+    "path": "/blogs/audit-missing-page",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "4",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"blogs\"",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:45 GMT",
+      "etag": "W/\"1a173986b777dd421ead32f1ae4c0b9f\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:41 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::gphrw-1794910005414-9dc220b0e5ff"
+    },
+    "title": "Page not found | AGAI Physiotherapy Centre",
+    "overflow": false,
+    "h1": [
+      "Article not found."
+    ],
+    "robots": "noindex, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "section agai-container journal-page",
+        "bg": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "api": [],
+    "smallInputs": [],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 1440,
+    "path": "/",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "11",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:46 GMT",
+      "etag": "W/\"bcfb826e037dcb749cf7b2be858144e8\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:35 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::vnp5b-1794910006458-2dc1bd17391d"
+    },
+    "title": "AGAI Physiotherapy Centre | Sports Rehabilitation & Performance",
+    "overflow": false,
+    "h1": [
+      "Move Better. Recover Stronger. Perform Better."
+    ],
+    "canonical": "https://www.agaiphysiotherapy.com/",
+    "robots": "index, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "hero",
+        "bg": "rgb(10, 79, 156)"
+      },
+      {
+        "class": "section care-needs-section",
+        "bg": "rgb(246, 248, 253)"
+      },
+      {
+        "class": "section agai-container home-services",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "approach-section",
+        "bg": "rgb(6, 88, 174)"
+      },
+      {
+        "class": "section founder-showcase",
+        "bg": "rgb(247, 249, 254)"
+      },
+      {
+        "class": "section home-testimonials",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "class": "section appointment-section",
+        "bg": "rgb(247, 249, 252)"
+      },
+      {
+        "class": "section home-faq",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "class": "contact-banner contact-banner--home",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "api": [
+      {
+        "url": "https://admin.agaiphysiotherapy.com/api/public/content",
+        "duration": 2045.699999988079
+      },
+      {
+        "url": "https://admin.agaiphysiotherapy.com/api/public/services",
+        "duration": 69.69999998807907
+      }
+    ],
+    "smallInputs": [
+      {
+        "id": "care-path-query",
+        "font": "13px"
+      },
+      {
+        "id": "appointment-name",
+        "font": "14px"
+      },
+      {
+        "id": "appointment-phone",
+        "font": "14px"
+      },
+      {
+        "id": "appointment-email",
+        "font": "14px"
+      },
+      {
+        "id": "appointment-notes",
+        "font": "14px"
+      },
+      {
+        "id": "",
+        "font": "12px"
+      }
+    ],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 1440,
+    "path": "/about",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "11",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"about\"",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:50 GMT",
+      "etag": "W/\"7abefe4f8673809a977b3db54a5459cf\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:38 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::fj8bq-1794910010277-b43918b628aa"
+    },
+    "title": "About us | AGAI Physiotherapy Centre",
+    "overflow": false,
+    "h1": [
+      "Care that startswith you."
+    ],
+    "canonical": "https://www.agaiphysiotherapy.com/about",
+    "robots": "index, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "page-intro",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "section about-clinic",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "class": "section founder-showcase",
+        "bg": "rgb(247, 249, 254)"
+      },
+      {
+        "class": "approach-section",
+        "bg": "rgb(6, 88, 174)"
+      },
+      {
+        "class": "contact-banner contact-banner--home",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "api": [],
+    "smallInputs": [],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 1440,
+    "path": "/services",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "11",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"services\"",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:51 GMT",
+      "etag": "W/\"c4e5a10d3dd840bff5040d2ffccd6ec4\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:39 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::s22cr-1794910011383-5a25f1415980"
+    },
+    "title": "Our services | AGAI Physiotherapy Centre",
+    "overflow": false,
+    "h1": [
+      "Understand your needs.Find your next step."
+    ],
+    "canonical": "https://www.agaiphysiotherapy.com/services",
+    "robots": "index, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "page-intro",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "section agai-container services-section",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "contact-banner contact-banner--home",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "api": [],
+    "smallInputs": [],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=sports-injury#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=strength-conditioning#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=orthopaedic#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=neurological#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=womens-wellness#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=pelvic-floor#appointment"
+      },
+      {
+        "text": "Book Appointment ",
+        "url": "https://www.agaiphysiotherapy.com/?service=geriatric#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 1440,
+    "path": "/blogs",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "11",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"blogs\"",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:52 GMT",
+      "etag": "W/\"1a173986b777dd421ead32f1ae4c0b9f\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:41 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::pl8rw-1794910012848-888b2b9d527b"
+    },
+    "title": "The AGAI Journal | Blogs",
+    "overflow": false,
+    "h1": [
+      "A little insight.A step forward."
+    ],
+    "canonical": "https://www.agaiphysiotherapy.com/blogs",
+    "robots": "index, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "page-intro",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "journal-library",
+        "bg": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "api": [],
+    "smallInputs": [
+      {
+        "id": "",
+        "font": "12px"
+      }
+    ],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 1440,
+    "path": "/book-appointment",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "11",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"book-appointment\"",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:53 GMT",
+      "etag": "W/\"ba2f56d807edf8cb720096486f433a45\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:42 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::k6tvr-1794910013816-f8a3093c5ec7"
+    },
+    "title": "Book appointment | AGAI Physiotherapy Centre",
+    "overflow": false,
+    "h1": [
+      "Book your appointment"
+    ],
+    "canonical": "https://www.agaiphysiotherapy.com/book-appointment",
+    "robots": "index, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "section appointment-section",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "api": [],
+    "smallInputs": [
+      {
+        "id": "appointment-name",
+        "font": "14px"
+      },
+      {
+        "id": "appointment-phone",
+        "font": "14px"
+      },
+      {
+        "id": "appointment-email",
+        "font": "14px"
+      },
+      {
+        "id": "appointment-notes",
+        "font": "14px"
+      },
+      {
+        "id": "",
+        "font": "12px"
+      }
+    ],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 1440,
+    "path": "/contact",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "11",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"contact\"",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:54 GMT",
+      "etag": "W/\"a97919c43de404b712be4da9fed1b2c6\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:43 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::vz7tx-1794910014643-47e6fd132894"
+    },
+    "title": "Contact us | AGAI Physiotherapy Centre",
+    "overflow": false,
+    "h1": [
+      "Every next step startswith a conversation."
+    ],
+    "canonical": "https://www.agaiphysiotherapy.com/contact",
+    "robots": "index, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "page-intro",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "section agai-container contact-layout",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "class": "visit-section",
+        "bg": "rgb(243, 244, 246)"
+      },
+      {
+        "class": "faq-section section home-faq",
+        "bg": "rgb(255, 255, 255)"
+      }
+    ],
+    "api": [],
+    "smallInputs": [
+      {
+        "id": "",
+        "font": "16px"
+      },
+      {
+        "id": "enquiry-name",
+        "font": "14px"
+      },
+      {
+        "id": "enquiry-email",
+        "font": "14px"
+      },
+      {
+        "id": "enquiry-phone",
+        "font": "14px"
+      },
+      {
+        "id": "enquiry-message",
+        "font": "14px"
+      }
+    ],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  },
+  {
+    "width": 1440,
+    "path": "/blogs/audit-missing-page",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "14",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"blogs\"",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 17 Nov 2026 10:06:56 GMT",
+      "etag": "W/\"1a173986b777dd421ead32f1ae4c0b9f\"",
+      "last-modified": "Tue, 17 Nov 2026 10:06:41 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "bom1::h7sgk-1794910016094-978fa676da06"
+    },
+    "title": "Page not found | AGAI Physiotherapy Centre",
+    "overflow": false,
+    "h1": [
+      "Article not found."
+    ],
+    "robots": "noindex, follow",
+    "brokenImages": [],
+    "sections": [
+      {
+        "class": "section agai-container journal-page",
+        "bg": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "api": [],
+    "smallInputs": [],
+    "links": [
+      {
+        "text": "Book appointment ",
+        "url": "https://www.agaiphysiotherapy.com/#appointment"
+      },
+      {
+        "text": "Book appointment",
+        "url": "https://www.agaiphysiotherapy.com/book-appointment"
+      }
+    ],
+    "errors": [],
+    "failed": []
+  }
+]

@@ -1,3 +1,4 @@
+import { useLanguage } from '../language'
 import { useEffect, useRef, useState } from 'react'
 import { useServices } from '../ServicesContext'
 import { Icon } from './UI'
@@ -5,8 +6,9 @@ import { Icon } from './UI'
 
 
 export default function ServiceSelect({ value, onChange }: { value: string; onChange: (value: string) => void }) {
+  const { t } = useLanguage()
   const { services } = useServices()
-  const options = [...services.map(service => ({ id: service.id as string, label: service.shortTitle as string, icon: service.icon })), { id: 'not-sure', label: 'Not sure yet / help me choose', icon: 'chat' as const }]
+  const options = [...services.map(service => ({ id: service.id as string, label: t(service.shortTitle as string), icon: service.icon })), { id: 'not-sure', label: t('Not sure yet / help me choose'), icon: 'chat' as const }]
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState(0)
   const root = useRef<HTMLDivElement>(null)
@@ -37,7 +39,7 @@ export default function ServiceSelect({ value, onChange }: { value: string; onCh
   }
 
   return <div className="agai-field appointment-field-wide service-select" ref={root} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false) }}>
-    <label id="appointment-service-label" htmlFor="appointment-service">Service *</label>
+    <label id="appointment-service-label" htmlFor="appointment-service">{t("Service *")}</label>
     <button ref={trigger} type="button" id="appointment-service" className={`service-select-trigger${open ? ' is-open' : ''}`} role="combobox" aria-labelledby="appointment-service-label" aria-expanded={open} aria-controls="service-options" aria-haspopup="listbox" aria-required="true" aria-activedescendant={open ? `service-option-${active}` : undefined} onClick={() => open ? setOpen(false) : show()} onKeyDown={event => {
       if (event.key === 'Tab') { setOpen(false) }
       else if (event.key === 'Escape') { event.preventDefault(); setOpen(false) }
@@ -45,8 +47,8 @@ export default function ServiceSelect({ value, onChange }: { value: string; onCh
         event.preventDefault()
         if (!open) show()
         else setActive(index => (index + (event.key === 'ArrowDown' ? 1 : -1) + options.length) % options.length)
-      } else if (event.key === 'Home' || event.key === 'End') {
-        event.preventDefault(); setOpen(true); setActive(event.key === 'Home' ? 0 : options.length - 1)
+      } else if (event.key === t('Home') || event.key === 'End') {
+        event.preventDefault(); setOpen(true); setActive(event.key === t('Home') ? 0 : options.length - 1)
       } else if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault(); if (open) choose(active); else show()
       } else if (event.key.length === 1 && !event.ctrlKey && !event.metaKey && !event.altKey) {
@@ -58,7 +60,7 @@ export default function ServiceSelect({ value, onChange }: { value: string; onCh
       }
     }}>
       {selected ? <Icon name={selected.icon} /> : <Icon name="activity" />}
-      <span className={selected ? '' : 'service-select-placeholder'}>{selected?.label || 'Select a service'}</span>
+      <span className={selected ? '' : 'service-select-placeholder'}>{selected?.label || t('Select a service')}</span>
       <svg className="service-select-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
     </button>
     {open ? <div className="service-select-menu" id="service-options" role="listbox" aria-labelledby="appointment-service-label">{options.map((option, index) => <div key={option.id} id={`service-option-${index}`} role="option" aria-selected={value === option.id} className={`service-select-option${index === active ? ' is-active' : ''}${value === option.id ? ' is-selected' : ''}`} onPointerMove={() => setActive(index)} onPointerDown={event => event.preventDefault()} onClick={() => choose(index)}>

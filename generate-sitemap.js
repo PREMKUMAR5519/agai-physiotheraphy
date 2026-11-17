@@ -26,6 +26,12 @@ const pages = [
   { path: '/services', source: 'src/pages/ServicesPage.tsx', changefreq: 'monthly', priority: 0.9 },
   { path: '/blogs', source: 'src/pages/BlogsPage.tsx', changefreq: 'weekly', priority: 0.8 },
   { path: '/book-appointment', source: 'src/pages/BookAppointmentPage.tsx', changefreq: 'monthly', priority: 0.9 },
+  { path: '/ta', source: 'src/pages/HomePage.tsx', changefreq: 'monthly', priority: 1.0 },
+  { path: '/ta/about', source: 'src/pages/AboutPage.tsx', changefreq: 'monthly', priority: 0.8 },
+  { path: '/ta/services', source: 'src/pages/ServicesPage.tsx', changefreq: 'monthly', priority: 0.9 },
+  { path: '/ta/blogs', source: 'src/pages/BlogsPage.tsx', changefreq: 'weekly', priority: 0.8 },
+  { path: '/ta/book-appointment', source: 'src/pages/BookAppointmentPage.tsx', changefreq: 'monthly', priority: 0.9 },
+  { path: '/ta/contact', source: 'src/pages/ContactPage.tsx', changefreq: 'monthly', priority: 0.8 },
   { path: '/contact', source: 'src/pages/ContactPage.tsx', changefreq: 'monthly', priority: 0.8 },
 ]
 
@@ -34,7 +40,7 @@ const pages = [
 // to computed routes requires an explicit update here.
 const app = read('src/App.tsx')
 const routes = [...app.matchAll(/<Route\s+path\s*=\s*["']([^"']+)["']/g)].map(match => match[1])
-const expectedRoutes = [...pages.map(page => page.path), '/blogs/:slug', '*']
+const expectedRoutes = [...pages.map(page => page.path), '/blogs/:slug', '/ta/blogs/:slug', '*']
 if ((app.match(/<Route\s/g) || []).length !== routes.length || routes.length !== expectedRoutes.length || expectedRoutes.some(path => !routes.includes(path))) {
   throw new Error('Routes changed: update pages and article routes in generate-sitemap.js')
 }

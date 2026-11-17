@@ -1,0 +1,50 @@
+{
+  "articles": [
+    {
+      "url": "https://www.agaiphysiotherapy.com/blogs/questions-to-ask-your-physiotherapist",
+      "status": 200,
+      "h1": "Five questions worth bringing to your appointment.",
+      "canonical": "https://www.agaiphysiotherapy.com/blogs/questions-to-ask-your-physiotherapist",
+      "brokenAnchors": [],
+      "overflow": false,
+      "bodyLength": 872
+    },
+    {
+      "url": "https://www.agaiphysiotherapy.com/blogs/movement-goals-that-mean-something",
+      "status": 200,
+      "h1": "What does moving well mean to you?",
+      "canonical": "https://www.agaiphysiotherapy.com/blogs/movement-goals-that-mean-something",
+      "brokenAnchors": [],
+      "overflow": false,
+      "bodyLength": 918
+    }
+  ],
+  "chatOverlap": {
+    "input": {
+      "x": 20,
+      "y": 780.359375,
+      "width": 350,
+      "height": 52,
+      "top": 780.359375,
+      "right": 370,
+      "bottom": 832.359375,
+      "left": 20
+    },
+    "chat": {
+      "x": 177.9375,
+      "y": 770,
+      "width": 196.0625,
+      "height": 58,
+      "top": 770,
+      "right": 374,
+      "bottom": 828,
+      "left": 177.9375
+    },
+    "overlap": true
+  },
+  "slowCms": {
+    "elapsed": 721,
+    "ariaBusy": "true",
+    "menuOpened": 0
+  }
+}

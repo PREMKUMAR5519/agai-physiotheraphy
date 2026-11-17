@@ -1,4 +1,5 @@
-﻿import type { ReactNode } from 'react'
+import { useLanguage } from '../language'
+import type { ReactNode } from 'react'
 import { Link } from 'react-router'
 import { approach, clinic } from '../content'
 
@@ -29,18 +30,20 @@ export function Eyebrow({ children }: { children: ReactNode }) {
   return <p className="eyebrow">{children}</p>
 }
 export function Breadcrumb({ current }: { current: string }) {
-  return <nav className="breadcrumb" aria-label="Breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><span aria-current="page">{current}</span></nav>
+  const { t, localPath } = useLanguage()
+  return <nav className="breadcrumb" aria-label="Breadcrumb"><Link to={localPath("/")}>{t('Home')}</Link><span aria-hidden="true">/</span><span aria-current="page">{current}</span></nav>
 }
 export function ContactBanner({ variant = 'default' }: { variant?: 'default' | 'home' }) {
+  const { t, localPath } = useLanguage()
   const isHome = variant === 'home'
   return <section className={`contact-banner${isHome ? ' contact-banner--home' : ''}`}><div className="contact-banner-inner agai-container"><div className="contact-banner-copy">
     {isHome && clinic.address ? <span className="contact-banner-location"><Icon name="pin" />{clinic.address}</span> : null}
-    <Eyebrow>Your next step</Eyebrow>
-    <h2 className="home-section-title"><span className="home-title-lead">{isHome ? "Let's get you" : 'Let’s make movement'}</span><br /><span>{isHome ? 'moving better.' : 'part of your story.'}</span></h2>
-    {isHome ? <p className="contact-banner-message">Your recovery. Your performance. Our commitment.</p> : null}
-    <p>{isHome ? 'Connect with AGAI Physiotherapy Centre for sports rehabilitation, injury prevention and personalised physiotherapy care.' : 'Explore care that starts with you and your goals.'}</p>
-  </div><div className="contact-banner-actions"><Link className="agai-button" to="/contact">Get in touch <Arrow /></Link>{isHome && clinic.phone ? <a className="contact-banner-phone" href={`tel:${clinic.phone.replace(/[^+\d]/g, '')}`}><Icon name="phone" />{clinic.phone}</a> : null}</div></div>
-    {isHome ? <div className="agai-container"><ul className="contact-banner-steps" aria-label="Your first visit">{approach.map((step, index) => <li key={step.title}><span className="contact-banner-step-icon"><Icon name={index === 0 ? 'chat' : index === 1 ? 'activity' : 'person'} /></span><div><h3>{step.title}</h3><p>{step.text}</p></div></li>)}</ul></div> : null}
+    <Eyebrow>{t("Your next step")}</Eyebrow>
+    <h2 className="home-section-title"><span className="home-title-lead">{isHome ? t("Let's get you") : t("Let’s make movement")}</span><br /><span>{isHome ? t("moving better.") : t("part of your story.")}</span></h2>
+    {isHome ? <p className="contact-banner-message">{t("Your recovery. Your performance. Our commitment.")}</p> : null}
+    <p>{isHome ? t("Connect with AGAI Physiotherapy Centre for sports rehabilitation, injury prevention and personalised physiotherapy care.") : t("Explore care that starts with you and your goals.")}</p>
+  </div><div className="contact-banner-actions"><Link className="agai-button" to={localPath("/contact")}>{t("Get in touch")} <Arrow /></Link>{isHome && clinic.phone ? <a className="contact-banner-phone" href={`tel:${clinic.phone.replace(/[^+\d]/g, '')}`}><Icon name="phone" />{clinic.phone}</a> : null}</div></div>
+    {isHome ? <div className="agai-container"><ul className="contact-banner-steps" aria-label={t("Your first visit")}>{approach.map((step, index) => <li key={step.title}><span className="contact-banner-step-icon"><Icon name={index === 0 ? 'chat' : index === 1 ? 'activity' : 'person'} /></span><div><h3>{t(step.title)}</h3><p>{t(step.text)}</p></div></li>)}</ul></div> : null}
   </section>
 }
 export function FAQ({ items, numbered = false, openFirst = false }: { items: { question: string; answer: string }[]; numbered?: boolean; openFirst?: boolean }) {

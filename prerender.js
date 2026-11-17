@@ -31,6 +31,7 @@ function build(path) {
   const markup = render(path)
   if (!markup.includes('<h1')) throw new Error(`Prerendered ${path} has no <h1>; the page did not render`)
   let html = replaceOnce(template, /<title>[^<]*<\/title>/, `<title>${escapeHtml(meta.title)}</title>`)
+  html = html.replace('<html lang="en">', `<html lang="${meta.language}">`)
   html = setMeta(html, 'name="description"', meta.description)
   html = setMeta(html, 'property="og:title"', meta.title)
   html = setMeta(html, 'property="og:description"', meta.description)
@@ -38,6 +39,7 @@ function build(path) {
   html = setMeta(html, 'property="og:url"', meta.canonical ?? siteUrl)
   html = setMeta(html, 'property="og:image"', socialImage)
   const head = [
+    ...meta.alternates.map(alternate => `<link rel="alternate" hreflang="${alternate.language}" href="${escapeHtml(alternate.href)}" />`),
     `<meta name="robots" content="${meta.indexable ? 'index, follow' : 'noindex, follow'}" />`,
     meta.canonical ? `<link rel="canonical" href="${escapeHtml(meta.canonical)}" />` : '',
     // "<" is escaped so content can never close the script element early.

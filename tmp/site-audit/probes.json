@@ -1,0 +1,406 @@
+{
+  "accessibility": [
+    {
+      "path": "/",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "#care-path-results"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.46 (foreground color: #647a8c, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#orthopaedic\"][data-discover=\"true\"]:nth-child(1) > .care-need-focus > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #607d99, background color: #edf3fd, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#orthopaedic\"][data-discover=\"true\"]:nth-child(1) > .care-need-topics > li:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #687b8a, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#orthopaedic\"][data-discover=\"true\"]:nth-child(1) > .care-need-topics > li:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #687b8a, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#orthopaedic\"][data-discover=\"true\"]:nth-child(1) > .care-need-link > .care-need-number"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #718494, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#orthopaedic\"][data-discover=\"true\"]:nth-child(2) > .care-need-focus > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #607d99, background color: #edf3fd, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#orthopaedic\"][data-discover=\"true\"]:nth-child(2) > .care-need-topics > li:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #687b8a, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#orthopaedic\"][data-discover=\"true\"]:nth-child(2) > .care-need-topics > li:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #687b8a, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#orthopaedic\"][data-discover=\"true\"]:nth-child(2) > .care-need-link > .care-need-number"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #718494, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#sports-injury\"][data-discover=\"true\"] > .care-need-focus > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #607d99, background color: #edf3fd, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#sports-injury\"][data-discover=\"true\"] > .care-need-topics > li:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #687b8a, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#sports-injury\"][data-discover=\"true\"] > .care-need-topics > li:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #687b8a, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#sports-injury\"][data-discover=\"true\"] > .care-need-link > .care-need-number"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #718494, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#womens-wellness\"][data-discover=\"true\"] > .care-need-focus > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #607d99, background color: #edf3fd, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#womens-wellness\"][data-discover=\"true\"] > .care-need-topics > li:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #687b8a, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#womens-wellness\"][data-discover=\"true\"] > .care-need-topics > li:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #687b8a, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#womens-wellness\"][data-discover=\"true\"] > .care-need-link > .care-need-number"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #718494, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#geriatric\"][data-discover=\"true\"] > .care-need-focus > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #607d99, background color: #edf3fd, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#geriatric\"][data-discover=\"true\"] > .care-need-topics > li:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #687b8a, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#geriatric\"][data-discover=\"true\"] > .care-need-topics > li:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #687b8a, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#geriatric\"][data-discover=\"true\"] > .care-need-link > .care-need-number"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #718494, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#neurological\"][data-discover=\"true\"] > .care-need-focus > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #607d99, background color: #edf3fd, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#neurological\"][data-discover=\"true\"] > .care-need-topics > li:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #687b8a, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#neurological\"][data-discover=\"true\"] > .care-need-topics > li:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #687b8a, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-need[href$=\"services#neurological\"][data-discover=\"true\"] > .care-need-link > .care-need-number"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #718494, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-path-principles > div:nth-child(1) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.23 (foreground color: #5d7388, background color: #e5effd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-path-principles > div:nth-child(2) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.23 (foreground color: #5d7388, background color: #e5effd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".care-path-principles > div:nth-child(3) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.23 (foreground color: #5d7388, background color: #e5effd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".testimonials-rating-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "figure:nth-child(1) > figcaption > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "figure:nth-child(2) > figcaption > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "figure:nth-child(3) > figcaption > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".testimonials-footer > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".booking-practitioner-steps > li:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #617b97, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".booking-practitioner-steps > li:nth-child(2) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #617b97, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".booking-practitioner-steps > li:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #617b97, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".appointment-whatsapp-button > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".appointment-phone > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".appointment-phone > span:nth-child(2) > .booking-contact-caption"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".home-faq-description"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "details[open=\"\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "details:nth-child(2) > summary > .faq-number[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.81 (foreground color: #849cbb, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "details:nth-child(3) > summary > .faq-number[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.81 (foreground color: #849cbb, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "details:nth-child(4) > summary > .faq-number[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.81 (foreground color: #849cbb, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "details:nth-child(5) > summary > .faq-number[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.81 (foreground color: #849cbb, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/about",
+      "violations": []
+    },
+    {
+      "path": "/services",
+      "violations": []
+    },
+    {
+      "path": "/blogs",
+      "violations": []
+    },
+    {
+      "path": "/book-appointment",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "li:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #617b97, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "li:nth-child(2) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #617b97, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "li:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #617b97, background color: #f7f9fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".appointment-whatsapp-button > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".appointment-phone > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".appointment-phone > span:nth-child(2) > .booking-contact-caption"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #617b97, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/contact",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "details:nth-child(1) > summary > .faq-number[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.81 (foreground color: #849cbb, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "details:nth-child(2) > summary > .faq-number[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.81 (foreground color: #849cbb, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "details:nth-child(3) > summary > .faq-number[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.81 (foreground color: #849cbb, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "invalidPhoneAccepted": true,
+  "calendarToday": "2026-11-17",
+  "morningTimes": [
+    "09:00 AM",
+    "09:30 AM",
+    "10:00 AM",
+    "10:30 AM",
+    "11:00 AM",
+    "11:30 AM"
+  ],
+  "openingHours": "Opening hours\n\nClinic hours will be available soon.",
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "78",
+    "cache-control": "public, max-age=0, must-revalidate",
+    "content-disposition": "inline",
+    "content-encoding": "br",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Tue, 17 Nov 2026 10:07:53 GMT",
+    "etag": "W/\"bcfb826e037dcb749cf7b2be858144e8\"",
+    "last-modified": "Tue, 17 Nov 2026 10:06:35 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "x-vercel-cache": "HIT",
+    "x-vercel-id": "bom1::5d7gh-1794910073485-584c742d9c15",
+    "transfer-encoding": "chunked"
+  },
+  "articleLinks": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- generated: 2026-11-17T15:28:44+05:30 -->\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url>\n    <loc>https://www.agaiphysiotherapy.com/blogs/questions-to-ask-your-physiotherapist</loc>\n    <lastmod>2026-11-17T14:33:29+05:30</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n  <url>\n    <loc>https://www.agaiphysiotherapy.com/blogs/movement-goals-that-mean-something</loc>\n    <lastmod>2026-11-17T14:33:18+05:30</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n</urlset>\n",
+  "robots": "User-agent: *\nAllow: /\n\nSitemap: https://www.agaiphysiotherapy.com/sitemap.xml\n",
+  "generic404": 404
+}

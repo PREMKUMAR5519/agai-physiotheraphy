@@ -1,3 +1,4 @@
+import { useLanguage } from './language'
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { services as initialServices } from './content'
 import { contentEndpoint } from './cms-contract'
@@ -40,8 +41,9 @@ export function useServices() {
   return value
 }
 export function ServicesStatus() {
+  const { t } = useLanguage()
   const { loading, error, refresh } = useServices()
-  if (loading) return <p role="status" className="services-status">Updating services…</p>
-  if (error) return <div className="services-status" role="status"><p>{error}</p><button type="button" className="text-action" onClick={() => void refresh()}>Retry loading services</button></div>
+  if (loading) return <p role="status" className="services-status">{t('Updating services…')}</p>
+  if (error) return <div className="services-status" role="status"><p>{t(error)}</p><button type="button" className="text-action" onClick={() => void refresh()}>{t('Retry loading services')}</button></div>
   return null
 }

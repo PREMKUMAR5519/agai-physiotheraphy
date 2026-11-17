@@ -47,6 +47,7 @@ test('robots and sitemap index expose every public route as valid XML', async ({
   }
   expect(urls.sort()).toEqual([
     '/', '/about', '/services', '/blogs', '/book-appointment', '/contact',
+    '/ta', '/ta/about', '/ta/services', '/ta/blogs', '/ta/book-appointment', '/ta/contact',
     ...blogArticles.map(article => `/blogs/${article.slug}`),
   ].map(path => site.url + path).sort())
 })

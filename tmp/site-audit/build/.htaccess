@@ -1,0 +1,16 @@
+# Apache only (cPanel and similar hosts). Other hosts ignore this file.
+# Every page is a prerendered file: /about is served from about.html.
+Options -Indexes -MultiViews
+DirectorySlash Off
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+
+# /about/ -> /about, so each page has one address.
+RewriteCond %{REQUEST_FILENAME} !-d [OR]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Serve /about from about.html and /blogs/slug from blogs/slug.html.
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]

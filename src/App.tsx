@@ -1,3 +1,4 @@
+import { useLanguage } from './language'
 import { ServicesProvider, useServices } from './ServicesContext'
 import { useEffect, useRef } from 'react'
 import { Link, Route, Routes, useLocation } from 'react-router'
@@ -18,12 +19,22 @@ export default function App() {
   return <ServicesProvider><WebsiteApp/></ServicesProvider>
 }
 function WebsiteApp() {
+  const { t, isTamil, localPath } = useLanguage()
   const { services } = useServices()
   const location = useLocation()
   useEffect(() => {
     const meta = getPageMeta(location.pathname)
     const { indexable } = meta
     document.title = meta.title
+    document.documentElement.lang = meta.language
+    document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(link => link.remove())
+    for (const alternate of meta.alternates) {
+      const link = document.createElement('link')
+      link.rel = 'alternate'
+      link.hreflang = alternate.language
+      link.href = alternate.href
+      document.head.appendChild(link)
+    }
     for (const [selector, value] of [
       ['meta[name="description"]', meta.description],
       ['meta[property="og:title"]', meta.title],
@@ -73,5 +84,5 @@ function WebsiteApp() {
     return () => cancelAnimationFrame(frame)
   }, [location, services])
 
-  return <div id="top" className="site-shell"><a className="skip-link" href="#main">Skip to content</a><Header key={location.pathname + location.search + location.hash} /><main id="main" tabIndex={-1}><Routes><Route path="/" element={<HomePage />} /><Route path="/about" element={<AboutPage />} /><Route path="/services" element={<ServicesPage />} /><Route path="/blogs" element={<BlogsPage />} /><Route path="/blogs/:slug" element={<BlogArticlePage />} /><Route path="/book-appointment" element={<BookAppointmentPage />} /><Route path="/contact" element={<ContactPage key={location.search} />} /><Route path="*" element={<section className="section agai-container not-found"><Eyebrow>404 · Page not found</Eyebrow><h1>Let’s get you<br /><span>back on track.</span></h1><p>This page isn’t here. Explore our care or return to the homepage.</p><Link className="agai-button" to="/">Back to home <Arrow /></Link></section>} /></Routes></main><Footer /><ChatAssistant /></div>
+  return <div id="top" className={`site-shell${isTamil ? ' tamil-page' : ''}`} lang={isTamil ? 'ta' : 'en'}><a className="skip-link" href="#main">{t('Skip to content')}</a><Header key={location.pathname + location.search + location.hash} /><main id="main" tabIndex={-1}><Routes><Route path="/" element={<HomePage />} /><Route path="/about" element={<AboutPage />} /><Route path="/services" element={<ServicesPage />} /><Route path="/blogs" element={<BlogsPage />} /><Route path="/blogs/:slug" element={<BlogArticlePage />} /><Route path="/book-appointment" element={<BookAppointmentPage />} /><Route path="/ta" element={<HomePage />} /><Route path="/ta/about" element={<AboutPage />} /><Route path="/ta/services" element={<ServicesPage />} /><Route path="/ta/blogs" element={<BlogsPage />} /><Route path="/ta/blogs/:slug" element={<BlogArticlePage />} /><Route path="/ta/book-appointment" element={<BookAppointmentPage />} /><Route path="/ta/contact" element={<ContactPage key={location.search} />} /><Route path="/contact" element={<ContactPage key={location.search} />} /><Route path="*" element={<section className="section agai-container not-found"><Eyebrow>{isTamil ? '404 · பக்கம் கிடைக்கவில்லை' : '404 · Page not found'}</Eyebrow><h1>{isTamil ? 'முகப்புப் பக்கத்திற்குத் திரும்பலாம்.' : <>Let’s get you<br /><span>back on track.</span></>}</h1><p>{isTamil ? 'இந்தப் பக்கம் இல்லை. எங்கள் சேவைகளைப் பாருங்கள் அல்லது முகப்புப் பக்கத்திற்குத் திரும்புங்கள்.' : 'This page isn’t here. Explore our care or return to the homepage.'}</p><Link className="agai-button" to={localPath("/")}>{isTamil ? 'முகப்புக்குத் திரும்புங்கள்' : 'Back to home'} <Arrow /></Link></section>} /></Routes></main><Footer /><ChatAssistant /></div>
 }

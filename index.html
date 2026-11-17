@@ -22,15 +22,43 @@
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <title>AGAI Physiotherapy Centre</title>
-    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TWPLL6GG"></script>
+    <style>
+      .startup-screen { position: fixed; inset: 0; z-index: 10000; display: grid; place-items: center; padding: 24px; box-sizing: border-box; background: #fff; color: #143b63; font-family: Arial, sans-serif; text-align: center; }
+      .startup-screen[hidden], #root:not(:empty) + .startup-screen:not([data-error]) { display: none; }
+      .startup-spinner { display: block; width: 42px; height: 42px; border: 4px solid #e2edf8; border-top-color: #0658ae; border-radius: 50%; animation: startup-spin .8s linear infinite; }
+      .startup-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+      .startup-screen h1 { margin: 0 0 12px; font-size: 24px; }
+      .startup-screen p { margin: 0 0 20px; line-height: 1.6; }
+      .startup-screen button { padding: 12px 24px; border: 0; border-radius: 8px; background: #0658ae; color: #fff; font: inherit; cursor: pointer; }
+      .startup-screen button:focus-visible { outline: 3px solid #143b63; outline-offset: 4px; }
+      @keyframes startup-spin { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) { .startup-spinner { animation: none; } }
+    </style>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      // Set privacy defaults before the Google container can execute.
+      gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+      gtag('set', {
+        user_data: null,
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false,
+        page_location: location.origin + location.pathname,
+        page_referrer: '',
+        page_title: 'AGAI Physiotherapy Centre'
+      });
       gtag('js', new Date());
+      dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
     </script>
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TWPLL6GG"></script>
   </head>
   <body class="agai-theme">
     <div id="root"></div>
+    <div id="startup-screen" class="startup-screen" role="status" aria-live="polite">
+      <span class="startup-spinner" aria-hidden="true"></span>
+      <span class="startup-label">Loading AGAI</span>
+    </div>
+    <noscript><style>.startup-screen { display: none; }</style><p>Please enable JavaScript to use the booking form and interactive features.</p></noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
