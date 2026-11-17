@@ -608,7 +608,7 @@ p { margin-block: 0 16px; }
 .enquiry-card .eyebrow { margin-bottom: 16px; }
 .enquiry-card h2 { font-size: 28px; margin-bottom: 16px; }
 .enquiry-card > p { font-size: 13px; color: var(--agai-muted); margin-bottom: 32px; }
-.enquiry-card form { display: grid; gap: 20px; }
+.enquiry-card form, .enquiry-card form > fieldset { display: grid; gap: 20px; }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .agai-field { display: block; font-size: 13px; }
 .agai-field .agai-input { display: block; margin-top: 8px; font-size: 14px; min-width: 0; }

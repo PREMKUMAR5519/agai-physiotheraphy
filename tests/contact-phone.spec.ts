@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test.beforeEach(async ({ page }) => {
+  await page.route('**/api/public/contact', route => route.fulfill({ status: 201, contentType: 'application/json', headers: { 'Access-Control-Allow-Origin': '*' }, body: JSON.stringify({ ok: true }) }))
   await page.goto('/contact')
   await page.getByLabel('Your name').fill('Test Visitor')
   await page.getByLabel('Your message').fill('I would like to arrange a visit next week.')
@@ -25,7 +26,9 @@ test('rejects invalid phone numbers and allows correction without an email', asy
   await phone.fill('+91 96000 66505')
   await expect(page.getByRole('alert')).toHaveCount(0)
   await submit.click()
-  await expect(page.getByLabel('Enquiry draft')).toHaveValue(/Email: Not provided\nPhone: \+91 96000 66505/)
+  await expect(page.getByRole('heading', { name: 'Enquiry received.' })).toBeVisible()
+  await page.getByLabel('Your name').fill('Test Visitor')
+  await page.getByLabel('Your message').fill('I would like to arrange a visit next week.')
   await phone.fill('invalid')
   await expect(page.locator('.draft-preview')).toHaveCount(0)
   await submit.click()
@@ -35,9 +38,11 @@ test('rejects invalid phone numbers and allows correction without an email', asy
 test('accepts local and international formatting', async ({ page }) => {
   const phone = page.getByLabel('Phone number', { exact: false })
   for (const value of ['9600066505', '+91 (96000) 66505', '+1 (202) 555-0123', '020 7946 0958', '+44.20.7946.0958']) {
+    await page.getByLabel('Your name').fill('Test Visitor')
+    await page.getByLabel('Your message').fill('I would like to arrange a visit next week.')
     await phone.fill(value)
     await page.getByRole('button', { name: 'Submit enquiry', exact: true }).click()
-    await expect(page.getByLabel('Enquiry draft')).toHaveValue(new RegExp(`Phone: ${value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`))
+    await expect(page.getByRole('heading', { name: 'Enquiry received.' })).toBeVisible()
     await expect(page.getByRole('alert')).toHaveCount(0)
   }
 })

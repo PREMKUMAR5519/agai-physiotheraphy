@@ -118,53 +118,28 @@ test('FAQ filters questions and provides a contact route for unpublished coverag
   await expect(page).toHaveURL('/contact')
 })
 
-test('enquiry validates, creates an unsent draft, copies, downloads, and clears stale drafts', async ({ page }) => {
-  const submissions: string[] = []
-  page.on('request', request => { if (request.method() === 'POST' && new URL(request.url()).origin === 'http://127.0.0.1:5186') submissions.push(request.url()) })
+test('enquiry validates and submits the selected service', async ({ page }) => {
+  let submitted: Record<string, string> | undefined
+  await page.route('**/api/public/contact', route => {
+    submitted = route.request().postDataJSON()
+    return route.fulfill({ status: 201, contentType: 'application/json', headers: { 'Access-Control-Allow-Origin': '*' }, body: JSON.stringify({ ok: true }) })
+  })
   await page.goto('/contact?service=sports-injury')
   await page.getByRole('button', { name: 'Submit enquiry' }).click()
-  await expect(page.getByRole('heading', { name: 'Your draft is ready.' })).toHaveCount(0)
-  await page.getByLabel('Your name').fill('Test Visitor')
-  await page.getByLabel('Email address').fill('visitor@example.com')
-  await page.getByLabel('Phone number').fill('+91 96000 66505')
-  await page.getByLabel('Your message').fill('I would like to ask about an appointment next week.')
-  await page.getByRole('button', { name: 'Submit enquiry' }).click()
-  await expect(page.getByRole('heading', { name: 'Your draft is ready.' })).toBeFocused()
-  await expect(page.getByLabel('Enquiry draft')).toHaveValue(/Service: Sports injury prevention & rehabilitation/)
-  await expect(page.getByText('This is a draft, not a sent enquiry or a confirmed appointment.')).toBeVisible()
-  await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async () => {} } }))
-  await page.getByRole('button', { name: 'Copy draft', exact: true }).click()
-  await expect(page.getByRole('status')).toHaveText('Enquiry copied. It has not been sent to the centre.')
-  const downloadEvent = page.waitForEvent('download')
-  await page.getByRole('button', { name: 'Download draft' }).click()
-  const download = await downloadEvent
-  expect(download.suggestedFilename()).toBe('agai-enquiry.txt')
-  const stream = await download.createReadStream()
-  const chunks: Buffer[] = []
-  for await (const chunk of stream!) chunks.push(chunk)
-  expect(Buffer.concat(chunks).toString()).toContain('Test Visitor')
-  await page.getByLabel('Your message').fill('I have a different question about rehabilitation.')
-  await expect(page.getByRole('heading', { name: 'Your draft is ready.' })).toHaveCount(0)
-  expect(submissions).toEqual([])
-  expect(await page.evaluate(() => localStorage.length)).toBe(0)
-  await page.reload()
-  await expect(page.getByLabel('Your name')).toHaveValue('')
-})
-
-test('empty whitespace input and clipboard failure have useful feedback', async ({ page }) => {
-  await page.goto('/contact')
+  expect(submitted).toBeUndefined()
   await page.getByLabel('Your name').fill('   ')
-  await page.getByLabel('Email address').fill('visitor@example.com')
   await page.getByLabel('Phone number').fill('+91 96000 66505')
   await page.getByLabel('Your message').fill('                   ')
   await page.getByRole('button', { name: 'Submit enquiry' }).click()
   await expect(page.getByRole('alert')).toContainText('excluding extra spaces')
   await page.getByLabel('Your name').fill('Test Visitor')
-  await page.getByLabel('Your message').fill('I have a question about physiotherapy.')
+  await page.getByLabel('Email address').fill('visitor@example.com')
+  await page.getByLabel('Your message').fill('I would like to ask about an appointment next week.')
   await page.getByRole('button', { name: 'Submit enquiry' }).click()
-  await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async () => { throw new Error('Denied') } } }))
-  await page.getByRole('button', { name: 'Copy draft', exact: true }).click()
-  await expect(page.getByRole('status')).toContainText('Copy is unavailable')
+  await expect(page.getByRole('heading', { name: 'Enquiry received.' })).toBeFocused()
+  expect(submitted?.service).toBe('Sports injury prevention & rehabilitation')
+  expect(submitted?.email).toBe('visitor@example.com')
+  await expect(page.getByLabel('Your name')).toHaveValue('')
 })
 
 test('unknown routes offer a working return home', async ({ page }) => {
