@@ -1,6 +1,9 @@
 // Transcribed from the Google review screenshots supplied by the clinic.
 // This is a static snapshot, not a live Google feed. Only fully visible comments
 // are included; truncated reviews and owner replies are not reconstructed.
+// Direct review form shared by the clinic through Google Business Profile.
+export const googleReviewFormUrl = 'https://g.page/r/CaqFf4cprV8EEAE/review'
+
 export const googleReviewSnapshot = {
   reviewsUrl: 'https://www.google.com/maps/place/Agai+physiotherapy+centre/@13.0976418,80.1430638,17z/data=!4m18!1m9!3m8!1s0x3a52630006baad15:0x45fad29877f85aa!2sAgai+physiotherapy+centre!8m2!3d13.0967021!4d80.1437204!9m1!1b1!16s%2Fg%2F11zz7tjj9v!3m7!1s0x3a52630006baad15:0x45fad29877f85aa!8m2!3d13.0967021!4d80.1437204!9m1!1b1!16s%2Fg%2F11zz7tjj9v?entry=ttu&g_ep=EgoyMDI2MTExNS4wIKXMDSoASAFQAw%3D%3D',
   rating: '5.0',

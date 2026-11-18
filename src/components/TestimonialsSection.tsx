@@ -1,6 +1,6 @@
 import { useLanguage } from '../language'
 import { useState } from 'react'
-import { googleReviewSnapshot } from '../data/google-reviews'
+import { googleReviewFormUrl, googleReviewSnapshot } from '../data/google-reviews'
 import { Arrow } from './UI'
 import './TestimonialsSection.css'
 
@@ -31,6 +31,12 @@ export default function TestimonialsSection() {
         </figure>)}
       </div>
       <div className="testimonials-footer"><p>{t("Read more experiences and see the latest rating on Google.")}</p><a href={googleReviewSnapshot.reviewsUrl} target="_blank" rel="noopener noreferrer">{t("View all reviews")} <Arrow diagonal /></a></div>
+      <div className="testimonials-review">
+        <a className="testimonials-review-button" href={googleReviewFormUrl} target="_blank" rel="noopener noreferrer" aria-describedby="testimonials-review-note">
+          <span>{t("Write a Google review")}</span><span className="testimonials-review-arrow" aria-hidden="true"><Arrow diagonal /></span>
+        </a>
+        <span id="testimonials-review-note" className="visually-hidden">{t("Opens Google in a new tab. Google sign-in required.")}</span>
+      </div>
     </div>
   </section>
 }

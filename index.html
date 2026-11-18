@@ -8,7 +8,7 @@
     <link rel="icon" href="%BASE_URL%favicon.ico" sizes="any" />
     <link rel="icon" href="%BASE_URL%brand-kit/web/icon-192.png" type="image/png" sizes="192x192" />
     <link rel="apple-touch-icon" href="%BASE_URL%brand-kit/web/apple-touch-icon.png" />
-    <link rel="preload" href="%BASE_URL%brand-kit/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="%BASE_URL%brand-kit/fonts/InterVariable-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="%BASE_URL%brand-kit/web/brand.css" />
     <!-- Defaults for the home page. prerender.js rewrites these per page at build time. -->
     <meta property="og:site_name" content="AGAI Physiotherapy Centre" />
@@ -49,8 +49,25 @@
       });
       gtag('js', new Date());
       dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+      // Keep early events queued, but let the page's images and controls load
+      // before third-party tag code competes for network and main-thread time.
+      function loadTags() {
+        if (loadTags.started) return;
+        loadTags.started = true;
+        document.removeEventListener('pointerdown', loadTags);
+        document.removeEventListener('keydown', loadTags);
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-TWPLL6GG';
+        document.head.appendChild(script);
+      }
+      document.addEventListener('pointerdown', loadTags, { once: true, passive: true });
+      document.addEventListener('keydown', loadTags, { once: true });
+      window.addEventListener('load', function () {
+        if ('requestIdleCallback' in window) window.requestIdleCallback(loadTags, { timeout: 2000 });
+        else setTimeout(loadTags, 0);
+      }, { once: true });
     </script>
-    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TWPLL6GG"></script>
   </head>
   <body class="agai-theme">
     <div id="root"></div>

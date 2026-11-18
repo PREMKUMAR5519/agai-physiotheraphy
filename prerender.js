@@ -14,7 +14,18 @@ const dist = resolve(root, 'dist')
 const serverBuild = resolve(root, 'dist-ssr')
 const { render, getPageMeta, prerenderPaths, socialImage, structuredData, siteUrl } = await import(pathToFileURL(resolve(serverBuild, 'entry-server.js')).href)
 
-const template = readFileSync(resolve(dist, 'index.html'), 'utf8')
+// Put the initial page styles in the document so the first paint does not wait
+// for separate stylesheet requests. Rebase asset URLs relative to each stylesheet.
+const template = readFileSync(resolve(dist, 'index.html'), 'utf8').replace(/<link\b[^>]*rel="stylesheet"[^>]*>/g, tag => {
+  const href = tag.match(/href="([^"]+)"/)?.[1]
+  if (!href?.startsWith('/') || href.startsWith('//')) return tag
+  const css = readFileSync(resolve(dist, href.slice(1)), 'utf8').replace(/url\(\s*(['"]?)([^)'"\s]+)\1\s*\)/g, (match, _quote, asset) => {
+    if (/^(data:|https?:|\/\/|#)/.test(asset)) return match
+    const resolved = new URL(asset, `https://prerender.invalid${href}`)
+    return `url("${resolved.pathname}${resolved.search}${resolved.hash}")`
+  })
+  return `<style data-inline-styles="${href}">${css.replace(/<\/style/gi, '<\\/style')}</style>`
+})
 const escapeHtml = value => String(value).replace(/[&<>"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[char])
 
 // Fail the build rather than ship a page with a stale tag if index.html changes shape.
@@ -32,6 +43,15 @@ function build(path) {
   if (!markup.includes('<h1')) throw new Error(`Prerendered ${path} has no <h1>; the page did not render`)
   let html = replaceOnce(template, /<title>[^<]*<\/title>/, `<title>${escapeHtml(meta.title)}</title>`)
   html = html.replace('<html lang="en">', `<html lang="${meta.language}">`)
+  // Discover the responsive hero before fonts and scripts, without downloading
+  // the desktop image on phones. Use rendered URLs so CMS overrides still work.
+  if (path === '/' || path === '/ta') {
+    const mobileHero = markup.match(/<source media="\(max-width: 767px\)" srcSet="([^"]+)"/)?.[1]
+    const desktopHero = markup.match(/<img class="hero-photo" src="([^"]+)"/)?.[1]
+    // Media queries must be evaluated after the viewport declaration; otherwise
+    // phones can briefly use the default desktop viewport and fetch both images.
+    if (mobileHero && desktopHero) html = html.replace(/<meta name="viewport"[^>]*>/, viewport => `${viewport}\n    <link rel="preload" as="image" href="${mobileHero}" media="(max-width: 767px)" fetchpriority="high" />\n    <link rel="preload" as="image" href="${desktopHero}" media="(min-width: 768px)" fetchpriority="high" />`)
+  }
   html = setMeta(html, 'name="description"', meta.description)
   html = setMeta(html, 'property="og:title"', meta.title)
   html = setMeta(html, 'property="og:description"', meta.description)

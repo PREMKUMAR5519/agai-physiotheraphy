@@ -8,6 +8,11 @@ const root = fileURLToPath(new URL('../', import.meta.url))
 const output = path.join(root, 'public/optimized')
 await mkdir(output, { recursive: true })
 await mkdir(path.join(root, 'src/generated'), { recursive: true })
+// The mobile header displays the emblem at 32px; provide a 2x asset instead
+// of downloading the larger brand-kit original for every phone visit.
+await sharp(path.join(root, 'public/brand-kit/assets/agai-emblem-128.webp'))
+  .resize(64, 64).webp({ quality: 80, effort: 6 })
+  .toFile(path.join(root, 'public/brand-kit/assets/agai-emblem-64.webp'))
 const manifest = {}
 let originalBytes = 0
 let optimizedBytes = 0
