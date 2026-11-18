@@ -876,3 +876,113 @@ p { margin-block: 0 16px; }
   .contact-banner .contact-banner-steps p { font-size: 12px; }
   .contact-banner-steps h3 { font-size: 13px; }
 }
+
+/* One mobile type scale across the homepage, using the existing brand fonts. */
+@media (max-width: 767px) {
+  .home-page {
+    --home-type-display: clamp(2rem, 1.5rem + 2.5vw, 2.25rem);
+    --home-type-section: 2rem;
+    --home-type-card: 1.25rem;
+    --home-type-body: 1rem;
+    --home-type-small: .875rem;
+    --home-type-caption: .75rem;
+  }
+
+  .home-page .hero h1 {
+    font-size: var(--home-type-display);
+    font-weight: 700;
+    line-height: var(--home-script-leading, 1.2);
+    letter-spacing: var(--home-script-tracking, -.025em);
+  }
+  .home-page .hero-speciality { font-size: 1.125rem; font-weight: 600; line-height: 1.5; }
+  .home-page .hero-feature h2 { font-size: 1.125rem; font-weight: 700; line-height: var(--home-script-leading, 1.4); }
+
+  .home-page h2.home-unified-title,
+  .home-page .care-path-heading h2,
+  .home-page .founder-showcase .founder-showcase-story h2.home-section-title,
+  .home-page .contact-banner h2.home-section-title {
+    font-size: var(--home-type-section);
+    font-weight: 700;
+    line-height: var(--home-script-leading, 1.25);
+    letter-spacing: var(--home-script-tracking, -.025em);
+  }
+  .home-page :is(.founder-showcase .founder-showcase-story, .contact-banner) h2.home-section-title > span {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  .home-page :is(.care-need, .care-needs-footer, .approach-grid, .founder-showcase .founder-identity, .founder-showcase-panel, .home-faq-contact, .home-faq-empty) h3 {
+    font-size: var(--home-type-card);
+    font-weight: 700;
+    line-height: var(--home-script-leading, 1.4);
+    letter-spacing: var(--home-script-tracking, -.015em);
+  }
+  .home-page :is(.service-preview, .booking-practitioner-profile) h3 { font-size: 1.125rem; font-weight: 700; line-height: var(--home-script-leading, 1.4); }
+  /* Service names must remain readable when larger type needs another line. */
+  .home-page .service-preview h3 { display: block; -webkit-line-clamp: unset; line-clamp: unset; overflow: visible; }
+  .home-page .booking-card-header h3 { font-size: 1.5rem; font-weight: 700; line-height: var(--home-script-leading, 1.35); }
+  .home-page :is(.booking-step-heading, .booking-review) h4 { font-size: var(--home-type-card); font-weight: 700; line-height: var(--home-script-leading, 1.4); }
+  .home-page .contact-banner-steps h3 { font-size: var(--home-type-body); font-weight: 700; line-height: 1.5; }
+
+  .home-page :is(
+    .hero-feature p, .care-path-intro, .care-need-description,
+    .care-needs-footer p:not(.care-path-eyebrow), .section-heading > p,
+    .service-preview p, .approach-grid p, .founder-showcase-description,
+    .testimonials-introduction, .testimonial-card blockquote p,
+    .appointment-intro > p:not(.home-unified-eyebrow), .home-faq-description,
+    .home-faq-contact > p, .home-faq .faq-list--numbered details > p,
+    .contact-banner-copy > p:last-child
+  ) { font-size: var(--home-type-body); font-weight: 400; line-height: 1.65; }
+
+  .home-page :is(
+    .hero-help-link, .hero-pill, .text-action, .care-path-search button,
+    .care-path-filters button, .care-need-link, .care-path-actions .agai-button,
+    .care-path-contact, .founder-showcase-book, .founder-showcase-explore,
+    .founder-showcase-link, .testimonial-read-more, .testimonials-footer a,
+    .home-faq-filters button, .home-faq-contact-button, .home-faq-empty a,
+    .booking-steps button, .booking-back, .booking-notes summary,
+    .contact-banner-actions .agai-button, .contact-banner-phone
+  ) { font-size: var(--home-type-small); font-weight: 600; line-height: 1.5; }
+  .home-page .hero-pill { min-height: 44px; box-sizing: border-box; }
+  .home-page .testimonials-review-button { font-size: var(--home-type-body); font-weight: 600; }
+  .home-page .home-faq .faq-list--numbered summary { font-size: var(--home-type-body); font-weight: 600; line-height: 1.5; }
+  .home-page :is(.agai-field, .booking-fieldset legend) { font-size: var(--home-type-small); font-weight: 600; }
+  .home-page .appointment-card :is(.agai-input, .service-select-trigger) { font-size: var(--home-type-body); font-weight: 400; line-height: 1.5; }
+  .home-page .appointment-submit { font-size: var(--home-type-body); font-weight: 600; line-height: 1.5; }
+
+  .home-page :is(
+    .care-path-note strong, .care-path-principles strong, .care-need-focus p,
+    .section-bottom, .founder-showcase .founder-identity p,
+    .founder-showcase-education li, .founder-showcase-expectations strong,
+    .founder-showcase-expectations p, .testimonial-card figcaption strong,
+    .testimonials-footer p, .booking-practitioner-profile p,
+    .booking-privacy-note p, .booking-step-heading > p:last-child,
+    .booking-review > p, .booking-review dd, .booking-notes summary > span,
+    .appointment-consent, .service-select-option, .booking-time,
+    .booking-time-flexible, .booking-info, .booking-time-picker > p,
+    .booking-calendar-selection, .form-error, .contact-banner .contact-banner-steps p
+  ) { font-size: var(--home-type-small); line-height: 1.6; }
+
+  .home-page :is(
+    p.home-unified-eyebrow, .eyebrow, .care-path-eyebrow,
+    .founder-showcase-eyebrow, .founder-showcase-badge, .founder-showcase-kicker,
+    .founder-showcase-panel h4, .booking-label, .testimonial-category
+  ) { font-size: var(--home-type-caption); font-weight: 600; line-height: 1.5; }
+  .home-page :is(
+    .care-path-note p, .care-path-note span, .care-path-count, .care-need-tags span,
+    .care-need-focus > span, .care-need-topics li, .care-need-number,
+    .care-path-principles p, .founder-credential-badges li,
+    .founder-showcase-care-tags li, .founder-showcase-panel-footer > span,
+    .testimonials-source, .testimonials-rating-copy > p,
+    .testimonial-card figcaption div > span, .booking-practitioner-tags li,
+    .booking-practitioner-steps span, .booking-contact-caption,
+    .appointment-whatsapp-button small, .appointment-phone small,
+    .booking-duration, .booking-steps button > span, .appointment-note,
+    .home-faq-contact-footer, .contact-banner-location
+  ) { font-size: var(--home-type-caption); line-height: 1.6; }
+  .home-page :is(.booking-practitioner-steps strong, .appointment-whatsapp-button strong, .appointment-phone strong) { font-size: var(--home-type-small); font-weight: 600; }
+
+  /* Give Tamil vowel marks room and preserve natural script spacing. */
+  .tamil-page .home-page { --home-script-leading: 1.5; --home-script-tracking: normal; }
+  .tamil-page .home-page :is(h1, h2, h3, h4) { line-height: 1.5; letter-spacing: normal; }
+  .tamil-page .home-page :is(.home-unified-eyebrow, .care-path-eyebrow, .founder-showcase-eyebrow, .founder-showcase-kicker, .booking-label) { letter-spacing: normal; }
+}

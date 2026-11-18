@@ -1,0 +1,49 @@
+[
+  {
+    "lang": "en",
+    "width": 320,
+    "issues": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "issues": [],
+    "headingStyles": [
+      "32px / 700 / 40px"
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 767,
+    "issues": []
+  },
+  {
+    "lang": "en",
+    "width": 1440,
+    "issues": [],
+    "desktopUnchanged": true
+  },
+  {
+    "lang": "ta",
+    "width": 320,
+    "issues": []
+  },
+  {
+    "lang": "ta",
+    "width": 390,
+    "issues": [],
+    "headingStyles": [
+      "32px / 700 / 48px"
+    ]
+  },
+  {
+    "lang": "ta",
+    "width": 767,
+    "issues": []
+  },
+  {
+    "lang": "ta",
+    "width": 1440,
+    "issues": []
+  }
+]

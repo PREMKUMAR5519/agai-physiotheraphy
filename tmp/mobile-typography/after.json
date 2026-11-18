@@ -1,0 +1,6576 @@
+[
+  {
+    "lang": "en",
+    "width": 320,
+    "overflows": [
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 320,
+        "width": 320,
+        "clipped": [
+          {
+            "text": "Your details",
+            "width": 1,
+            "scroll": 108,
+            "height": 1,
+            "scrollHeight": 28
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "Move Better. Recover Stronger. Perform Better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "38.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "Sports Rehabilitation & Performance Centre",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "27px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Is movement becoming difficult?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "If pain, stiffness or weakness is making everyday activ",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Does this sound familiar?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pain or stiffness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "An injury or recent surgery",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Getting back to sport",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Changes during or after pregnancy",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Walking or balance feels harder",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Movement after a stroke",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Not sure which service you need?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Care for your needs. Support for your next step.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Sports injury rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For an injury that is keeping you away from sport or ex",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Strength & conditioning",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For building strength, stamina and confidence in exerci",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Orthopaedic rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For back, neck or joint pain, stiffness and recovery af",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Neurological rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement and balance difficulties linked to a neuro",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Women’s fitness & wellness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement, strength and exercise support through dif",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pelvic floor rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For concerns such as bladder leakage or pelvic floor we",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Geriatric rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For older adults finding walking, balance or everyday m",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Know what to expect. Feel ready to begin.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Someone who listens.Care that fits you.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Practitioner credentials",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Their words. Their experience.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Your recovery. Starts right here.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Schedule Your Clinical Appointment",
+        "font": "Inter, Arial, sans-serif",
+        "size": "24px",
+        "weight": "700",
+        "line": "32.4px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "22.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Frequently asked questions.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "Clear care begins with answering everyday doubts. Every",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Still have a question?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Let's get youmoving better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 360,
+    "overflows": [
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 360,
+        "width": 360,
+        "clipped": [
+          {
+            "text": "Your details",
+            "width": 1,
+            "scroll": 108,
+            "height": 1,
+            "scrollHeight": 28
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "Move Better. Recover Stronger. Perform Better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "33px",
+        "weight": "700",
+        "line": "39.6px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "Sports Rehabilitation & Performance Centre",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "27px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Is movement becoming difficult?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "If pain, stiffness or weakness is making everyday activ",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Does this sound familiar?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pain or stiffness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "An injury or recent surgery",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Getting back to sport",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Changes during or after pregnancy",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Walking or balance feels harder",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Movement after a stroke",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Not sure which service you need?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Care for your needs. Support for your next step.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Sports injury rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For an injury that is keeping you away from sport or ex",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Strength & conditioning",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For building strength, stamina and confidence in exerci",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Orthopaedic rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For back, neck or joint pain, stiffness and recovery af",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Neurological rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement and balance difficulties linked to a neuro",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Women’s fitness & wellness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement, strength and exercise support through dif",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pelvic floor rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For concerns such as bladder leakage or pelvic floor we",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Geriatric rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For older adults finding walking, balance or everyday m",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Know what to expect. Feel ready to begin.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Someone who listens.Care that fits you.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Practitioner credentials",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Their words. Their experience.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Your recovery. Starts right here.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Schedule Your Clinical Appointment",
+        "font": "Inter, Arial, sans-serif",
+        "size": "24px",
+        "weight": "700",
+        "line": "32.4px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "22.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Frequently asked questions.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "Clear care begins with answering everyday doubts. Every",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Still have a question?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Let's get youmoving better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "overflows": [
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 390,
+        "width": 390,
+        "clipped": [
+          {
+            "text": "Your details",
+            "width": 1,
+            "scroll": 108,
+            "height": 1,
+            "scrollHeight": 28
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "Move Better. Recover Stronger. Perform Better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "33.75px",
+        "weight": "700",
+        "line": "40.5px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "Sports Rehabilitation & Performance Centre",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "27px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Is movement becoming difficult?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "If pain, stiffness or weakness is making everyday activ",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Does this sound familiar?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pain or stiffness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "An injury or recent surgery",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Getting back to sport",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Changes during or after pregnancy",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Walking or balance feels harder",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Movement after a stroke",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Not sure which service you need?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Care for your needs. Support for your next step.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Sports injury rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For an injury that is keeping you away from sport or ex",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Strength & conditioning",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For building strength, stamina and confidence in exerci",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Orthopaedic rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For back, neck or joint pain, stiffness and recovery af",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Neurological rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement and balance difficulties linked to a neuro",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Women’s fitness & wellness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement, strength and exercise support through dif",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pelvic floor rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For concerns such as bladder leakage or pelvic floor we",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Geriatric rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For older adults finding walking, balance or everyday m",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Know what to expect. Feel ready to begin.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Someone who listens.Care that fits you.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Practitioner credentials",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Their words. Their experience.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Your recovery. Starts right here.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Schedule Your Clinical Appointment",
+        "font": "Inter, Arial, sans-serif",
+        "size": "24px",
+        "weight": "700",
+        "line": "32.4px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "22.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Frequently asked questions.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "Clear care begins with answering everyday doubts. Every",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Still have a question?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Let's get youmoving better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 430,
+    "overflows": [
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 430,
+        "width": 430,
+        "clipped": [
+          {
+            "text": "Your details",
+            "width": 1,
+            "scroll": 108,
+            "height": 1,
+            "scrollHeight": 28
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "Move Better. Recover Stronger. Perform Better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "34.75px",
+        "weight": "700",
+        "line": "41.7px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "Sports Rehabilitation & Performance Centre",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "27px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Is movement becoming difficult?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "If pain, stiffness or weakness is making everyday activ",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Does this sound familiar?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pain or stiffness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "An injury or recent surgery",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Getting back to sport",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Changes during or after pregnancy",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Walking or balance feels harder",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Movement after a stroke",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Not sure which service you need?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Care for your needs. Support for your next step.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Sports injury rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For an injury that is keeping you away from sport or ex",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Strength & conditioning",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For building strength, stamina and confidence in exerci",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Orthopaedic rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For back, neck or joint pain, stiffness and recovery af",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Neurological rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement and balance difficulties linked to a neuro",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Women’s fitness & wellness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement, strength and exercise support through dif",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pelvic floor rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For concerns such as bladder leakage or pelvic floor we",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Geriatric rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For older adults finding walking, balance or everyday m",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Know what to expect. Feel ready to begin.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Someone who listens.Care that fits you.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Practitioner credentials",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Their words. Their experience.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Your recovery. Starts right here.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Schedule Your Clinical Appointment",
+        "font": "Inter, Arial, sans-serif",
+        "size": "24px",
+        "weight": "700",
+        "line": "32.4px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "22.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Frequently asked questions.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "Clear care begins with answering everyday doubts. Every",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Still have a question?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Let's get youmoving better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 767,
+    "overflows": [
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 767,
+        "width": 767,
+        "clipped": [
+          {
+            "text": "Your details",
+            "width": 1,
+            "scroll": 108,
+            "height": 1,
+            "scrollHeight": 28
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "Move Better. Recover Stronger. Perform Better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "36px",
+        "weight": "700",
+        "line": "43.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "Sports Rehabilitation & Performance Centre",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "27px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Is movement becoming difficult?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "If pain, stiffness or weakness is making everyday activ",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Does this sound familiar?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pain or stiffness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "An injury or recent surgery",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Getting back to sport",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Changes during or after pregnancy",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Walking or balance feels harder",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Movement after a stroke",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Not sure which service you need?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Care for your needs. Support for your next step.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Sports injury rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For an injury that is keeping you away from sport or ex",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Strength & conditioning",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For building strength, stamina and confidence in exerci",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Orthopaedic rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For back, neck or joint pain, stiffness and recovery af",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Neurological rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement and balance difficulties linked to a neuro",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Women’s fitness & wellness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement, strength and exercise support through dif",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pelvic floor rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For concerns such as bladder leakage or pelvic floor we",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Geriatric rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For older adults finding walking, balance or everyday m",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Know what to expect. Feel ready to begin.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Someone who listens.Care that fits you.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Practitioner credentials",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Their words. Their experience.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Your recovery. Starts right here.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "25.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Schedule Your Clinical Appointment",
+        "font": "Inter, Arial, sans-serif",
+        "size": "24px",
+        "weight": "700",
+        "line": "32.4px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "22.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Frequently asked questions.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "Clear care begins with answering everyday doubts. Every",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Still have a question?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Let's get youmoving better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 768,
+    "overflows": [
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 768,
+        "width": 768,
+        "clipped": [
+          {
+            "text": "Your details",
+            "width": 1,
+            "scroll": 109,
+            "height": 1,
+            "scrollHeight": 34
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "Move Better. Recover Stronger. Perform Better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "500",
+        "line": "36.8px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "Sports Rehabilitation & Performance Centre",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "500",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Is movement becoming difficult?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "17px",
+        "weight": "600",
+        "line": "20.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "If pain, stiffness or weakness is making everyday activ",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Does this sound familiar?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pain or stiffness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "An injury or recent surgery",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Getting back to sport",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Changes during or after pregnancy",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Walking or balance feels harder",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Movement after a stroke",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Not sure which service you need?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "27px",
+        "weight": "600",
+        "line": "33.75px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Care for your needs. Support for your next step.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Sports injury rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For an injury that is keeping you away from sport or ex",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Strength & conditioning",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For building strength, stamina and confidence in exerci",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Orthopaedic rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For back, neck or joint pain, stiffness and recovery af",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Neurological rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement and balance difficulties linked to a neuro",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Women’s fitness & wellness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement, strength and exercise support through dif",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pelvic floor rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For concerns such as bladder leakage or pelvic floor we",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Geriatric rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For older adults finding walking, balance or everyday m",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Know what to expect. Feel ready to begin.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "33.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "33.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "33.8px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Someone who listens.Care that fits you.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "36px",
+        "weight": "600",
+        "line": "43.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "29.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Practitioner credentials",
+        "font": "Inter, Arial, sans-serif",
+        "size": "19px",
+        "weight": "600",
+        "line": "25.65px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Their words. Their experience.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Your recovery. Starts right here.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "15px",
+        "weight": "600",
+        "line": "20.25px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Schedule Your Clinical Appointment",
+        "font": "Inter, Arial, sans-serif",
+        "size": "24px",
+        "weight": "500",
+        "line": "31.2px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "20.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Frequently asked questions.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "Clear care begins with answering everyday doubts. Every",
+        "font": "Inter, Arial, sans-serif",
+        "size": "15px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Still have a question?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Let's get youmoving better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "36px",
+        "weight": "500",
+        "line": "43.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 1440,
+    "overflows": [
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 1440,
+        "width": 1440,
+        "clipped": [
+          {
+            "text": "Your details",
+            "width": 1,
+            "scroll": 109,
+            "height": 1,
+            "scrollHeight": 34
+          }
+        ]
+      }
+    ],
+    "desktopUnchanged": true,
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "Move Better. Recover Stronger. Perform Better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "46px",
+        "weight": "500",
+        "line": "52.9px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "Sports Rehabilitation & Performance Centre",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "500",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Is movement becoming difficult?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "17px",
+        "weight": "600",
+        "line": "20.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "If pain, stiffness or weakness is making everyday activ",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Does this sound familiar?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pain or stiffness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "An injury or recent surgery",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Getting back to sport",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Changes during or after pregnancy",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Walking or balance feels harder",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Movement after a stroke",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Not sure which service you need?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "27px",
+        "weight": "600",
+        "line": "33.75px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Care for your needs. Support for your next step.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Sports injury rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For an injury that is keeping you away from sport or ex",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Strength & conditioning",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For building strength, stamina and confidence in exerci",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Orthopaedic rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For back, neck or joint pain, stiffness and recovery af",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Neurological rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement and balance difficulties linked to a neuro",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Women’s fitness & wellness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement, strength and exercise support through dif",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pelvic floor rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For concerns such as bladder leakage or pelvic floor we",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Geriatric rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For older adults finding walking, balance or everyday m",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Know what to expect. Feel ready to begin.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "33.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "33.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "33.8px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Someone who listens.Care that fits you.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "36px",
+        "weight": "600",
+        "line": "43.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "29.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Practitioner credentials",
+        "font": "Inter, Arial, sans-serif",
+        "size": "19px",
+        "weight": "600",
+        "line": "25.65px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Their words. Their experience.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Your recovery. Starts right here.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "17px",
+        "weight": "600",
+        "line": "22.95px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Schedule Your Clinical Appointment",
+        "font": "Inter, Arial, sans-serif",
+        "size": "24px",
+        "weight": "500",
+        "line": "31.2px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "20.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Frequently asked questions.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "Clear care begins with answering everyday doubts. Every",
+        "font": "Inter, Arial, sans-serif",
+        "size": "15px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Still have a question?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Let's get youmoving better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "36px",
+        "weight": "500",
+        "line": "43.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      }
+    ]
+  },
+  {
+    "lang": "ta",
+    "width": 320,
+    "overflows": [
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 320,
+        "width": 320,
+        "clipped": [
+          {
+            "text": "உங்கள் விவரங்கள்",
+            "width": 1,
+            "scroll": 220,
+            "height": 1,
+            "scrollHeight": 30
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "எளிதாக இயங்குங்கள். வலிமையுடன் மீளுங்கள். சிறப்பாகச் செ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "விளையாட்டு மறுவாழ்வு மற்றும் செயல்திறன் மையம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "27px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இயங்குவது கடினமாக உள்ளதா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வலி, இறுக்கம் அல்லது பலவீனம் காரணமாக அன்றாடச் செயல்கள் ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இந்தச் சிரமங்கள் உங்களுக்கும் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "வலி அல்லது இறுக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "காயம் அல்லது அண்மையில் செய்த அறுவைச் சிகிச்சை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக்குத் திரும்புதல்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "கர்ப்பகாலம் அல்லது பிரசவத்திற்குப் பிந்தைய மாற்றங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நடப்பது அல்லது சமநிலையைப் பேணுவது கடினமாக உள்ளது",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பக்கவாதத்திற்குப் பிந்தைய இயக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எந்தச் சேவை தேவை என்று தெரியவில்லையா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் தேவைகளுக்கேற்ற சிகிச்சை. அடுத்த படிக்கான ஆதரவு.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக் காயங்களுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "காயம் காரணமாக விளையாட்டு அல்லது உடற்பயிற்சியில் ஈடுபட ம",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "தசை வலிமை மற்றும் உடற்திறன் பயிற்சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "உடற்பயிற்சியில் வலிமை, சகிப்புத்திறன் மற்றும் நம்பிக்கை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எலும்பு மற்றும் மூட்டுப் பிரச்சினைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "முதுகு, கழுத்து அல்லது மூட்டு வலி, இறுக்கம் மற்றும் அறு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நரம்பியல் மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நரம்பியல் பாதிப்புடன் தொடர்புடைய இயக்கம் மற்றும் சமநிலை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பெண்களுக்கான உடற்தகுதி மற்றும் நலம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வாழ்க்கையின் பல்வேறு நிலைகளில் இயக்கம், வலிமை மற்றும் உ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இடுப்புத்தளத் தசைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "சிறுநீர்க் கசிவு அல்லது இடுப்புத்தளத் தசைப் பலவீனம் போன",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "முதியோருக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நடை, சமநிலை அல்லது அன்றாட இயக்கத்தில் சிரமப்படும் முதிய",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "என்ன எதிர்பார்க்கலாம் என்பதை அறியுங்கள். நம்பிக்கையுடன்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "உங்கள் குரலைக் கேட்கிறோம்.உங்களுக்கேற்ற சிகிச்சை அளிக்க",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "மருத்துவரின் தகுதிகள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அவர்களின் கருத்துகள். அவர்களின் அனுபவங்கள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் நலம். இங்கிருந்து தொடங்குகிறது.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சந்திப்புக்கு முன்பதிவு செய்யுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "24px",
+        "weight": "700",
+        "line": "36px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "22.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அடிக்கடி கேட்கப்படும் கேள்விகள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "உங்கள் சந்தேகங்களுக்குப் பதிலளிப்பதிலிருந்து தெளிவான சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இன்னும் கேள்விகள் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "மேலும் எளிதாகஇயங்க உதவுகிறோம்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      }
+    ]
+  },
+  {
+    "lang": "ta",
+    "width": 360,
+    "overflows": [
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 360,
+        "width": 360,
+        "clipped": [
+          {
+            "text": "உங்கள் விவரங்கள்",
+            "width": 1,
+            "scroll": 220,
+            "height": 1,
+            "scrollHeight": 30
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "எளிதாக இயங்குங்கள். வலிமையுடன் மீளுங்கள். சிறப்பாகச் செ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "33px",
+        "weight": "700",
+        "line": "49.5px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "விளையாட்டு மறுவாழ்வு மற்றும் செயல்திறன் மையம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "27px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இயங்குவது கடினமாக உள்ளதா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வலி, இறுக்கம் அல்லது பலவீனம் காரணமாக அன்றாடச் செயல்கள் ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இந்தச் சிரமங்கள் உங்களுக்கும் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "வலி அல்லது இறுக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "காயம் அல்லது அண்மையில் செய்த அறுவைச் சிகிச்சை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக்குத் திரும்புதல்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "கர்ப்பகாலம் அல்லது பிரசவத்திற்குப் பிந்தைய மாற்றங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நடப்பது அல்லது சமநிலையைப் பேணுவது கடினமாக உள்ளது",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பக்கவாதத்திற்குப் பிந்தைய இயக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எந்தச் சேவை தேவை என்று தெரியவில்லையா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் தேவைகளுக்கேற்ற சிகிச்சை. அடுத்த படிக்கான ஆதரவு.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக் காயங்களுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "காயம் காரணமாக விளையாட்டு அல்லது உடற்பயிற்சியில் ஈடுபட ம",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "தசை வலிமை மற்றும் உடற்திறன் பயிற்சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "உடற்பயிற்சியில் வலிமை, சகிப்புத்திறன் மற்றும் நம்பிக்கை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எலும்பு மற்றும் மூட்டுப் பிரச்சினைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "முதுகு, கழுத்து அல்லது மூட்டு வலி, இறுக்கம் மற்றும் அறு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நரம்பியல் மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நரம்பியல் பாதிப்புடன் தொடர்புடைய இயக்கம் மற்றும் சமநிலை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பெண்களுக்கான உடற்தகுதி மற்றும் நலம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வாழ்க்கையின் பல்வேறு நிலைகளில் இயக்கம், வலிமை மற்றும் உ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இடுப்புத்தளத் தசைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "சிறுநீர்க் கசிவு அல்லது இடுப்புத்தளத் தசைப் பலவீனம் போன",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "முதியோருக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நடை, சமநிலை அல்லது அன்றாட இயக்கத்தில் சிரமப்படும் முதிய",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "என்ன எதிர்பார்க்கலாம் என்பதை அறியுங்கள். நம்பிக்கையுடன்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "உங்கள் குரலைக் கேட்கிறோம்.உங்களுக்கேற்ற சிகிச்சை அளிக்க",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "மருத்துவரின் தகுதிகள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அவர்களின் கருத்துகள். அவர்களின் அனுபவங்கள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் நலம். இங்கிருந்து தொடங்குகிறது.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சந்திப்புக்கு முன்பதிவு செய்யுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "24px",
+        "weight": "700",
+        "line": "36px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "22.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அடிக்கடி கேட்கப்படும் கேள்விகள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "உங்கள் சந்தேகங்களுக்குப் பதிலளிப்பதிலிருந்து தெளிவான சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இன்னும் கேள்விகள் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "மேலும் எளிதாகஇயங்க உதவுகிறோம்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      }
+    ]
+  },
+  {
+    "lang": "ta",
+    "width": 390,
+    "overflows": [
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 390,
+        "width": 390,
+        "clipped": [
+          {
+            "text": "உங்கள் விவரங்கள்",
+            "width": 1,
+            "scroll": 220,
+            "height": 1,
+            "scrollHeight": 30
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "எளிதாக இயங்குங்கள். வலிமையுடன் மீளுங்கள். சிறப்பாகச் செ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "33.75px",
+        "weight": "700",
+        "line": "50.625px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "விளையாட்டு மறுவாழ்வு மற்றும் செயல்திறன் மையம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "27px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இயங்குவது கடினமாக உள்ளதா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வலி, இறுக்கம் அல்லது பலவீனம் காரணமாக அன்றாடச் செயல்கள் ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இந்தச் சிரமங்கள் உங்களுக்கும் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "வலி அல்லது இறுக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "காயம் அல்லது அண்மையில் செய்த அறுவைச் சிகிச்சை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக்குத் திரும்புதல்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "கர்ப்பகாலம் அல்லது பிரசவத்திற்குப் பிந்தைய மாற்றங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நடப்பது அல்லது சமநிலையைப் பேணுவது கடினமாக உள்ளது",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பக்கவாதத்திற்குப் பிந்தைய இயக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எந்தச் சேவை தேவை என்று தெரியவில்லையா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் தேவைகளுக்கேற்ற சிகிச்சை. அடுத்த படிக்கான ஆதரவு.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக் காயங்களுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "காயம் காரணமாக விளையாட்டு அல்லது உடற்பயிற்சியில் ஈடுபட ம",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "தசை வலிமை மற்றும் உடற்திறன் பயிற்சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "உடற்பயிற்சியில் வலிமை, சகிப்புத்திறன் மற்றும் நம்பிக்கை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எலும்பு மற்றும் மூட்டுப் பிரச்சினைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "முதுகு, கழுத்து அல்லது மூட்டு வலி, இறுக்கம் மற்றும் அறு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நரம்பியல் மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நரம்பியல் பாதிப்புடன் தொடர்புடைய இயக்கம் மற்றும் சமநிலை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பெண்களுக்கான உடற்தகுதி மற்றும் நலம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வாழ்க்கையின் பல்வேறு நிலைகளில் இயக்கம், வலிமை மற்றும் உ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இடுப்புத்தளத் தசைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "சிறுநீர்க் கசிவு அல்லது இடுப்புத்தளத் தசைப் பலவீனம் போன",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "முதியோருக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நடை, சமநிலை அல்லது அன்றாட இயக்கத்தில் சிரமப்படும் முதிய",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "என்ன எதிர்பார்க்கலாம் என்பதை அறியுங்கள். நம்பிக்கையுடன்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "உங்கள் குரலைக் கேட்கிறோம்.உங்களுக்கேற்ற சிகிச்சை அளிக்க",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "மருத்துவரின் தகுதிகள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அவர்களின் கருத்துகள். அவர்களின் அனுபவங்கள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் நலம். இங்கிருந்து தொடங்குகிறது.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சந்திப்புக்கு முன்பதிவு செய்யுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "24px",
+        "weight": "700",
+        "line": "36px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "22.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அடிக்கடி கேட்கப்படும் கேள்விகள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "உங்கள் சந்தேகங்களுக்குப் பதிலளிப்பதிலிருந்து தெளிவான சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இன்னும் கேள்விகள் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "மேலும் எளிதாகஇயங்க உதவுகிறோம்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      }
+    ]
+  },
+  {
+    "lang": "ta",
+    "width": 430,
+    "overflows": [
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 430,
+        "width": 430,
+        "clipped": [
+          {
+            "text": "உங்கள் விவரங்கள்",
+            "width": 1,
+            "scroll": 220,
+            "height": 1,
+            "scrollHeight": 30
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "எளிதாக இயங்குங்கள். வலிமையுடன் மீளுங்கள். சிறப்பாகச் செ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "34.75px",
+        "weight": "700",
+        "line": "52.125px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "விளையாட்டு மறுவாழ்வு மற்றும் செயல்திறன் மையம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "27px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இயங்குவது கடினமாக உள்ளதா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வலி, இறுக்கம் அல்லது பலவீனம் காரணமாக அன்றாடச் செயல்கள் ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இந்தச் சிரமங்கள் உங்களுக்கும் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "வலி அல்லது இறுக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "காயம் அல்லது அண்மையில் செய்த அறுவைச் சிகிச்சை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக்குத் திரும்புதல்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "கர்ப்பகாலம் அல்லது பிரசவத்திற்குப் பிந்தைய மாற்றங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நடப்பது அல்லது சமநிலையைப் பேணுவது கடினமாக உள்ளது",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பக்கவாதத்திற்குப் பிந்தைய இயக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எந்தச் சேவை தேவை என்று தெரியவில்லையா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் தேவைகளுக்கேற்ற சிகிச்சை. அடுத்த படிக்கான ஆதரவு.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக் காயங்களுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "காயம் காரணமாக விளையாட்டு அல்லது உடற்பயிற்சியில் ஈடுபட ம",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "தசை வலிமை மற்றும் உடற்திறன் பயிற்சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "உடற்பயிற்சியில் வலிமை, சகிப்புத்திறன் மற்றும் நம்பிக்கை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எலும்பு மற்றும் மூட்டுப் பிரச்சினைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "முதுகு, கழுத்து அல்லது மூட்டு வலி, இறுக்கம் மற்றும் அறு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நரம்பியல் மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நரம்பியல் பாதிப்புடன் தொடர்புடைய இயக்கம் மற்றும் சமநிலை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பெண்களுக்கான உடற்தகுதி மற்றும் நலம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வாழ்க்கையின் பல்வேறு நிலைகளில் இயக்கம், வலிமை மற்றும் உ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இடுப்புத்தளத் தசைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "சிறுநீர்க் கசிவு அல்லது இடுப்புத்தளத் தசைப் பலவீனம் போன",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "முதியோருக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நடை, சமநிலை அல்லது அன்றாட இயக்கத்தில் சிரமப்படும் முதிய",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "என்ன எதிர்பார்க்கலாம் என்பதை அறியுங்கள். நம்பிக்கையுடன்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "உங்கள் குரலைக் கேட்கிறோம்.உங்களுக்கேற்ற சிகிச்சை அளிக்க",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "மருத்துவரின் தகுதிகள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அவர்களின் கருத்துகள். அவர்களின் அனுபவங்கள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் நலம். இங்கிருந்து தொடங்குகிறது.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சந்திப்புக்கு முன்பதிவு செய்யுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "24px",
+        "weight": "700",
+        "line": "36px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "22.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அடிக்கடி கேட்கப்படும் கேள்விகள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "உங்கள் சந்தேகங்களுக்குப் பதிலளிப்பதிலிருந்து தெளிவான சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இன்னும் கேள்விகள் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "மேலும் எளிதாகஇயங்க உதவுகிறோம்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      }
+    ]
+  },
+  {
+    "lang": "ta",
+    "width": 767,
+    "overflows": [
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 767,
+        "width": 767,
+        "clipped": [
+          {
+            "text": "உங்கள் விவரங்கள்",
+            "width": 1,
+            "scroll": 220,
+            "height": 1,
+            "scrollHeight": 30
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "எளிதாக இயங்குங்கள். வலிமையுடன் மீளுங்கள். சிறப்பாகச் செ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "36px",
+        "weight": "700",
+        "line": "54px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "விளையாட்டு மறுவாழ்வு மற்றும் செயல்திறன் மையம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "27px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இயங்குவது கடினமாக உள்ளதா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வலி, இறுக்கம் அல்லது பலவீனம் காரணமாக அன்றாடச் செயல்கள் ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இந்தச் சிரமங்கள் உங்களுக்கும் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "வலி அல்லது இறுக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "காயம் அல்லது அண்மையில் செய்த அறுவைச் சிகிச்சை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக்குத் திரும்புதல்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "கர்ப்பகாலம் அல்லது பிரசவத்திற்குப் பிந்தைய மாற்றங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நடப்பது அல்லது சமநிலையைப் பேணுவது கடினமாக உள்ளது",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பக்கவாதத்திற்குப் பிந்தைய இயக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எந்தச் சேவை தேவை என்று தெரியவில்லையா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் தேவைகளுக்கேற்ற சிகிச்சை. அடுத்த படிக்கான ஆதரவு.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக் காயங்களுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "காயம் காரணமாக விளையாட்டு அல்லது உடற்பயிற்சியில் ஈடுபட ம",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "தசை வலிமை மற்றும் உடற்திறன் பயிற்சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "உடற்பயிற்சியில் வலிமை, சகிப்புத்திறன் மற்றும் நம்பிக்கை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எலும்பு மற்றும் மூட்டுப் பிரச்சினைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "முதுகு, கழுத்து அல்லது மூட்டு வலி, இறுக்கம் மற்றும் அறு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நரம்பியல் மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நரம்பியல் பாதிப்புடன் தொடர்புடைய இயக்கம் மற்றும் சமநிலை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பெண்களுக்கான உடற்தகுதி மற்றும் நலம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வாழ்க்கையின் பல்வேறு நிலைகளில் இயக்கம், வலிமை மற்றும் உ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இடுப்புத்தளத் தசைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "சிறுநீர்க் கசிவு அல்லது இடுப்புத்தளத் தசைப் பலவீனம் போன",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "முதியோருக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நடை, சமநிலை அல்லது அன்றாட இயக்கத்தில் சிரமப்படும் முதிய",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "என்ன எதிர்பார்க்கலாம் என்பதை அறியுங்கள். நம்பிக்கையுடன்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "உங்கள் குரலைக் கேட்கிறோம்.உங்களுக்கேற்ற சிகிச்சை அளிக்க",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "மருத்துவரின் தகுதிகள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அவர்களின் கருத்துகள். அவர்களின் அனுபவங்கள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் நலம். இங்கிருந்து தொடங்குகிறது.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "18px",
+        "weight": "700",
+        "line": "27px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சந்திப்புக்கு முன்பதிவு செய்யுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "24px",
+        "weight": "700",
+        "line": "36px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "22.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அடிக்கடி கேட்கப்படும் கேள்விகள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "48px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "உங்கள் சந்தேகங்களுக்குப் பதிலளிப்பதிலிருந்து தெளிவான சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "26.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இன்னும் கேள்விகள் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "700",
+        "line": "30px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "மேலும் எளிதாகஇயங்க உதவுகிறோம்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "700",
+        "line": "40px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "line": "24px"
+      }
+    ]
+  },
+  {
+    "lang": "ta",
+    "width": 768,
+    "overflows": [
+      {
+        "section": "section care-needs-section",
+        "scrollWidth": 768,
+        "width": 768,
+        "clipped": [
+          {
+            "text": "இந்தச் சிரமங்கள் உங்களுக்கும் உள்ளனவா?",
+            "width": 406,
+            "scroll": 406,
+            "height": 110,
+            "scrollHeight": 113
+          }
+        ]
+      },
+      {
+        "section": "section agai-container home-services",
+        "scrollWidth": 768,
+        "width": 768,
+        "clipped": [
+          {
+            "text": "விளையாட்டுக் காயங்களுக்கான மறுவாழ்வு",
+            "width": 201,
+            "scroll": 201,
+            "height": 45,
+            "scrollHeight": 67
+          },
+          {
+            "text": "எலும்பு மற்றும் மூட்டுப் பிரச்சினைகளுக்கான மறுவாழ்வு",
+            "width": 201,
+            "scroll": 201,
+            "height": 45,
+            "scrollHeight": 67
+          },
+          {
+            "text": "பெண்களுக்கான உடற்தகுதி மற்றும் நலம்",
+            "width": 201,
+            "scroll": 201,
+            "height": 45,
+            "scrollHeight": 67
+          },
+          {
+            "text": "இடுப்புத்தளத் தசைகளுக்கான மறுவாழ்வு",
+            "width": 201,
+            "scroll": 201,
+            "height": 45,
+            "scrollHeight": 67
+          }
+        ]
+      },
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 768,
+        "width": 768,
+        "clipped": [
+          {
+            "text": "உங்கள் விவரங்கள்",
+            "width": 1,
+            "scroll": 214,
+            "height": 1,
+            "scrollHeight": 32
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "எளிதாக இயங்குங்கள். வலிமையுடன் மீளுங்கள். சிறப்பாகச் செ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "30px",
+        "weight": "500",
+        "line": "45px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "விளையாட்டு மறுவாழ்வு மற்றும் செயல்திறன் மையம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "500",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இயங்குவது கடினமாக உள்ளதா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "17px",
+        "weight": "600",
+        "line": "25.5px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வலி, இறுக்கம் அல்லது பலவீனம் காரணமாக அன்றாடச் செயல்கள் ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இந்தச் சிரமங்கள் உங்களுக்கும் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "வலி அல்லது இறுக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "காயம் அல்லது அண்மையில் செய்த அறுவைச் சிகிச்சை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக்குத் திரும்புதல்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "கர்ப்பகாலம் அல்லது பிரசவத்திற்குப் பிந்தைய மாற்றங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நடப்பது அல்லது சமநிலையைப் பேணுவது கடினமாக உள்ளது",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பக்கவாதத்திற்குப் பிந்தைய இயக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எந்தச் சேவை தேவை என்று தெரியவில்லையா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "27px",
+        "weight": "600",
+        "line": "33.75px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் தேவைகளுக்கேற்ற சிகிச்சை. அடுத்த படிக்கான ஆதரவு.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக் காயங்களுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "காயம் காரணமாக விளையாட்டு அல்லது உடற்பயிற்சியில் ஈடுபட ம",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "தசை வலிமை மற்றும் உடற்திறன் பயிற்சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "உடற்பயிற்சியில் வலிமை, சகிப்புத்திறன் மற்றும் நம்பிக்கை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எலும்பு மற்றும் மூட்டுப் பிரச்சினைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "முதுகு, கழுத்து அல்லது மூட்டு வலி, இறுக்கம் மற்றும் அறு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நரம்பியல் மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நரம்பியல் பாதிப்புடன் தொடர்புடைய இயக்கம் மற்றும் சமநிலை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பெண்களுக்கான உடற்தகுதி மற்றும் நலம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வாழ்க்கையின் பல்வேறு நிலைகளில் இயக்கம், வலிமை மற்றும் உ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இடுப்புத்தளத் தசைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "சிறுநீர்க் கசிவு அல்லது இடுப்புத்தளத் தசைப் பலவீனம் போன",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "முதியோருக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நடை, சமநிலை அல்லது அன்றாட இயக்கத்தில் சிரமப்படும் முதிய",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "என்ன எதிர்பார்க்கலாம் என்பதை அறியுங்கள். நம்பிக்கையுடன்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "39px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "39px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "39px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "உங்கள் குரலைக் கேட்கிறோம்.உங்களுக்கேற்ற சிகிச்சை அளிக்க",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "36px",
+        "weight": "600",
+        "line": "43.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "29.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "மருத்துவரின் தகுதிகள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "19px",
+        "weight": "600",
+        "line": "25.65px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அவர்களின் கருத்துகள். அவர்களின் அனுபவங்கள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "48px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் நலம். இங்கிருந்து தொடங்குகிறது.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "48px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "15px",
+        "weight": "600",
+        "line": "20.25px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சந்திப்புக்கு முன்பதிவு செய்யுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "24px",
+        "weight": "500",
+        "line": "36px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "20.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அடிக்கடி கேட்கப்படும் கேள்விகள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "48px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "உங்கள் சந்தேகங்களுக்குப் பதிலளிப்பதிலிருந்து தெளிவான சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "15px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இன்னும் கேள்விகள் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "மேலும் எளிதாகஇயங்க உதவுகிறோம்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "36px",
+        "weight": "500",
+        "line": "43.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      }
+    ]
+  },
+  {
+    "lang": "ta",
+    "width": 1440,
+    "overflows": [
+      {
+        "section": "section care-needs-section",
+        "scrollWidth": 1440,
+        "width": 1440,
+        "clipped": [
+          {
+            "text": "இந்தச் சிரமங்கள் உங்களுக்கும் உள்ளனவா?",
+            "width": 658,
+            "scroll": 658,
+            "height": 101,
+            "scrollHeight": 105
+          }
+        ]
+      },
+      {
+        "section": "section agai-container home-services",
+        "scrollWidth": 1440,
+        "width": 1440,
+        "clipped": [
+          {
+            "text": "விளையாட்டுக் காயங்களுக்கான மறுவாழ்வு",
+            "width": 214,
+            "scroll": 214,
+            "height": 45,
+            "scrollHeight": 67
+          },
+          {
+            "text": "எலும்பு மற்றும் மூட்டுப் பிரச்சினைகளுக்கான மறுவாழ்வு",
+            "width": 214,
+            "scroll": 214,
+            "height": 45,
+            "scrollHeight": 67
+          },
+          {
+            "text": "இடுப்புத்தளத் தசைகளுக்கான மறுவாழ்வு",
+            "width": 214,
+            "scroll": 214,
+            "height": 45,
+            "scrollHeight": 67
+          }
+        ]
+      },
+      {
+        "section": "section appointment-section",
+        "scrollWidth": 1440,
+        "width": 1440,
+        "clipped": [
+          {
+            "text": "உங்கள் விவரங்கள்",
+            "width": 1,
+            "scroll": 214,
+            "height": 1,
+            "scrollHeight": 32
+          }
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "எளிதாக இயங்குங்கள். வலிமையுடன் மீளுங்கள். சிறப்பாகச் செ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "51.84px",
+        "weight": "500",
+        "line": "77.76px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "விளையாட்டு மறுவாழ்வு மற்றும் செயல்திறன் மையம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "20px",
+        "weight": "500",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இயங்குவது கடினமாக உள்ளதா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "17px",
+        "weight": "600",
+        "line": "25.5px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வலி, இறுக்கம் அல்லது பலவீனம் காரணமாக அன்றாடச் செயல்கள் ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "இந்தச் சிரமங்கள் உங்களுக்கும் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "வலி அல்லது இறுக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "காயம் அல்லது அண்மையில் செய்த அறுவைச் சிகிச்சை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக்குத் திரும்புதல்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "கர்ப்பகாலம் அல்லது பிரசவத்திற்குப் பிந்தைய மாற்றங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நடப்பது அல்லது சமநிலையைப் பேணுவது கடினமாக உள்ளது",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பக்கவாதத்திற்குப் பிந்தைய இயக்கம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எந்தச் சேவை தேவை என்று தெரியவில்லையா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "27px",
+        "weight": "600",
+        "line": "33.75px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் தேவைகளுக்கேற்ற சிகிச்சை. அடுத்த படிக்கான ஆதரவு.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "66px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "விளையாட்டுக் காயங்களுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "காயம் காரணமாக விளையாட்டு அல்லது உடற்பயிற்சியில் ஈடுபட ம",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "தசை வலிமை மற்றும் உடற்திறன் பயிற்சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "உடற்பயிற்சியில் வலிமை, சகிப்புத்திறன் மற்றும் நம்பிக்கை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "எலும்பு மற்றும் மூட்டுப் பிரச்சினைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "முதுகு, கழுத்து அல்லது மூட்டு வலி, இறுக்கம் மற்றும் அறு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "நரம்பியல் மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நரம்பியல் பாதிப்புடன் தொடர்புடைய இயக்கம் மற்றும் சமநிலை",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "பெண்களுக்கான உடற்தகுதி மற்றும் நலம்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "வாழ்க்கையின் பல்வேறு நிலைகளில் இயக்கம், வலிமை மற்றும் உ",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இடுப்புத்தளத் தசைகளுக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "சிறுநீர்க் கசிவு அல்லது இடுப்புத்தளத் தசைப் பலவீனம் போன",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "முதியோருக்கான மறுவாழ்வு",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "நடை, சமநிலை அல்லது அன்றாட இயக்கத்தில் சிரமப்படும் முதிய",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "என்ன எதிர்பார்க்கலாம் என்பதை அறியுங்கள். நம்பிக்கையுடன்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "66px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "39px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "39px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "39px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "உங்கள் குரலைக் கேட்கிறோம்.உங்களுக்கேற்ற சிகிச்சை அளிக்க",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "36px",
+        "weight": "600",
+        "line": "43.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "29.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "மருத்துவரின் தகுதிகள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "19px",
+        "weight": "600",
+        "line": "25.65px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அவர்களின் கருத்துகள். அவர்களின் அனுபவங்கள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "66px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "உங்கள் நலம். இங்கிருந்து தொடங்குகிறது.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "66px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "17px",
+        "weight": "600",
+        "line": "22.95px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சந்திப்புக்கு முன்பதிவு செய்யுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "24px",
+        "weight": "500",
+        "line": "36px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "20.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "அடிக்கடி கேட்கப்படும் கேள்விகள்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "66px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "உங்கள் சந்தேகங்களுக்குப் பதிலளிப்பதிலிருந்து தெளிவான சி",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "15px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இன்னும் கேள்விகள் உள்ளனவா?",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "மேலும் எளிதாகஇயங்க உதவுகிறோம்.",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "36px",
+        "weight": "500",
+        "line": "43.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் சிரமங்களைத் தெரிவியுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "உங்கள் இயக்கத்தைப் புரிந்துகொள்ளுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "இணைந்து திட்டமிடுங்கள்",
+        "font": "\"Nirmala UI\", \"Tamil Sangam MN\", Latha, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      }
+    ]
+  }
+]

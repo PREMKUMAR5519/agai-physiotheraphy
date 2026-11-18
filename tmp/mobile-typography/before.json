@@ -1,0 +1,894 @@
+[
+  {
+    "width": 390,
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "Move Better. Recover Stronger. Perform Better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "28px",
+        "weight": "500",
+        "line": "32.2px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "Sports Rehabilitation & Performance Centre",
+        "font": "Inter, Arial, sans-serif",
+        "size": "17px",
+        "weight": "500",
+        "line": "23.8px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Is movement becoming difficult?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "15px",
+        "weight": "600",
+        "line": "18px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "If pain, stiffness or weakness is making everyday activ",
+        "font": "Inter, Arial, sans-serif",
+        "size": "13px",
+        "weight": "400",
+        "line": "22.1px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Does this sound familiar?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pain or stiffness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "An injury or recent surgery",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Getting back to sport",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Changes during or after pregnancy",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Walking or balance feels harder",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Movement after a stroke",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Not sure which service you need?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "25px",
+        "weight": "600",
+        "line": "31.25px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Care for your needs. Support for your next step.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Sports injury rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For an injury that is keeping you away from sport or ex",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Strength & conditioning",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For building strength, stamina and confidence in exerci",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Orthopaedic rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For back, neck or joint pain, stiffness and recovery af",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Neurological rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement and balance difficulties linked to a neuro",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Women’s fitness & wellness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement, strength and exercise support through dif",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pelvic floor rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For concerns such as bladder leakage or pelvic floor we",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Geriatric rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For older adults finding walking, balance or everyday m",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Know what to expect. Feel ready to begin.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "33.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "33.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "33.8px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Someone who listens.Care that fits you.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "28px",
+        "weight": "600",
+        "line": "33.6px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "28px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Practitioner credentials",
+        "font": "Inter, Arial, sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "24.3px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Their words. Their experience.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Your recovery. Starts right here.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "600",
+        "line": "21.6px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Schedule Your Clinical Appointment",
+        "font": "Inter, Arial, sans-serif",
+        "size": "22px",
+        "weight": "500",
+        "line": "28.6px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "20.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Frequently asked questions.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "36.8px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "Clear care begins with answering everyday doubts. Every",
+        "font": "Inter, Arial, sans-serif",
+        "size": "15px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Still have a question?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Let's get youmoving better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "28px",
+        "weight": "500",
+        "line": "33.6px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "13px",
+        "weight": "600",
+        "line": "19.5px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "13px",
+        "weight": "600",
+        "line": "19.5px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "13px",
+        "weight": "600",
+        "line": "19.5px"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "styles": [
+      {
+        "tag": "H1",
+        "cls": "",
+        "text": "Move Better. Recover Stronger. Perform Better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "46px",
+        "weight": "500",
+        "line": "52.9px"
+      },
+      {
+        "tag": "P",
+        "cls": "hero-speciality",
+        "text": "Sports Rehabilitation & Performance Centre",
+        "font": "Inter, Arial, sans-serif",
+        "size": "20px",
+        "weight": "500",
+        "line": "28px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Is movement becoming difficult?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "17px",
+        "weight": "600",
+        "line": "20.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "If pain, stiffness or weakness is making everyday activ",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px"
+      },
+      {
+        "tag": "H2",
+        "cls": "",
+        "text": "Does this sound familiar?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pain or stiffness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "An injury or recent surgery",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Getting back to sport",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Changes during or after pregnancy",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Walking or balance feels harder",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Movement after a stroke",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Not sure which service you need?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "27px",
+        "weight": "600",
+        "line": "33.75px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Care for your needs. Support for your next step.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Sports injury rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For an injury that is keeping you away from sport or ex",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Strength & conditioning",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For building strength, stamina and confidence in exerci",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Orthopaedic rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For back, neck or joint pain, stiffness and recovery af",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Neurological rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement and balance difficulties linked to a neuro",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Women’s fitness & wellness",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For movement, strength and exercise support through dif",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Pelvic floor rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For concerns such as bladder leakage or pelvic floor we",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Geriatric rehabilitation",
+        "font": "Inter, Arial, sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "22.4px"
+      },
+      {
+        "tag": "P",
+        "cls": "",
+        "text": "For older adults finding walking, balance or everyday m",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.1px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Know what to expect. Feel ready to begin.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "33.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "33.8px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "33.8px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Someone who listens.Care that fits you.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "36px",
+        "weight": "600",
+        "line": "43.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "29.4px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Practitioner credentials",
+        "font": "Inter, Arial, sans-serif",
+        "size": "19px",
+        "weight": "600",
+        "line": "25.65px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Their words. Their experience.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Your recovery. Starts right here.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Dr. Rasathi Rajendren, PT",
+        "font": "Inter, Arial, sans-serif",
+        "size": "17px",
+        "weight": "600",
+        "line": "22.95px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Schedule Your Clinical Appointment",
+        "font": "Inter, Arial, sans-serif",
+        "size": "24px",
+        "weight": "500",
+        "line": "31.2px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "agai-input",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "21px"
+      },
+      {
+        "tag": "INPUT",
+        "cls": "",
+        "text": "",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "20.4px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-unified-title",
+        "text": "Frequently asked questions.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "44px",
+        "weight": "600",
+        "line": "50.6px"
+      },
+      {
+        "tag": "P",
+        "cls": "home-faq-description",
+        "text": "Clear care begins with answering everyday doubts. Every",
+        "font": "Inter, Arial, sans-serif",
+        "size": "15px",
+        "weight": "400",
+        "line": "24px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Still have a question?",
+        "font": "Inter, Arial, sans-serif",
+        "size": "21px",
+        "weight": "600",
+        "line": "27.3px"
+      },
+      {
+        "tag": "H2",
+        "cls": "home-section-title",
+        "text": "Let's get youmoving better.",
+        "font": "Inter, Arial, sans-serif",
+        "size": "36px",
+        "weight": "500",
+        "line": "43.2px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Tell us what is difficult",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Understand your movement",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      },
+      {
+        "tag": "H3",
+        "cls": "",
+        "text": "Agree on a plan together",
+        "font": "Inter, Arial, sans-serif",
+        "size": "12px",
+        "weight": "600",
+        "line": "18px"
+      }
+    ]
+  }
+]
