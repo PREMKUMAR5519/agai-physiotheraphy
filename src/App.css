@@ -686,6 +686,10 @@ p { margin-block: 0 16px; }
 .form-privacy { text-align: center; margin-top: -4px; }
 .form-error { color: #a32b1e; font-size: 13px; margin: 0; }
 .prepare-button { width: 100%; }
+.prepare-button:disabled { cursor: wait; }
+.enquiry-submit-spinner { display: inline-block; width: 22px; height: 22px; flex-shrink: 0; box-sizing: border-box; border: 2px solid #ffffff59; border-top-color: currentColor; border-radius: 50%; animation: enquiry-submit-spin .75s linear infinite; }
+@keyframes enquiry-submit-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .enquiry-submit-spinner { animation: none; } }
 .draft-preview { padding-top: 32px; margin-top: 32px; border-top: 1px solid var(--agai-border); }
 .enquiry-card > .draft-preview:only-child { padding-top: 0; margin-top: 0; border-top: 0; }
 .draft-preview h3 { font-size: 22px; margin: 0 0 12px; }

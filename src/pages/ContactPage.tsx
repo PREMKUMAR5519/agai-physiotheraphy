@@ -1,6 +1,5 @@
 import { clearValidation, useLanguage } from '../language'
 import { contentEndpoint } from '../cms-contract'
-import { isValidPhone } from '../phone'
 import { createFormTracker } from '../form-analytics'
 import { useServices } from '../ServicesContext'
 import PageIntro from '../components/PageIntro'
@@ -10,6 +9,16 @@ import { Link, useSearchParams } from 'react-router'
 import { clinic } from '../content'
 import { Arrow, Eyebrow, FAQ, Icon } from '../components/UI'
 import type { IconName } from '../components/UI'
+
+function keepPhoneDigits(input: HTMLInputElement) {
+  const value = input.value
+  const digits = value.replace(/\D/g, '')
+  if (value === digits) return
+  const start = input.selectionStart ?? value.length
+  const end = input.selectionEnd ?? start
+  input.value = digits
+  input.setSelectionRange(value.slice(0, start).replace(/\D/g, '').length, value.slice(0, end).replace(/\D/g, '').length)
+}
 
 function ContactMethod({ icon, title, value, pending, href }: { icon: IconName; title: string; value: string; pending: string; href?: string }) {
   return <div className="contact-method"><span className="contact-icon"><Icon name={icon} /></span><div><h3>{title}</h3>{value && href ? <a href={href} target={href.startsWith('https:') ? '_blank' : undefined} rel={href.startsWith('https:') ? 'noreferrer' : undefined}>{value}<Arrow diagonal /></a> : <p>{value || pending}</p>}</div></div>
@@ -40,8 +49,8 @@ export default function ContactPage() {
     const name = String(data.get('name') || '').trim()
     const message = String(data.get('message') || '').trim()
     const phone = String(data.get('phone') || '').trim()
-    if (!isValidPhone(phone)) {
-      setPhoneError('Enter a phone number with 7–15 digits. Spaces, brackets, hyphens and a leading + are allowed.')
+    if (!/^\d{7,15}$/.test(phone)) {
+      setPhoneError('Enter a phone number with 7–15 digits.')
       phoneInput.current?.focus()
       return
     }
@@ -80,15 +89,16 @@ export default function ContactPage() {
         <div className="contact-methods"><ContactMethod icon="phone" title={t("Call the centre")} value={clinic.phone} pending={t("Phone number will be available soon.")} href={phoneLink} /><ContactMethod icon="chat" title="WhatsApp" value={clinic.whatsapp} pending={t("WhatsApp contact will be available soon.")} href={whatsappLink} /><ContactMethod icon="mail" title={t("Email us")} value={clinic.email} pending={t("Email address will be available soon.")} href={clinic.email ? `mailto:${clinic.email}` : undefined} /><ContactMethod icon="clock" title={t("Opening hours")} value={clinic.hours} pending={t("Clinic hours will be available soon.")} /></div>
       </div>
       <div className={`enquiry-card${sent ? ' enquiry-card--success' : ''}`}>{!sent && <><Eyebrow>{t("Your enquiry")}</Eyebrow><h2>{t("How can we help?")}</h2><p>{t("Send your enquiry directly to our team. We will contact you using the details you provide.")}</p>
+        <p className="visually-hidden" role="status" aria-live="polite">{busy ? t('Sending enquiry…') : ''}</p>
         <form onInvalidCapture={localizeValidation} onInputCapture={clearValidation} onSubmit={prepareEnquiry} aria-busy={busy} onFocusCapture={() => track('enquiry_start')} onChange={() => { track('enquiry_start'); setSent(false); setFormError(''); setPhoneError('') }}>
           <fieldset disabled={busy} style={{ border: 0, padding: 0, margin: 0, minWidth: 0 }}>
           <div hidden aria-hidden="true"><label>Leave this empty<input name="website" tabIndex={-1} autoComplete="off" /></label></div>
           <div className="form-grid"><label className="agai-field" htmlFor="enquiry-name">{t("Your name")} <span className="required-label">{t("(required)")}</span><input id="enquiry-name" className="agai-input" name="name" autoComplete="name" required maxLength={100} placeholder={t("Full name")} /></label><label className="agai-field" htmlFor="enquiry-email">{t("Email address")} <span className="required-label">{t("(optional)")}</span><input id="enquiry-email" className="agai-input" name="email" type="email" autoComplete="email" maxLength={200} placeholder="you@example.com" /></label></div>
-          <label className="agai-field" htmlFor="enquiry-phone">{t("Phone number")} <span className="required-label">{t("(required)")}</span><input ref={phoneInput} id="enquiry-phone" className="agai-input" name="phone" type="tel" autoComplete="tel" required maxLength={30} placeholder={t("Include country code")} aria-invalid={phoneError ? true : undefined} aria-describedby={phoneError ? 'enquiry-phone-error' : undefined} /></label>
+          <label className="agai-field" htmlFor="enquiry-phone">{t("Phone number")} <span className="required-label">{t("(required)")}</span><input ref={phoneInput} id="enquiry-phone" className="agai-input" name="phone" type="tel" inputMode="numeric" autoComplete="tel" onInput={event => keepPhoneDigits(event.currentTarget)} required maxLength={30} placeholder={t("Include country code")} aria-invalid={phoneError ? true : undefined} aria-describedby={phoneError ? 'enquiry-phone-error' : undefined} /></label>
           {phoneError ? <p id="enquiry-phone-error" className="form-error" role="alert">{t(phoneError)}</p> : null}
           <label className="agai-field" htmlFor="enquiry-message">{t("Your message")} <span className="required-label">{t("(required)")}</span><textarea id="enquiry-message" className="agai-input" name="message" rows={4} required minLength={10} maxLength={1500} aria-describedby="message-help" placeholder={t("Let us know your question or preferred appointment day.")} /></label><p className="form-help" id="message-help">{t("10–1,500 characters. A general question is enough; you don’t need to include medical records.")}</p>
           {formError ? <p className="form-error" role="alert">{t(formError)}</p> : null}
-          <button className="agai-button prepare-button" type="submit" disabled={busy}>{busy ? t('Sending enquiry?') : t('Submit enquiry')} <Arrow /></button><p className="form-privacy">{t("Your details are shared privately with the centre to respond to your enquiry. Submitting does not confirm an appointment.")}</p>
+          <button className="agai-button prepare-button" type="submit" disabled={busy}>{busy ? t('Sending enquiry…') : t('Submit enquiry')}{busy ? <span className="enquiry-submit-spinner" aria-hidden="true" /> : <Arrow />}</button><p className="form-privacy">{t("Your details are shared privately with the centre to respond to your enquiry. Submitting does not confirm an appointment.")}</p>
           </fieldset>
         </form></>}
         {sent && <section className="draft-preview" role="status"><span className="enquiry-success-icon" aria-hidden="true"><Icon name="check" /></span><h3 tabIndex={-1} ref={draftHeading}>{t("Enquiry received.")}</h3><p>{t("Thank you. Our team will contact you about your enquiry.")}</p><p className="enquiry-success-note">{t("Your appointment is confirmed only after you hear back from the centre.")}</p></section>}
