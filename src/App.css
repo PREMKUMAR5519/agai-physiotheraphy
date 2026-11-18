@@ -573,7 +573,7 @@ p { margin-block: 0 16px; }
   border-top: 0;
   border-radius: 0;
 }
-.footer-brand .footer-logo { display: inline-flex; align-items: center; width: 264px; max-width: 100%; box-sizing: border-box; padding: 10px 12px; background: white; border-radius: 0; margin-bottom: 24px; text-decoration: none; }
+.footer-brand .footer-logo { display: inline-flex; align-items: center; width: 264px; max-width: 100%; box-sizing: border-box; padding: 0; background: transparent; border-radius: 0; margin-bottom: 24px; text-decoration: none; }
 .footer-logo img { display: block; width: 100%; height: auto; }
 .site-footer a:focus-visible { outline: 2px solid #ffffff; outline-offset: 4px; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr .7fr 1fr 1fr; gap: 40px; padding-block: 56px; }
